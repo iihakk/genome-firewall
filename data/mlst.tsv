@@ -1,0 +1,559 @@
+genome_id	mlst	isolation_source	collection_year	genome_name
+573.12796	MLST.klebsiella.15	wound	2016	Klebsiella pneumoniae strain MLST-15
+573.12859	MLST.klebsiella.133			Klebsiella pneumoniae 3248
+573.12874	MLST.klebsiella.393			Klebsiella pneumoniae 3294
+573.12878	MLST.klebsiella.16			Klebsiella pneumoniae 3262
+573.12882	MLST.klebsiella.37			Klebsiella pneumoniae 113
+573.12892	MLST.klebsiella.70			Klebsiella pneumoniae 3371
+573.12893	MLST.klebsiella.2975			Klebsiella pneumoniae 3238
+573.12896	MLST.klebsiella.492			Klebsiella pneumoniae 3300
+573.12914	MLST.klebsiella.25			Klebsiella pneumoniae 3275
+573.12928	MLST.klebsiella.466			Klebsiella pneumoniae 96
+573.12935	MLST.klebsiella.133			Klebsiella pneumoniae 104
+573.12943	MLST.klebsiella.101			Klebsiella pneumoniae 81
+573.12952	MLST.klebsiella.1017			Klebsiella pneumoniae 3324
+573.12958	MLST.klebsiella.258			Klebsiella pneumoniae 3270
+573.12963	MLST.klebsiella.433			Klebsiella pneumoniae 31
+573.12984	MLST.klebsiella.636			Klebsiella pneumoniae 63
+573.12986	MLST.klebsiella.45			Klebsiella pneumoniae 21
+573.12995	MLST.klebsiella.36			Klebsiella pneumoniae 5
+573.13001	MLST.Klebsiella_pneumoniae.1662			Klebsiella pneumoniae 3290
+573.13005	MLST.klebsiella.111			Klebsiella pneumoniae 24
+573.13008	MLST.klebsiella.307			Klebsiella pneumoniae 3302
+573.13021	MLST.klebsiella.133			Klebsiella pneumoniae 3253
+573.13022	MLST.klebsiella.200			Klebsiella pneumoniae 40
+573.13028	MLST.klebsiella.307			Klebsiella pneumoniae 3254
+573.13032	MLST.klebsiella.628	URINE	2013	Klebsiella pneumoniae KPN1001ec
+573.13047	MLST.klebsiella.348	URINE	2013	Klebsiella pneumoniae KPN1021ec
+573.13048	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN1022ec
+573.13056	MLST.klebsiella.261	URINE	2013	Klebsiella pneumoniae KPN1033ec
+573.13057	MLST.klebsiella.2185	URINE	2013	Klebsiella pneumoniae KPN1034ec
+573.13063	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN1041ec
+573.13068	MLST.klebsiella.258	DRAIN	2013	Klebsiella pneumoniae KPN1046ec
+573.13071	MLST.klebsiella.258	URINE	2013	Klebsiella pneumoniae KPN1052ec
+573.13072	MLST.Klebsiella_pneumoniae.2975	RESPIRATORY	2013	Klebsiella pneumoniae KPN1053ec
+573.13076	MLST.klebsiella.258	RESPIRATORY	2013	Klebsiella pneumoniae KPN1058ec
+573.13081	MLST.Klebsiella_pneumoniae.551	URINE	2013	Klebsiella pneumoniae KPN1066ec
+573.13082	MLST.klebsiella.307	RESPIRATORY	2013	Klebsiella pneumoniae KPN1067ec
+573.13084	MLST.klebsiella.258	URINE	2013	Klebsiella pneumoniae KPN1070ec
+573.13091	MLST.klebsiella.45	RESPIRATORY	2013	Klebsiella pneumoniae KPN1079ec
+573.13095	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN1087ec
+573.13096	MLST.klebsiella.258	URINE	2013	Klebsiella pneumoniae KPN1090ec
+573.13101	MLST.klebsiella.1440	RESPIRATORY	2013	Klebsiella pneumoniae KPN1095ec
+573.13106	MLST.klebsiella.258	TISSUE	2013	Klebsiella pneumoniae KPN1102ec
+573.13107	MLST.klebsiella.2975	URINE	2013	Klebsiella pneumoniae KPN1103ec
+573.13113	MLST.klebsiella.307	ULCER	2013	Klebsiella pneumoniae KPN1109ec
+573.13114	MLST.klebsiella.258	URINE	2013	Klebsiella pneumoniae KPN1110ec
+573.13116	MLST.klebsiella.16	BLOOD	2013	Klebsiella pneumoniae KPN1113ec
+573.13122	MLST.klebsiella.2975	RESPIRATORY	2013	Klebsiella pneumoniae KPN1120ec
+573.13125	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN1123ec
+573.13128	MLST.klebsiella.16	URINE	2013	Klebsiella pneumoniae KPN1126ec
+573.13133	MLST.klebsiella.476	URINE	2013	Klebsiella pneumoniae KPN1132ec
+573.13139	MLST.klebsiella.307	BLOOD	2013	Klebsiella pneumoniae KPN1139ec
+573.13145	MLST.klebsiella.258	RESPIRATORY	2013	Klebsiella pneumoniae KPN1147ec
+573.13151	MLST.klebsiella.307	WOUND	2014	Klebsiella pneumoniae KPN1153ec
+573.13174	MLST.klebsiella.307	RESPIRATORY	2014	Klebsiella pneumoniae KPN1182ec
+573.13183		URINE	2014	Klebsiella pneumoniae KPN1191ec
+573.13192	MLST.klebsiella.307	BLOOD	2014	Klebsiella pneumoniae KPN1200ec
+573.13193	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1202ec
+573.13196	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1205ec
+573.13212	MLST.klebsiella.307	RESPIRATORY	2014	Klebsiella pneumoniae KPN1222ec
+573.13217	MLST.klebsiella.258	RESPIRATORY	2014	Klebsiella pneumoniae KPN1234ec
+573.13233	MLST.klebsiella.258	RESPIRATORY	2014	Klebsiella pneumoniae KPN1254ec
+573.13242	MLST.klebsiella.1427	URINE	2014	Klebsiella pneumoniae KPN1263ec
+573.13249	MLST.klebsiella.307	RESPIRATORY	2014	Klebsiella pneumoniae KPN1270ec
+573.13264	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1285ec
+573.13265	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1286ec
+573.13273		RESPIRATORY	2014	Klebsiella pneumoniae KPN1309ec
+573.13285	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1325ec
+573.13289	MLST.klebsiella.307	RESPIRATORY	2014	Klebsiella pneumoniae KPN1329ec
+573.13317	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1358ec
+573.13322	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1364ec
+573.13331	MLST.klebsiella.551	URINE	2014	Klebsiella pneumoniae KPN1381ec
+573.13341	MLST.klebsiella.258	SITE	2014	Klebsiella pneumoniae KPN1393ec
+573.13354	MLST.klebsiella.15	BLOOD	2014	Klebsiella pneumoniae KPN1410ec
+573.13385	MLST.klebsiella.280	WOUND	2014	Klebsiella pneumoniae KPN1444ec
+573.13392	MLST.klebsiella.258	BLOOD	2014	Klebsiella pneumoniae KPN1450ec
+573.13393	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1451ec
+573.13399	MLST.klebsiella.258	URINE	2011	Klebsiella pneumoniae KPN145ec
+573.13406	MLST.klebsiella.16	URINE	2014	Klebsiella pneumoniae KPN1469ec
+573.13411		URINE	2014	Klebsiella pneumoniae KPN1473ec
+573.13416	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1477ec
+573.13418	MLST.klebsiella.258	URINE	2011	Klebsiella pneumoniae KPN147ec
+573.13419	MLST.klebsiella.906	urine	2014	Klebsiella pneumoniae KPN1481ec
+573.13433	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1496ec
+573.13445	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1512ec
+573.13448	MLST.klebsiella.258	RESPIRATORY	2014	Klebsiella pneumoniae KPN1515ec
+573.13449	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1516ec
+573.13452	MLST.klebsiella.392	URINE	2012	Klebsiella pneumoniae KPN151ec
+573.13461	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1530ec
+573.13472	MLST.klebsiella.280	URINE	2014	Klebsiella pneumoniae KPN1543ec
+573.13476	MLST.klebsiella.37	TISSUE	2014	Klebsiella pneumoniae KPN1547ec
+573.13479	MLST.klebsiella.16	URINE	2012	Klebsiella pneumoniae KPN154ec
+573.13486	MLST.klebsiella.405	URINE	2014	Klebsiella pneumoniae KPN1558ec
+573.13487	MLST.klebsiella.16	URINE	2014	Klebsiella pneumoniae KPN1559ec
+573.13493	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1565ec
+573.13496	MLST.klebsiella.307	RESPIRATORY	2014	Klebsiella pneumoniae KPN1568ec
+573.13506	MLST.klebsiella.13	RESPIRATORY	2014	Klebsiella pneumoniae KPN1580ec
+573.13509	MLST.klebsiella.29	BLOOD	2014	Klebsiella pneumoniae KPN1584ec
+573.13512	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1587ec
+573.13515	MLST.klebsiella.37	URINE	2014	Klebsiella pneumoniae KPN1591ec
+573.13528	MLST.klebsiella.258	ULCER	2014	Klebsiella pneumoniae KPN1608ec
+573.13529	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1609ec
+573.13532	MLST.klebsiella.37	URINE	2014	Klebsiella pneumoniae KPN1611ec
+573.13548	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1635ec
+573.1355	MLST.klebsiella.493			Klebsiella pneumoniae strain KPPR1
+573.13552	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1643ec
+573.13565	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1658ec
+573.13572	MLST.klebsiella.471	RESPIRATORY	2014	Klebsiella pneumoniae KPN1666ec
+573.13621	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1718ec
+573.13625	MLST.klebsiella.16	URINE	2014	Klebsiella pneumoniae KPN1722ec
+573.13626	MLST.klebsiella.307	PUS	2014	Klebsiella pneumoniae KPN1723ec
+573.13628	MLST.klebsiella.15	URINE	2014	Klebsiella pneumoniae KPN1726ec
+573.1363	MLST.klebsiella.29	sputum from patient with respiratory tract infection	2013	Klebsiella pneumoniae strain XDR
+573.13637	MLST.klebsiella.45	URINE	2014	Klebsiella pneumoniae KPN1738ec
+573.13639	MLST.klebsiella.3660	RESPIRATORY	2014	Klebsiella pneumoniae KPN1740ec
+573.13642	MLST.klebsiella.234	RESPIRATORY	2014	Klebsiella pneumoniae KPN1744ec
+573.13643	MLST.klebsiella.307	RESPIRATORY	2014	Klebsiella pneumoniae KPN1746ec
+573.13644	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1747ec
+573.13653	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1757ec
+573.13657	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1761ec
+573.1366	MLST.klebsiella.3577	wound	2007	Klebsiella pneumoniae strain 101712
+573.13664	MLST.klebsiella.45	RESPIRATORY	2012	Klebsiella pneumoniae KPN176ec
+573.13675	MLST.klebsiella.280	URINE	2014	Klebsiella pneumoniae KPN1782ec
+573.13677	MLST.klebsiella.895	TISSUE	2014	Klebsiella pneumoniae KPN1784ec
+573.13683	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN179ec
+573.1369	MLST.klebsiella.258	Urine	2010	Klebsiella pneumoniae strain 32192
+573.13691	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1826ec
+573.13694	MLST.klebsiella.307	RESPIRATORY	2012	Klebsiella pneumoniae KPN182ec
+573.13699	MLST.klebsiella.258	RESPIRATORY	2014	Klebsiella pneumoniae KPN1835ec
+573.13706	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1843ec
+573.13715	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1852ec
+573.1372	MLST.klebsiella.392	Bodily fluid	2012	Klebsiella pneumoniae strain 6234
+573.13742	MLST.klebsiella.13	URINE	2014	Klebsiella pneumoniae KPN1879ec
+573.13743	MLST.klebsiella.258	PUS	2012	Klebsiella pneumoniae KPN187ec
+573.13746	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1882ec
+573.13747	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1883ec
+573.13754	MLST.klebsiella.1758	URINE	2014	Klebsiella pneumoniae KPN1893ec
+573.13755	MLST.klebsiella.307	URINE	2014	Klebsiella pneumoniae KPN1894ec
+573.13768	MLST.klebsiella.147	URINE	2014	Klebsiella pneumoniae KPN1912ec
+573.13769	MLST.klebsiella.258	URINE	2014	Klebsiella pneumoniae KPN1914ec
+573.13789	MLST.klebsiella.17	BLOOD	2014	Klebsiella pneumoniae KPN1938ec
+573.13793		URINE	2015	Klebsiella pneumoniae KPN1946ec
+573.13794	MLST.klebsiella.45	RESPIRATORY	2014	Klebsiella pneumoniae KPN1947ec
+573.13796	MLST.klebsiella.258	URINE	2015	Klebsiella pneumoniae KPN1949ec
+573.13807	MLST.Klebsiella_pneumoniae.307	BLOOD	2015	Klebsiella pneumoniae KPN1968ec
+573.13813	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN197ec
+573.13818	MLST.klebsiella.15	TISSUE	2015	Klebsiella pneumoniae KPN1985ec
+573.13827	MLST.klebsiella.15	RESPIRATORY	2013	Klebsiella pneumoniae KPN1994ec
+573.13828	MLST.klebsiella.15	RESPIRATORY	2013	Klebsiella pneumoniae KPN1997ec
+573.1383	MLST.klebsiella.307			Klebsiella pneumoniae
+573.13832	MLST.klebsiella.307	URINE	2015	Klebsiella pneumoniae KPN2002ec
+573.13833	MLST.klebsiella.25	BLOOD	2015	Klebsiella pneumoniae KPN2003ec
+573.1384	MLST.klebsiella.258			Klebsiella pneumoniae
+573.13869	MLST.klebsiella.15	RESPIRATORY	2015	Klebsiella pneumoniae KPN2043ec
+573.13872	MLST.klebsiella.258	BLOOD	2015	Klebsiella pneumoniae KPN2046ec
+573.1389	MLST.klebsiella.37			Klebsiella pneumoniae
+573.13891	MLST.klebsiella.37	URINE	2015	Klebsiella pneumoniae KPN2067ec
+573.13895	MLST.klebsiella.258	URINE	2015	Klebsiella pneumoniae KPN2072ec
+573.13897	MLST.klebsiella.1440	RESPIRATORY	2015	Klebsiella pneumoniae KPN2075ec
+573.13898	MLST.klebsiella.307	BLOOD	2015	Klebsiella pneumoniae KPN2076ec
+573.13904	MLST.klebsiella.258	URINE	2015	Klebsiella pneumoniae KPN2081ec
+573.13908	MLST.klebsiella.258	URINE	2015	Klebsiella pneumoniae KPN2085ec
+573.1392	MLST.klebsiella.15			Klebsiella pneumoniae
+573.13928	MLST.klebsiella.76	BLOOD	2012	Klebsiella pneumoniae KPN210ec
+573.13939	MLST.klebsiella.258	WOUND	2015	Klebsiella pneumoniae KPN2128ec
+573.13942	MLST.klebsiella.258	URINE	2012	Klebsiella pneumoniae KPN213ec
+573.13945	MLST.klebsiella.307	URINE	2015	Klebsiella pneumoniae KPN2152ec
+573.13947	MLST.klebsiella.307	TISSUE	2015	Klebsiella pneumoniae KPN2155ec
+573.13951	MLST.klebsiella.258	URINE	2015	Klebsiella pneumoniae KPN2159ec
+573.13961	MLST.klebsiella.2975	URINE	2015	Klebsiella pneumoniae KPN2172ec
+573.13965	MLST.klebsiella.307	RESPIRATORY	2012	Klebsiella pneumoniae KPN218ec
+573.13977	MLST.klebsiella.258	URINE	2012	Klebsiella pneumoniae KPN232ec
+573.13978	MLST.klebsiella.258	RESPIRATORY	2012	Klebsiella pneumoniae KPN233ec
+573.13987	MLST.klebsiella.392	URINE	2012	Klebsiella pneumoniae KPN246ec
+573.13993	MLST.klebsiella.22	URINE	2012	Klebsiella pneumoniae KPN252ec
+573.14011	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN273ec
+573.14017	MLST.klebsiella.307	RESPIRATORY	2012	Klebsiella pneumoniae KPN279ec
+573.1402	MLST.klebsiella.512			Klebsiella pneumoniae
+573.14023	MLST.klebsiella.258	FLUID	2012	Klebsiella pneumoniae KPN286ec
+573.14037	MLST.klebsiella.16	RESPIRATORY	2012	Klebsiella pneumoniae KPN302ec
+573.14043	MLST.klebsiella.884	URINE	2012	Klebsiella pneumoniae KPN308ec
+573.14091	MLST.klebsiella.258	TISSUE	2012	Klebsiella pneumoniae KPN368ec
+573.14094	MLST.klebsiella.15	URINE	2012	Klebsiella pneumoniae KPN371ec
+573.14096	MLST.klebsiella.307	DRAIN	2012	Klebsiella pneumoniae KPN373ec
+573.14099	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN376ec
+573.14101	MLST.klebsiella.1296	URINE	2012	Klebsiella pneumoniae KPN378ec
+573.14107	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN384ec
+573.14109	MLST.klebsiella.307	ULCER	2012	Klebsiella pneumoniae KPN386ec
+573.14111	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN388ec
+573.14118	MLST.klebsiella.258	RESPIRATORY	2012	Klebsiella pneumoniae KPN396ec
+573.14119	MLST.klebsiella.13	WOUND	2012	Klebsiella pneumoniae KPN397ec
+573.1412	MLST.klebsiella.512			Klebsiella pneumoniae
+573.14121	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN400ec
+573.14124	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN403ec
+573.14128	MLST.klebsiella.258	URINE	2012	Klebsiella pneumoniae KPN407ec
+573.14132	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN412ec
+573.14136	MLST.klebsiella.258	URINE	2012	Klebsiella pneumoniae KPN416ec
+573.14142	MLST.klebsiella.16	URINE	2012	Klebsiella pneumoniae KPN422ec
+573.1415	MLST.klebsiella.160			Klebsiella pneumoniae
+573.14153	MLST.klebsiella.258	RESPIRATORY	2012	Klebsiella pneumoniae KPN435ec
+573.14166	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN450ec
+573.14175	MLST.klebsiella.258	RESPIRATORY	2012	Klebsiella pneumoniae KPN464ec
+573.14184	MLST.klebsiella.258	ABSCESS	2012	Klebsiella pneumoniae KPN475ec
+573.14186	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN479ec
+573.14203	MLST.klebsiella.16	WOUND	2012	Klebsiella pneumoniae KPN514ec
+573.14229	MLST.klebsiella.17	URINE	2012	Klebsiella pneumoniae KPN550ec
+573.14235	MLST.klebsiella.15	RESPIRATORY	2012	Klebsiella pneumoniae KPN558ec
+573.14246		URINE	2012	Klebsiella pneumoniae KPN572ec
+573.14247	MLST.klebsiella.307	URINE	2012	Klebsiella pneumoniae KPN573ec
+573.1425	MLST.klebsiella.466			Klebsiella pneumoniae
+573.14265	MLST.klebsiella.15	RESPIRATORY	2012	Klebsiella pneumoniae KPN593ec
+573.14267	MLST.klebsiella.147	RESPIRATORY	2012	Klebsiella pneumoniae KPN596ec
+573.14273	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN604ec
+573.14281	MLST.klebsiella.3792	URINE	2013	Klebsiella pneumoniae KPN614ec
+573.14285	MLST.klebsiella.307	BLOOD	2013	Klebsiella pneumoniae KPN618ec
+573.14288	MLST.klebsiella.258	RESPIRATORY	2013	Klebsiella pneumoniae KPN621ec
+573.14291	MLST.klebsiella.307	BLOOD	2013	Klebsiella pneumoniae KPN626ec
+573.14302	MLST.klebsiella.17	URINE	2013	Klebsiella pneumoniae KPN660ec
+573.14311	MLST.klebsiella.307	DRAIN	2013	Klebsiella pneumoniae KPN680ec
+573.14313	MLST.klebsiella.258	RESPIRATORY	2013	Klebsiella pneumoniae KPN682ec
+573.14316	MLST.klebsiella.307	BLOOD	2013	Klebsiella pneumoniae KPN685ec
+573.14327	MLST.klebsiella.36	URINE	2013	Klebsiella pneumoniae KPN698ec
+573.14328	MLST.klebsiella.681	BLOOD	2013	Klebsiella pneumoniae KPN700ec
+573.1433	MLST.klebsiella.416			Klebsiella pneumoniae
+573.14332	MLST.klebsiella.16	URINE	2013	Klebsiella pneumoniae KPN704ec
+573.14344	MLST.klebsiella.280	RESPIRATORY	2013	Klebsiella pneumoniae KPN718ec
+573.14348	MLST.klebsiella.15	WOUND	2013	Klebsiella pneumoniae KPN722ec
+573.14355	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN731ec
+573.14359		URINE	2013	Klebsiella pneumoniae KPN736ec
+573.14376	MLST.klebsiella.35	URINE	2013	Klebsiella pneumoniae KPN758ec
+573.14377	MLST.klebsiella.307	BLOOD	2013	Klebsiella pneumoniae KPN759ec
+573.14381	MLST.klebsiella.15	URINE	2013	Klebsiella pneumoniae KPN765ec
+573.14399	MLST.klebsiella.307	RESPIRATORY	2013	Klebsiella pneumoniae KPN790ec
+573.14403	MLST.Klebsiella_pneumoniae.307	URINE	2013	Klebsiella pneumoniae KPN796ec
+573.14404	MLST.klebsiella.2975	URINE	2013	Klebsiella pneumoniae KPN797ec
+573.14409	MLST.klebsiella.258	URINE	2013	Klebsiella pneumoniae KPN803ec
+573.14416	MLST.klebsiella.15	RESPIRATORY	2013	Klebsiella pneumoniae KPN816ec
+573.14422	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN823ec
+573.14426	MLST.klebsiella.307	BLOOD	2013	Klebsiella pneumoniae KPN828ec
+573.14436	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN841ec
+573.1444	MLST.klebsiella.1629			Klebsiella pneumoniae
+573.14444	MLST.klebsiella.258	BLOOD	2013	Klebsiella pneumoniae KPN854ec
+573.14448	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN863ec
+573.14458	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN876ec
+573.14463	MLST.klebsiella.432	RESPIRATORY	2013	Klebsiella pneumoniae KPN881ec
+573.14478	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN902ec
+573.1448	MLST.klebsiella.405			Klebsiella pneumoniae
+573.14483	MLST.klebsiella.258	URINE	2013	Klebsiella pneumoniae KPN908ec
+573.14488	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN914ec
+573.14489	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN915ec
+573.14493	MLST.klebsiella.26	BILE	2013	Klebsiella pneumoniae KPN921ec
+573.14499	MLST.klebsiella.432	RESPIRATORY	2013	Klebsiella pneumoniae KPN927ec
+573.14518	MLST.klebsiella.25	URINE	2013	Klebsiella pneumoniae KPN952ec
+573.14522	MLST.klebsiella.307	URINE	2013	Klebsiella pneumoniae KPN956ec
+573.14523	MLST.klebsiella.258	RESPIRATORY	2013	Klebsiella pneumoniae KPN957ec
+573.1453	MLST.klebsiella.512			Klebsiella pneumoniae
+573.14539	MLST.klebsiella.280	URINE	2013	Klebsiella pneumoniae KPN981ec
+573.14544	MLST.klebsiella.280	RESPIRATORY	2013	Klebsiella pneumoniae KPN988ec
+573.14546	MLST.klebsiella.280	RESPIRATORY	2013	Klebsiella pneumoniae KPN990ec
+573.15107	MLST.klebsiella.258			Klebsiella pneumoniae strain AR_0129
+573.15108	MLST.klebsiella.14			Klebsiella pneumoniae strain AR_0143
+573.15364	MLST.klebsiella.340			Klebsiella pneumoniae strain INF278
+573.15369	MLST.klebsiella.340			Klebsiella pneumoniae strain INF158
+573.15377	MLST.klebsiella.323			Klebsiella pneumoniae strain KSB1_4E
+573.15472	MLST.klebsiella.15	Blood		Klebsiella pneumoniae strain 10315_6#62
+573.15473	MLST.klebsiella.628	Urine	2012	Klebsiella pneumoniae strain 10315_6#65
+573.15485	MLST.klebsiella.11	Urine		Klebsiella pneumoniae strain 10315_6#76
+573.1549	MLST.klebsiella.258		2014	Klebsiella pneumoniae strain CHS139
+573.15505	MLST.klebsiella.3395	Blood	2012	Klebsiella pneumoniae strain 10356_5#80
+573.15509	MLST.klebsiella.25	Urine	2012	Klebsiella pneumoniae strain 10356_5#86
+573.15517	MLST.klebsiella.176	other (fluid)		Klebsiella pneumoniae strain INF150
+573.1552	MLST.klebsiella.258		2014	Klebsiella pneumoniae strain CHS141
+573.15522	MLST.klebsiella.256	bronchial alveolar lavage		Klebsiella pneumoniae strain INF173
+573.15525	MLST.klebsiella.292	other (tissue)		Klebsiella pneumoniae strain INF200
+573.15528	MLST.klebsiella.681	sputum		Klebsiella pneumoniae strain INF209
+573.15538	MLST.klebsiella.596	rectal swab		Klebsiella pneumoniae strain KSB1_2A
+573.15539	MLST.klebsiella.35	rectal swab		Klebsiella pneumoniae strain KSB1_1A
+573.15541	MLST.klebsiella.537	rectal swab		Klebsiella pneumoniae strain KSB1_1C
+573.15551		rectal swab		Klebsiella pneumoniae strain KSB1_2E
+573.15563		rectal swab		Klebsiella pneumoniae strain KSB1_4G
+573.15564	MLST.klebsiella.1800	rectal swab		Klebsiella pneumoniae strain KSB1_10G
+573.1559	MLST.klebsiella.258		2014	Klebsiella pneumoniae strain CHS150
+573.15592	MLST.klebsiella.231	rectal swab		Klebsiella pneumoniae strain MSB1_8A
+573.15595	MLST.klebsiella.323	rectal swab		Klebsiella pneumoniae strain KSB1_6J
+573.15597	MLST.klebsiella.2989	blood culture		Klebsiella pneumoniae strain INF312
+573.15602	MLST.klebsiella.323	bronchial alveolar lavage		Klebsiella pneumoniae strain INF277
+573.15614	MLST.klebsiella.323	rectal swab		Klebsiella pneumoniae strain KSB2_2B
+573.15618	MLST.klebsiella.323	rectal swab		Klebsiella pneumoniae strain KSB2_5A
+573.15626	MLST.klebsiella.323	rectal swab		Klebsiella pneumoniae strain KSB1_1H
+573.15628	MLST.klebsiella.1599	throat swab		Klebsiella pneumoniae strain KSB1_6B
+573.15629	MLST.klebsiella.340	cerebral spinal fluid		Klebsiella pneumoniae strain INF158
+573.15665	MLST.klebsiella.11			Klebsiella pneumoniae strain K1049
+573.15692	MLST.klebsiella.405			Klebsiella pneumoniae strain K874
+573.15699	MLST.klebsiella.405			Klebsiella pneumoniae strain K809
+573.15728	MLST.klebsiella.405			Klebsiella pneumoniae strain K1603
+573.1722	MLST.klebsiella.258	Blood	2011	Klebsiella pneumoniae strain KpVA-4
+573.17908	MLST.klebsiella.14			Klebsiella pneumoniae strain AR_0066
+573.17915	MLST.klebsiella.258			Klebsiella pneumoniae strain AR_0361
+573.17927	MLST.klebsiella.1224			Klebsiella pneumoniae strain AR_0080
+573.18542	MLST.klebsiella.16			Klebsiella pneumoniae strain AR_0087
+573.18543	MLST.klebsiella.34			Klebsiella pneumoniae strain AR_0140
+573.20061	MLST.klebsiella.36			Klebsiella pneumoniae strain AR_0160
+573.20062	MLST.klebsiella.16			Klebsiella pneumoniae strain AR_0075
+573.20745	MLST.klebsiella.37			Klebsiella pneumoniae strain EuSCAPE_LU006
+573.21216	MLST.klebsiella.11	Wound Secretion	2014	Klebsiella pneumoniae strain EuSCAPE_SK018
+573.21913	MLST.klebsiella.512	Blood	2014	Klebsiella pneumoniae strain EuSCAPE_IT341
+573.22072	MLST.klebsiella.453	Urine	2014	Klebsiella pneumoniae strain EuSCAPE_ES258
+573.22556		waste water	2015	Klebsiella pneumoniae strain SU14
+573.22558	MLST.klebsiella.314	river water	2015	Klebsiella pneumoniae strain SU6
+573.22567	MLST.klebsiella.1738	soil	2015	Klebsiella pneumoniae strain SU10
+573.23199	MLST.klebsiella.147	bedside rail in hospital intensive care unit	2016	Klebsiella pneumoniae strain KP_121
+573.23217	MLST.Klebsiella_pneumoniae.147	bedside rail in hospital intensive care unit	2016	Klebsiella pneumoniae strain KP_158
+573.23219	MLST.klebsiella.584	nursing call button in hospital intensive care unit	2016	Klebsiella pneumoniae strain KP_320
+573.23228	MLST.klebsiella.147	washroom sink in hospital intensive care unit	2016	Klebsiella pneumoniae strain KP_343
+573.24243	MLST.klebsiella.14	Rectal Swab	2012	Klebsiella pneumoniae strain 10
+573.24244	MLST.klebsiella.1473	sputum	2015	Klebsiella pneumoniae strain 101
+573.24247	MLST.klebsiella.14	Sputum	2013	Klebsiella pneumoniae strain 12
+573.24252	MLST.klebsiella.16	Urine	2013	Klebsiella pneumoniae strain 16
+573.24257	MLST.klebsiella.1966	abdominal	2015	Klebsiella pneumoniae strain 180
+573.24258	MLST.klebsiella.43	Sputum	2013	Klebsiella pneumoniae strain 19
+573.24268	MLST.klebsiella.17	sputum	2016	Klebsiella pneumoniae strain 246
+573.24269	MLST.klebsiella.36	Urine		Klebsiella pneumoniae strain 25
+573.24272	MLST.klebsiella.34	Urine	2013	Klebsiella pneumoniae strain 27
+573.24278	MLST.klebsiella.101		2014	Klebsiella pneumoniae strain 30
+573.24283	MLST.klebsiella.37	urine	2016	Klebsiella pneumoniae strain 313
+573.24293	MLST.klebsiella.16	urine	2016	Klebsiella pneumoniae strain 371
+573.24311	MLST.klebsiella.395	urine	2017	Klebsiella pneumoniae strain 523
+573.24314		ulcer	2015	Klebsiella pneumoniae strain 66
+573.24321	MLST.klebsiella.231	SURVEILLANCE	2012	Klebsiella pneumoniae strain MRSN14170
+573.24322	MLST.klebsiella.258	RESPIRATORY	2012	Klebsiella pneumoniae strain MRSN14213
+573.24323	MLST.klebsiella.16	EXUDATE	2013	Klebsiella pneumoniae strain MRSN19181
+573.24325	MLST.klebsiella.11	SURVEILLANCE	2013	Klebsiella pneumoniae strain MRSN20097
+573.24334	MLST.klebsiella.1178	Blood	2014	Klebsiella pneumoniae strain MUGSI_116
+573.24336	MLST.klebsiella.258	Urine	2014	Klebsiella pneumoniae strain MUGSI_118
+573.24349	MLST.klebsiella.45	Urine	2014	Klebsiella pneumoniae strain MUGSI_133
+573.24363	MLST.klebsiella.258	Urine	2012	Klebsiella pneumoniae strain MUGSI_16
+573.24373	MLST.klebsiella.147	Urine	2014	Klebsiella pneumoniae strain MUGSI_190
+573.24374	MLST.klebsiella.258	Urine	2014	Klebsiella pneumoniae strain MUGSI_191
+573.24377	MLST.klebsiella.11	Urine	2013	Klebsiella pneumoniae strain MUGSI_200
+573.24378	MLST.klebsiella.512	Urine	2012	Klebsiella pneumoniae strain MUGSI_21
+573.24386	MLST.klebsiella.37	Urine	2012	Klebsiella pneumoniae strain MUGSI_272
+573.24395	MLST.klebsiella.252	Fluid_Ascitic	2014	Klebsiella pneumoniae strain MUGSI_311
+573.24402	MLST.klebsiella.147	Urine	2014	Klebsiella pneumoniae strain MUGSI_320
+573.24406	MLST.klebsiella.258	Urine	2013	Klebsiella pneumoniae strain MUGSI_37
+573.24411	MLST.klebsiella.147	Urine	2013	Klebsiella pneumoniae strain MUGSI_42
+573.24414	MLST.klebsiella.258	Urine	2013	Klebsiella pneumoniae strain MUGSI_46
+573.24416	MLST.klebsiella.1213	Urine	2012	Klebsiella pneumoniae strain MUGSI_5
+573.24417	MLST.klebsiella.258	Urine	2013	Klebsiella pneumoniae strain MUGSI_50
+573.24419	MLST.klebsiella.15	Urine	2013	Klebsiella pneumoniae strain MUGSI_52
+573.24421	MLST.klebsiella.258	Urine	2013	Klebsiella pneumoniae strain MUGSI_57
+573.24424	MLST.klebsiella.258	Blood_whole	2013	Klebsiella pneumoniae strain MUGSI_61
+573.24442	MLST.klebsiella.1626	Urine	2013	Klebsiella pneumoniae strain MUGSI_83
+573.26087	MLST.klebsiella.4221	not available		Klebsiella pneumoniae strain 5012STDY7312714
+573.26091	MLST.klebsiella.15	not available		Klebsiella pneumoniae strain 5012STDY7312699
+573.26093	MLST.klebsiella.1308	not available		Klebsiella pneumoniae strain 5012STDY7312704
+573.26103	MLST.klebsiella.45	not available		Klebsiella pneumoniae strain 5012STDY7312564
+573.26109		not available		Klebsiella pneumoniae strain 5012STDY7312726
+573.26118	MLST.klebsiella.1583	not available		Klebsiella pneumoniae strain 5012STDY7312734
+573.26126	MLST.klebsiella.3387	not available		Klebsiella pneumoniae strain 5012STDY7312747
+573.26137	MLST.klebsiella.152	not available		Klebsiella pneumoniae strain 5012STDY7312753
+573.26145	MLST.klebsiella.1548	not available		Klebsiella pneumoniae strain 5012STDY7312583
+573.26168	MLST.klebsiella.48	not available		Klebsiella pneumoniae strain 5012STDY7312604
+573.26171	MLST.klebsiella.1605	not available		Klebsiella pneumoniae strain 5012STDY7312615
+573.26213		not available		Klebsiella pneumoniae strain 5012STDY7312676
+573.26236	MLST.klebsiella.39	not available		Klebsiella pneumoniae strain 5012STDY7626474
+573.26237	MLST.klebsiella.152	not available		Klebsiella pneumoniae strain 5012STDY7626506
+573.26242	MLST.klebsiella.414	not available		Klebsiella pneumoniae strain 5012STDY7626522
+573.26253	MLST.klebsiella.462	not available		Klebsiella pneumoniae strain 5012STDY7626374
+573.26258	MLST.klebsiella.11	not available		Klebsiella pneumoniae strain 5012STDY7626377
+573.26259	MLST.klebsiella.65	not available		Klebsiella pneumoniae strain 5012STDY7626381
+573.26278	MLST.klebsiella.11	not available		Klebsiella pneumoniae strain 5012STDY7626397
+573.26286	MLST.klebsiella.29	not available		Klebsiella pneumoniae strain 5012STDY7626404
+573.26288		not available		Klebsiella pneumoniae strain 5012STDY7626407
+573.26291	MLST.klebsiella.629	not available		Klebsiella pneumoniae strain 5012STDY7626412
+573.26302		not available		Klebsiella pneumoniae strain 5012STDY7626422
+573.26303	MLST.klebsiella.405	not available		Klebsiella pneumoniae strain 5012STDY7626423
+573.26312	MLST.klebsiella.528	not available		Klebsiella pneumoniae strain 5012STDY7626433
+573.26317	MLST.klebsiella.11	not available		Klebsiella pneumoniae strain 5012STDY7626435
+573.26319	MLST.klebsiella.4090	not available		Klebsiella pneumoniae strain 5012STDY7626439
+573.26321	MLST.klebsiella.11	not available		Klebsiella pneumoniae strain 5012STDY7626441
+573.26323	MLST.klebsiella.307	not available		Klebsiella pneumoniae strain 5012STDY7626431
+573.29873	MLST.klebsiella.512			Klebsiella pneumoniae strain Kpngiani7132563
+573.29882	MLST.klebsiella.307			Klebsiella pneumoniae strain Kpngiani7132587
+573.29921	MLST.klebsiella.3500			Klebsiella pneumoniae strain Kpngiani7132633
+573.29941	MLST.klebsiella.15			Klebsiella pneumoniae strain Kpngiani7132493
+573.29952	MLST.klebsiella.512			Klebsiella pneumoniae strain Kpngiani7132503
+573.29964	MLST.klebsiella.37			Klebsiella pneumoniae strain Kpngiani7132482
+573.29965	MLST.klebsiella.512			Klebsiella pneumoniae strain Kpngiani7132523
+573.29972	MLST.klebsiella.101			Klebsiella pneumoniae strain Kpngiani7132508
+573.29974	MLST.klebsiella.512			Klebsiella pneumoniae strain Kpngiani7132513
+573.29994	MLST.klebsiella.512			Klebsiella pneumoniae strain Kpngiani7132551
+573.30001	MLST.klebsiella.101			Klebsiella pneumoniae strain Kpngiani7132539
+573.30006	MLST.klebsiella.512			Klebsiella pneumoniae strain Kpngiani7132540
+573.30007	MLST.klebsiella.101			Klebsiella pneumoniae strain Kpngiani7132533
+573.31061	MLST.Klebsiella_pneumoniae.437			Klebsiella pneumoniae strain PH150-2
+573.31063	MLST.klebsiella.11			Klebsiella pneumoniae strain PH24-1
+573.31065	MLST.klebsiella.11			Klebsiella pneumoniae strain PH124
+573.31085	MLST.klebsiella.4228		2008	Klebsiella pneumoniae strain D47091
+573.31102	MLST.klebsiella.340		2013	Klebsiella pneumoniae strain BKR2U6
+573.31105	MLST.klebsiella.101		2009	Klebsiella pneumoniae strain C32
+573.31107	MLST.klebsiella.14		2009	Klebsiella pneumoniae strain A28
+573.31126	MLST.klebsiella.198		2009	Klebsiella pneumoniae strain D50395
+573.31128	MLST.klebsiella.896		2012	Klebsiella pneumoniae strain 1027734
+573.31134	MLST.klebsiella.218		2010	Klebsiella pneumoniae strain 10038396
+573.31137	MLST.klebsiella.48		1997	Klebsiella pneumoniae strain 3712
+573.31146	MLST.klebsiella.560		2005	Klebsiella pneumoniae strain D30014
+573.33128	MLST.klebsiella.258			Klebsiella pneumoniae strain NR5644
+573.33233	MLST.klebsiella.258			Klebsiella pneumoniae strain NR0114
+573.33377	MLST.klebsiella.258			Klebsiella pneumoniae strain NR5158
+573.33395	MLST.klebsiella.15			Klebsiella pneumoniae strain PMK14
+573.33396	MLST.klebsiella.15		2012	Klebsiella pneumoniae strain PMK16
+573.34284	MLST.klebsiella.323			Klebsiella pneumoniae strain INF327-sc-2280132
+573.34302	MLST.klebsiella.641			Klebsiella pneumoniae strain KSB1_10B-sc-2280232
+573.46065	MLST.klebsiella.29			Klebsiella pneumoniae INF261
+573.46082	MLST.klebsiella.2997			Klebsiella pneumoniae INF023
+573.46092	MLST.klebsiella.2388			Klebsiella pneumoniae KSB1_8B
+573.46098	MLST.klebsiella.414			Klebsiella pneumoniae KSB1_6D
+573.46099	MLST.klebsiella.1966			Klebsiella pneumoniae KSB1_10C
+573.46108	MLST.klebsiella.127			Klebsiella pneumoniae KSB1_8I
+573.46111	MLST.cronobacter.760			Klebsiella pneumoniae KSB2_10A
+573.46147	MLST.klebsiella.307			Klebsiella pneumoniae PBIO1967
+573.46151	MLST.klebsiella.307			Klebsiella pneumoniae PBIO1997
+573.46203	MLST.klebsiella.171		2009	Klebsiella pneumoniae 2485STDY5438223
+573.46215	MLST.klebsiella.15		2009	Klebsiella pneumoniae 2485STDY5438238
+573.46262	MLST.klebsiella.15		2010	Klebsiella pneumoniae 2485STDY5438408
+573.46266	MLST.klebsiella.25		2012	Klebsiella pneumoniae 2485STDY5438403
+573.46268	MLST.klebsiella.105		2011	Klebsiella pneumoniae 2485STDY5438394
+573.46269	MLST.klebsiella.215		2011	Klebsiella pneumoniae 2485STDY5438392
+573.46306	MLST.klebsiella.378		2007	Klebsiella pneumoniae 2485STDY5478014
+573.46308	MLST.klebsiella.134		2007	Klebsiella pneumoniae 2485STDY5478015
+573.46831	MLST.klebsiella.147			Klebsiella pneumoniae KP-106LU
+573.46835	MLST.klebsiella.147			Klebsiella pneumoniae KP-134LU
+573.46842	MLST.klebsiella.147			Klebsiella pneumoniae KP-16PI
+573.46846	MLST.klebsiella.147			Klebsiella pneumoniae KP-1PI
+573.46852	MLST.klebsiella.147			Klebsiella pneumoniae KP-23PI
+573.46853	MLST.klebsiella.147			Klebsiella pneumoniae KP-24PI
+573.46855	MLST.klebsiella.147			Klebsiella pneumoniae KP-25PI
+573.46869	MLST.klebsiella.147			Klebsiella pneumoniae KP-7PI
+573.46872	MLST.klebsiella.147			Klebsiella pneumoniae KP-84LU
+573.5644	MLST.klebsiella.383	Stool	2013	Klebsiella pneumoniae strain 5_GR_13
+573.5687	MLST.klebsiella.16	sputum	2015	Klebsiella pneumoniae strain PB291
+573.5694	MLST.klebsiella.462	Canal	2015	Klebsiella pneumoniae strain W2-1-ERG5
+573.5698	MLST.klebsiella.1318	urine	2015	Klebsiella pneumoniae strain PB463
+573.5706	MLST.klebsiella.15	Canal	2015	Klebsiella pneumoniae strain W2-4-ERG4
+573.5724	MLST.klebsiella.37	Farm	2015	Klebsiella pneumoniae strain F1-9-ERG2
+573.5765	MLST.klebsiella.258	Sputum	2012	Klebsiella pneumoniae strain 22_GR_12
+573.5769	MLST.klebsiella.11	Stool	2014	Klebsiella pneumoniae strain 17_GR_14
+573.5778	MLST.klebsiella.258	Stool	2012	Klebsiella pneumoniae strain 20_GR_12
+573.5809	MLST.klebsiella.23	blood	2015	Klebsiella pneumoniae strain PB270
+573.5822	MLST.klebsiella.895	Canal	2015	Klebsiella pneumoniae strain W2-13-ERG2
+573.5826	MLST.klebsiella.895	Canal	2015	Klebsiella pneumoniae strain W2-13-ERG8
+573.62701	MLST.klebsiella.395	E.T Tube aspirate	2020	Klebsiella pneumoniae 20200622_MGL_73
+573.62703	MLST.klebsiella.147	Blood	2020	Klebsiella pneumoniae 20200622_MGL_63
+573.62704	MLST.klebsiella.17	Stool	2019	Klebsiella pneumoniae MGL_58
+573.62707	MLST.klebsiella.15	Neonatal Blood	2016	Klebsiella pneumoniae MGL_K_12
+573.62719	MLST.klebsiella.231	Pus	2019	Klebsiella pneumoniae 20200203_MGL_18
+573.62727	MLST.klebsiella.147	Sputum	2020	Klebsiella pneumoniae 20200317_MGL_39
+573.66102	MLST.klebsiella.111			Klebsiella pneumoniae ERR1810609
+573.66127	MLST.klebsiella.512			Klebsiella pneumoniae ERR1829913
+573.66128	MLST.klebsiella.20			Klebsiella pneumoniae ERR1830484
+573.66133	MLST.klebsiella.36			Klebsiella pneumoniae ERR1830478
+573.66138	MLST.klebsiella.45			Klebsiella pneumoniae ERR1840990
+573.66147	MLST.klebsiella.111			Klebsiella pneumoniae ERR1981101
+573.66148	MLST.klebsiella.512			Klebsiella pneumoniae ERR2106615
+573.66149	MLST.klebsiella.2974			Klebsiella pneumoniae ERR2106420
+573.66153	MLST.klebsiella.512			Klebsiella pneumoniae ERR2109183
+573.66155	MLST.klebsiella.441			Klebsiella pneumoniae ERR2118024
+573.66157	MLST.klebsiella.48			Klebsiella pneumoniae ERR2118027
+573.66164	MLST.klebsiella.11			Klebsiella pneumoniae ERR2118034
+573.9723	MLST.klebsiella.258			Klebsiella pneumoniae strain AR_0115
+573.66168	MLST.klebsiella.258			Klebsiella pneumoniae ERR2118038
+573.66211	MLST.klebsiella.15		2013	Klebsiella pneumoniae KP_NORM_URN_2013_95579
+573.66232	MLST.klebsiella.15			Klebsiella pneumoniae 26968_5#140
+573.66234	MLST.klebsiella.147			Klebsiella pneumoniae 26968_5#67
+573.66246	MLST.klebsiella.15			Klebsiella pneumoniae 26968_6#6
+573.66262	MLST.klebsiella.15			Klebsiella pneumoniae 26968_6#112
+573.66284	MLST.klebsiella.307			Klebsiella pneumoniae 26975_5#16
+573.66303	MLST.klebsiella.656			Klebsiella pneumoniae 26975_5#64
+573.66304	MLST.klebsiella.16			Klebsiella pneumoniae 26975_5#39
+573.66315	MLST.klebsiella.16			Klebsiella pneumoniae 26975_5#179
+573.66321	MLST.klebsiella.11			Klebsiella pneumoniae 26994_6#67
+573.66341	MLST.klebsiella.15			Klebsiella pneumoniae 26994_6#159
+573.66345	MLST.klebsiella.15			Klebsiella pneumoniae 26994_6#179
+573.66356	MLST.klebsiella.395			Klebsiella pneumoniae 26994_7#52
+573.66369	MLST.klebsiella.16			Klebsiella pneumoniae 26994_7#115
+573.66379	MLST.klebsiella.199			Klebsiella pneumoniae 26994_7#157
+573.66391	MLST.klebsiella.656			Klebsiella pneumoniae 26994_8#38
+573.66393	MLST.klebsiella.656			Klebsiella pneumoniae 26994_8#41
+573.66397	MLST.klebsiella.11			Klebsiella pneumoniae 26994_8#116
+573.66411	MLST.klebsiella.147			Klebsiella pneumoniae 26994_8#142
+573.66417	MLST.klebsiella.656			Klebsiella pneumoniae 26994_8#175
+573.66432	MLST.klebsiella.15			Klebsiella pneumoniae 27097_7#62
+573.66433	MLST.klebsiella.147			Klebsiella pneumoniae 27097_7#76
+573.66435	MLST.klebsiella.147			Klebsiella pneumoniae 27097_7#77
+573.66441	MLST.klebsiella.16			Klebsiella pneumoniae 27261_7#51
+573.66481	MLST.klebsiella.307			Klebsiella pneumoniae 27261_8#85
+573.66486	MLST.klebsiella.15			Klebsiella pneumoniae 27261_8#107
+573.66491	MLST.klebsiella.16			Klebsiella pneumoniae 27261_8#111
+573.66525	MLST.klebsiella.15			Klebsiella pneumoniae 27322_4#82
+573.66554	MLST.klebsiella.392			Klebsiella pneumoniae 29109_2#213
+573.66555	MLST.klebsiella.11			Klebsiella pneumoniae 29105_1#376
+573.66564	MLST.klebsiella.11			Klebsiella pneumoniae 29339_1#51
+573.66566	MLST.klebsiella.3191		2005	Klebsiella pneumoniae KP_NORM_BLD_1035
+573.66568	MLST.klebsiella.17		2005	Klebsiella pneumoniae KP_NORM_BLD_1034
+573.66574	MLST.klebsiella.240		2005	Klebsiella pneumoniae KP_NORM_BLD_1045
+573.66593	MLST.klebsiella.515		2015	Klebsiella pneumoniae KP_NORM_BLD_112121
+573.66608	MLST.klebsiella.33		2015	Klebsiella pneumoniae KP_NORM_BLD_112916
+573.66645	MLST.klebsiella.29		2015	Klebsiella pneumoniae KP_NORM_BLD_114450
+573.66655	MLST.klebsiella.105		2015	Klebsiella pneumoniae KP_NORM_BLD_114729
+573.66664	MLST.klebsiella.37		2015	Klebsiella pneumoniae KP_NORM_BLD_115366
+573.66665	MLST.klebsiella.14		2015	Klebsiella pneumoniae KP_NORM_BLD_115357
+573.66676	MLST.klebsiella.515		2015	Klebsiella pneumoniae KP_NORM_BLD_115388
+573.66693	MLST.klebsiella.4290		2015	Klebsiella pneumoniae KP_NORM_BLD_116099
+573.66697	MLST.klebsiella.1574		2015	Klebsiella pneumoniae KP_NORM_BLD_116218
+573.66717	MLST.klebsiella.104		2015	Klebsiella pneumoniae KP_NORM_BLD_116389
+573.66734	MLST.klebsiella.70		2005	Klebsiella pneumoniae KP_NORM_BLD_1169
+573.66744	MLST.klebsiella.11		2015	Klebsiella pneumoniae KP_NORM_BLD_117562
+573.66823	MLST.klebsiella.643		2001	Klebsiella pneumoniae KP_NORM_BLD_14175
+573.66878	MLST.klebsiella.377		2011	Klebsiella pneumoniae KP_NORM_BLD_2011_72749
+573.66893	MLST.klebsiella.70		2011	Klebsiella pneumoniae KP_NORM_BLD_2011_76225
+573.66911	MLST.klebsiella.45		2013	Klebsiella pneumoniae KP_NORM_BLD_2013_91433
+573.66919	MLST.klebsiella.37		2013	Klebsiella pneumoniae KP_NORM_BLD_2013_92929
+573.66924	MLST.klebsiella.14		2014	Klebsiella pneumoniae KP_NORM_BLD_2014_101477
+573.66945	MLST.klebsiella.248		2005	Klebsiella pneumoniae KP_NORM_BLD_225
+573.67001	MLST.klebsiella.134		2009	Klebsiella pneumoniae KP_NORM_BLD_60613
+573.67015	MLST.klebsiella.37		2009	Klebsiella pneumoniae KP_NORM_BLD_61041
+573.67038	MLST.klebsiella.198		2009	Klebsiella pneumoniae KP_NORM_BLD_61805
+573.67142	MLST.klebsiella.147		2013	Klebsiella pneumoniae KP_NORM_URN_2013_95439
+573.67161	MLST.klebsiella.904		2014	Klebsiella pneumoniae KP_NORM_URN_2014_97959
+573.67169	MLST.klebsiella.48		2015	Klebsiella pneumoniae KP_NORM_URN_2015_108182
+573.67172	MLST.klebsiella.719		2015	Klebsiella pneumoniae KP_NORM_URN_2015_109358
+573.67185	MLST.klebsiella.34			Klebsiella pneumoniae ERR7221161
+573.67191	MLST.klebsiella.133			Klebsiella pneumoniae ERR7221162
+573.67197	MLST.klebsiella.133			Klebsiella pneumoniae ERR7221169
+573.67198	MLST.klebsiella.3515			Klebsiella pneumoniae ERR7221172
+573.67202	MLST.klebsiella.3516			Klebsiella pneumoniae ERR7221180
+573.67205	MLST.klebsiella.240			Klebsiella pneumoniae ERR7221186
+573.67211	MLST.klebsiella.1662			Klebsiella pneumoniae ERR7221181
+573.67225	MLST.klebsiella.1380			Klebsiella pneumoniae ERR7221211
+573.67248	MLST.klebsiella.258			Klebsiella pneumoniae ERR7221230
+573.67258	MLST.klebsiella.412			Klebsiella pneumoniae ERR7221249
+573.67264	MLST.klebsiella.336			Klebsiella pneumoniae ERR7221265
+573.67268	MLST.klebsiella.111			Klebsiella pneumoniae ERR7221260
+573.67271	MLST.klebsiella.111			Klebsiella pneumoniae ERR7221266
+573.67283	MLST.klebsiella.1322			Klebsiella pneumoniae ERR7221283
+573.67284	MLST.klebsiella.101			Klebsiella pneumoniae ERR7221285
+573.67289	MLST.klebsiella.191			Klebsiella pneumoniae ERR7221289
+573.67297	MLST.klebsiella.258			Klebsiella pneumoniae ERR7221298
+573.67309	MLST.klebsiella.133			Klebsiella pneumoniae ERR7221306
+573.67314	MLST.klebsiella.133			Klebsiella pneumoniae ERR7221316
+573.67319	MLST.klebsiella.323			Klebsiella pneumoniae ERR7221327
+573.67325	MLST.klebsiella.133			Klebsiella pneumoniae ERR7221336
+573.67341	MLST.klebsiella.13			Klebsiella pneumoniae ERR7221438
+573.67398	MLST.klebsiella.3991			Klebsiella pneumoniae MGL_K_8
+573.67401	MLST.klebsiella.147			Klebsiella pneumoniae MGL_121
+573.67411	MLST.klebsiella.1263			Klebsiella pneumoniae MGL_57
+573.67417	MLST.klebsiella.14			Klebsiella pneumoniae MGL_152
+573.67419	MLST.klebsiella.14			Klebsiella pneumoniae MGL_134
+573.7032	MLST.klebsiella.37			Klebsiella pneumoniae strain AR_0041
