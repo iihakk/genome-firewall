@@ -84,7 +84,7 @@ Full detail, including the measurements that killed it, is in `VALIDATION_FINDIN
 ```
 BV-BRC API ──> pipeline/build.py ──> ui/predictions.js ──> ui/index.html
                      │
-                     ├─ gene-presence features        601 genomes × 101 products
+                     ├─ gene-presence features        600 genomes × 101 products
                      ├─ per-drug calibrated model     HistGradientBoosting + isotonic
                      ├─ lineage-aware evaluation      GroupShuffleSplit on MLST × 12
                      ├─ novelty gate                  rare/unseen resistance machinery
@@ -125,7 +125,8 @@ Isolates are real human clinical samples — blood, urine, respiratory, wound.
   indicative, not conclusive.
 - Gene presence is not gene expression — a resistance gene can be present and silent. We observed
   exactly this: an isolate carrying Tet(D) that was tetracycline-susceptible.
-- Not a medical device. Every eligibility-relevant decision stays with a qualified human.
+- Not a medical device. Every treatment decision stays with a qualified clinician; this system
+  narrows the window in which that decision is a guess, and hands ambiguous cases back to the lab.
 
 ## Team
 
