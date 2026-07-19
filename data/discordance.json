@@ -1,0 +1,2899 @@
+{
+ "excluded_invalid_rule": [],
+ "summary": {
+  "false_susceptible": 2111,
+  "recovered": 1380,
+  "recovery_rate": 0.654,
+  "false_resistant": 842,
+  "mechanisms": {
+   "target mutation": 700,
+   "porin loss": 306,
+   "efflux / regulator": 1105
+  }
+ },
+ "per_drug": {
+  "meropenem": {
+   "n": 841,
+   "rule_wrong": 137,
+   "false_susceptible": 117,
+   "false_resistant": 20,
+   "model_correct_on_rule_errors": 57,
+   "model_recovers_false_susceptible": 47,
+   "recovery_rate": 0.402,
+   "mechanisms": {
+    "target mutation": 47,
+    "porin loss": 28,
+    "efflux / regulator": 42
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000534255.1",
+     "drug": "meropenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.268,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000534335.1",
+     "drug": "meropenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.155,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000566905.1",
+     "drug": "meropenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.155,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_000567045.1",
+     "drug": "meropenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.124,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk35",
+      "TRUNC:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_000567225.2",
+     "drug": "meropenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.219,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_000692195.1",
+     "drug": "meropenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.298,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000694475.2",
+     "drug": "meropenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.174,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb"
+     ]
+    },
+    {
+     "isolate": "GCA_022316805.1",
+     "drug": "meropenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.633,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    }
+   ]
+  },
+  "imipenem": {
+   "n": 579,
+   "rule_wrong": 89,
+   "false_susceptible": 77,
+   "false_resistant": 12,
+   "model_correct_on_rule_errors": 51,
+   "model_recovers_false_susceptible": 51,
+   "recovery_rate": 0.662,
+   "mechanisms": {
+    "target mutation": 35,
+    "efflux / regulator": 27,
+    "porin loss": 15
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000534135.1",
+     "drug": "imipenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.623,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534255.1",
+     "drug": "imipenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.687,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000534335.1",
+     "drug": "imipenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.44,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022316805.1",
+     "drug": "imipenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.428,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316865.1",
+     "drug": "imipenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.428,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "NULL",
+     "drug": "imipenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.35,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab",
+      "ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_022316255.1",
+     "drug": "imipenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.906,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022316155.1",
+     "drug": "imipenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.868,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    }
+   ]
+  },
+  "ertapenem": {
+   "n": 770,
+   "rule_wrong": 117,
+   "false_susceptible": 88,
+   "false_resistant": 29,
+   "model_correct_on_rule_errors": 71,
+   "model_recovers_false_susceptible": 49,
+   "recovery_rate": 0.557,
+   "mechanisms": {
+    "efflux / regulator": 33,
+    "target mutation": 55
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000534095.1",
+     "drug": "ertapenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.51,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000534135.1",
+     "drug": "ertapenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.183,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534255.1",
+     "drug": "ertapenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.342,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000534335.1",
+     "drug": "ertapenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.364,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022316805.1",
+     "drug": "ertapenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.667,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316865.1",
+     "drug": "ertapenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.731,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316545.1",
+     "drug": "ertapenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.073,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "NULL",
+     "drug": "ertapenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.111,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab",
+      "ramr"
+     ]
+    }
+   ]
+  },
+  "doripenem": {
+   "n": 181,
+   "rule_wrong": 44,
+   "false_susceptible": 38,
+   "false_resistant": 6,
+   "model_correct_on_rule_errors": 36,
+   "model_recovers_false_susceptible": 36,
+   "recovery_rate": 0.947,
+   "mechanisms": {
+    "target mutation": 14,
+    "porin loss": 13,
+    "efflux / regulator": 11
+   },
+   "examples": [
+    {
+     "isolate": "GCA_022316255.1",
+     "drug": "doripenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.887,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022316035.1",
+     "drug": "doripenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.894,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022315975.1",
+     "drug": "doripenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.894,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022315915.1",
+     "drug": "doripenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.937,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_022315935.1",
+     "drug": "doripenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.925,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_022315955.1",
+     "drug": "doripenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.907,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022315855.1",
+     "drug": "doripenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.923,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022315875.1",
+     "drug": "doripenem",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.964,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    }
+   ]
+  },
+  "ceftazidime": {
+   "n": 1455,
+   "rule_wrong": 250,
+   "false_susceptible": 209,
+   "false_resistant": 41,
+   "model_correct_on_rule_errors": 159,
+   "model_recovers_false_susceptible": 159,
+   "recovery_rate": 0.761,
+   "mechanisms": {
+    "efflux / regulator": 129,
+    "target mutation": 65,
+    "porin loss": 15
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000408985.1",
+     "drug": "ceftazidime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.944,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000534095.1",
+     "drug": "ceftazidime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.313,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000534135.1",
+     "drug": "ceftazidime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.832,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534235.1",
+     "drug": "ceftazidime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.887,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534255.1",
+     "drug": "ceftazidime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.82,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000534335.1",
+     "drug": "ceftazidime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.636,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000566725.1",
+     "drug": "ceftazidime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.878,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb",
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000566745.1",
+     "drug": "ceftazidime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.959,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb",
+      "POINT:gyra"
+     ]
+    }
+   ]
+  },
+  "ceftriaxone": {
+   "n": 1074,
+   "rule_wrong": 224,
+   "false_susceptible": 212,
+   "false_resistant": 12,
+   "model_correct_on_rule_errors": 166,
+   "model_recovers_false_susceptible": 165,
+   "recovery_rate": 0.778,
+   "mechanisms": {
+    "efflux / regulator": 127,
+    "porin loss": 14,
+    "target mutation": 71
+   },
+   "examples": [
+    {
+     "isolate": "GCA_022316805.1",
+     "drug": "ceftriaxone",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.973,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316865.1",
+     "drug": "ceftriaxone",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.958,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316825.1",
+     "drug": "ceftriaxone",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.248,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001720765.1",
+     "drug": "ceftriaxone",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.965,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk35"
+     ]
+    },
+    {
+     "isolate": "GCA_022310935.1",
+     "drug": "ceftriaxone",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.973,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab"
+     ]
+    },
+    {
+     "isolate": "GCA_022310915.1",
+     "drug": "ceftriaxone",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.98,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab"
+     ]
+    },
+    {
+     "isolate": "GCA_001874725.1",
+     "drug": "ceftriaxone",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.975,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001874715.1",
+     "drug": "ceftriaxone",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.109,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    }
+   ]
+  },
+  "cefotaxime": {
+   "n": 738,
+   "rule_wrong": 35,
+   "false_susceptible": 32,
+   "false_resistant": 3,
+   "model_correct_on_rule_errors": 23,
+   "model_recovers_false_susceptible": 23,
+   "recovery_rate": 0.719,
+   "mechanisms": {
+    "efflux / regulator": 17,
+    "target mutation": 11,
+    "porin loss": 4
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000408985.1",
+     "drug": "cefotaxime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.924,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000534095.1",
+     "drug": "cefotaxime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.389,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000534135.1",
+     "drug": "cefotaxime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.74,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534235.1",
+     "drug": "cefotaxime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.881,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534255.1",
+     "drug": "cefotaxime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.74,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000566725.1",
+     "drug": "cefotaxime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.86,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb",
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000566745.1",
+     "drug": "cefotaxime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.996,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb",
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000566805.1",
+     "drug": "cefotaxime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.017,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:mgrb"
+     ]
+    }
+   ]
+  },
+  "cefepime": {
+   "n": 722,
+   "rule_wrong": 142,
+   "false_susceptible": 33,
+   "false_resistant": 109,
+   "model_correct_on_rule_errors": 36,
+   "model_recovers_false_susceptible": 12,
+   "recovery_rate": 0.364,
+   "mechanisms": {
+    "efflux / regulator": 17,
+    "porin loss": 3,
+    "target mutation": 13
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000408985.1",
+     "drug": "cefepime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.806,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000709225.1",
+     "drug": "cefepime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.71,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316805.1",
+     "drug": "cefepime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.784,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316865.1",
+     "drug": "cefepime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.6,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316825.1",
+     "drug": "cefepime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.595,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001874725.1",
+     "drug": "cefepime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.784,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001874715.1",
+     "drug": "cefepime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.124,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001874865.1",
+     "drug": "cefepime",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.069,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk35",
+      "TRUNC:ompk36"
+     ]
+    }
+   ]
+  },
+  "cefoxitin": {
+   "n": 517,
+   "rule_wrong": 125,
+   "false_susceptible": 120,
+   "false_resistant": 5,
+   "model_correct_on_rule_errors": 49,
+   "model_recovers_false_susceptible": 48,
+   "recovery_rate": 0.4,
+   "mechanisms": {
+    "target mutation": 55,
+    "efflux / regulator": 41,
+    "porin loss": 24
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000534075.1",
+     "drug": "cefoxitin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.957,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534095.1",
+     "drug": "cefoxitin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.672,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000534115.1",
+     "drug": "cefoxitin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.882,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534135.1",
+     "drug": "cefoxitin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.448,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534235.1",
+     "drug": "cefoxitin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.882,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534255.1",
+     "drug": "cefoxitin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.96,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000534315.1",
+     "drug": "cefoxitin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.882,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534335.1",
+     "drug": "cefoxitin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.372,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    }
+   ]
+  },
+  "cefazolin": {
+   "n": 432,
+   "rule_wrong": 74,
+   "false_susceptible": 69,
+   "false_resistant": 5,
+   "model_correct_on_rule_errors": 64,
+   "model_recovers_false_susceptible": 64,
+   "recovery_rate": 0.928,
+   "mechanisms": {
+    "target mutation": 37,
+    "efflux / regulator": 27,
+    "porin loss": 5
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000534075.1",
+     "drug": "cefazolin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.982,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534095.1",
+     "drug": "cefazolin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.559,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000534115.1",
+     "drug": "cefazolin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.982,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534135.1",
+     "drug": "cefazolin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.933,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534235.1",
+     "drug": "cefazolin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.992,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534255.1",
+     "drug": "cefazolin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.982,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000534315.1",
+     "drug": "cefazolin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.994,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000534335.1",
+     "drug": "cefazolin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.977,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    }
+   ]
+  },
+  "aztreonam": {
+   "n": 350,
+   "rule_wrong": 46,
+   "false_susceptible": 44,
+   "false_resistant": 2,
+   "model_correct_on_rule_errors": 36,
+   "model_recovers_false_susceptible": 36,
+   "recovery_rate": 0.818,
+   "mechanisms": {
+    "efflux / regulator": 18,
+    "target mutation": 23,
+    "porin loss": 3
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000408985.1",
+     "drug": "aztreonam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.317,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000709225.1",
+     "drug": "aztreonam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.561,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316805.1",
+     "drug": "aztreonam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.862,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316865.1",
+     "drug": "aztreonam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.862,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316825.1",
+     "drug": "aztreonam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.453,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001874725.1",
+     "drug": "aztreonam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.651,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001874715.1",
+     "drug": "aztreonam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.207,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_002180075.1",
+     "drug": "aztreonam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.79,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:blashv"
+     ]
+    }
+   ]
+  },
+  "ciprofloxacin": {
+   "n": 838,
+   "rule_wrong": 260,
+   "false_susceptible": 167,
+   "false_resistant": 93,
+   "model_correct_on_rule_errors": 194,
+   "model_recovers_false_susceptible": 151,
+   "recovery_rate": 0.904,
+   "mechanisms": {
+    "efflux / regulator": 121,
+    "target mutation": 25,
+    "porin loss": 21
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000417105.1",
+     "drug": "ciprofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.847,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417125.1",
+     "drug": "ciprofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.879,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000401195.1",
+     "drug": "ciprofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.884,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417305.1",
+     "drug": "ciprofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.869,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "mara",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417325.1",
+     "drug": "ciprofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.914,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417345.1",
+     "drug": "ciprofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.886,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417225.2",
+     "drug": "ciprofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.832,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417205.1",
+     "drug": "ciprofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.647,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:phoq"
+     ]
+    }
+   ]
+  },
+  "levofloxacin": {
+   "n": 565,
+   "rule_wrong": 203,
+   "false_susceptible": 125,
+   "false_resistant": 78,
+   "model_correct_on_rule_errors": 147,
+   "model_recovers_false_susceptible": 113,
+   "recovery_rate": 0.904,
+   "mechanisms": {
+    "efflux / regulator": 93,
+    "target mutation": 15,
+    "porin loss": 17
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000417105.1",
+     "drug": "levofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.825,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417125.1",
+     "drug": "levofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.91,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000401195.1",
+     "drug": "levofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.929,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417305.1",
+     "drug": "levofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.94,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "mara",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417325.1",
+     "drug": "levofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.919,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417345.1",
+     "drug": "levofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.919,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417225.2",
+     "drug": "levofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.803,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417205.1",
+     "drug": "levofloxacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.674,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:phoq"
+     ]
+    }
+   ]
+  },
+  "gentamicin": {
+   "n": 787,
+   "rule_wrong": 88,
+   "false_susceptible": 72,
+   "false_resistant": 16,
+   "model_correct_on_rule_errors": 24,
+   "model_recovers_false_susceptible": 24,
+   "recovery_rate": 0.333,
+   "mechanisms": {
+    "target mutation": 20,
+    "efflux / regulator": 33,
+    "porin loss": 19
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000406525.1",
+     "drug": "gentamicin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.252,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000566725.1",
+     "drug": "gentamicin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.425,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb",
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000566745.1",
+     "drug": "gentamicin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.915,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb",
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000566825.1",
+     "drug": "gentamicin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.184,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:mgrb"
+     ]
+    },
+    {
+     "isolate": "NULL",
+     "drug": "gentamicin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.63,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab",
+      "ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_022316325.1",
+     "drug": "gentamicin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.931,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk35"
+     ]
+    },
+    {
+     "isolate": "GCA_022316245.1",
+     "drug": "gentamicin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.556,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022316015.1",
+     "drug": "gentamicin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.688,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    }
+   ]
+  },
+  "tobramycin": {
+   "n": 607,
+   "rule_wrong": 23,
+   "false_susceptible": 10,
+   "false_resistant": 13,
+   "model_correct_on_rule_errors": 7,
+   "model_recovers_false_susceptible": 2,
+   "recovery_rate": 0.2,
+   "mechanisms": {
+    "efflux / regulator": 5,
+    "target mutation": 3,
+    "porin loss": 2
+   },
+   "examples": [
+    {
+     "isolate": "GCA_022316825.1",
+     "drug": "tobramycin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.28,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316195.1",
+     "drug": "tobramycin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.017,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_001875055.2",
+     "drug": "tobramycin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.933,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022299755.1",
+     "drug": "tobramycin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.016,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk35"
+     ]
+    },
+    {
+     "isolate": "GCA_003073675.1",
+     "drug": "tobramycin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.848,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_014946935.1",
+     "drug": "tobramycin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.332,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk35"
+     ]
+    },
+    {
+     "isolate": "GCA_019930165.1",
+     "drug": "tobramycin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.017,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_024580195.1",
+     "drug": "tobramycin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.045,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:pmrb"
+     ]
+    }
+   ]
+  },
+  "amikacin": {
+   "n": 766,
+   "rule_wrong": 276,
+   "false_susceptible": 16,
+   "false_resistant": 260,
+   "model_correct_on_rule_errors": 251,
+   "model_recovers_false_susceptible": 3,
+   "recovery_rate": 0.188,
+   "mechanisms": {
+    "porin loss": 4,
+    "target mutation": 7,
+    "efflux / regulator": 5
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000566785.1",
+     "drug": "amikacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.128,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_000566805.1",
+     "drug": "amikacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.067,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:mgrb"
+     ]
+    },
+    {
+     "isolate": "GCA_000566825.1",
+     "drug": "amikacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.095,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "TRUNC:mgrb"
+     ]
+    },
+    {
+     "isolate": "GCA_022316825.1",
+     "drug": "amikacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.115,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001709295.1",
+     "drug": "amikacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.125,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001720815.1",
+     "drug": "amikacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.321,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk35"
+     ]
+    },
+    {
+     "isolate": "GCA_003073335.1",
+     "drug": "amikacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.0,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk35",
+      "POINT:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_014946935.1",
+     "drug": "amikacin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.383,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk35"
+     ]
+    }
+   ]
+  },
+  "trimethoprim-sulfamethoxazole": {
+   "n": 792,
+   "rule_wrong": 115,
+   "false_susceptible": 10,
+   "false_resistant": 105,
+   "model_correct_on_rule_errors": 63,
+   "model_recovers_false_susceptible": 0,
+   "recovery_rate": 0.0,
+   "mechanisms": {
+    "efflux / regulator": 9,
+    "target mutation": 1
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000417265.2",
+     "drug": "trimethoprim-sulfamethoxazole",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.16,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417165.1",
+     "drug": "trimethoprim-sulfamethoxazole",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.158,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000406605.1",
+     "drug": "trimethoprim-sulfamethoxazole",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.207,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_004322995.1",
+     "drug": "trimethoprim-sulfamethoxazole",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.216,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_019930165.1",
+     "drug": "trimethoprim-sulfamethoxazole",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.049,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_031045905.2",
+     "drug": "trimethoprim-sulfamethoxazole",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.304,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_031045135.2",
+     "drug": "trimethoprim-sulfamethoxazole",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.049,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_038080415.1",
+     "drug": "trimethoprim-sulfamethoxazole",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.124,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:acrr",
+      "POINT:oqxr"
+     ]
+    }
+   ]
+  },
+  "tetracycline": {
+   "n": 441,
+   "rule_wrong": 64,
+   "false_susceptible": 54,
+   "false_resistant": 10,
+   "model_correct_on_rule_errors": 12,
+   "model_recovers_false_susceptible": 12,
+   "recovery_rate": 0.222,
+   "mechanisms": {
+    "efflux / regulator": 24,
+    "porin loss": 18,
+    "target mutation": 12
+   },
+   "examples": [
+    {
+     "isolate": "GCA_022316825.1",
+     "drug": "tetracycline",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.16,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022315915.1",
+     "drug": "tetracycline",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.567,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_022315935.1",
+     "drug": "tetracycline",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.444,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_022315955.1",
+     "drug": "tetracycline",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.056,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022315815.1",
+     "drug": "tetracycline",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.072,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022315675.1",
+     "drug": "tetracycline",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.79,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022315615.1",
+     "drug": "tetracycline",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.373,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "POINT:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_022315635.1",
+     "drug": "tetracycline",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.159,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    }
+   ]
+  },
+  "colistin": {
+   "n": 243,
+   "rule_wrong": 50,
+   "false_susceptible": 49,
+   "false_resistant": 1,
+   "model_correct_on_rule_errors": 17,
+   "model_recovers_false_susceptible": 16,
+   "recovery_rate": 0.327,
+   "mechanisms": {
+    "efflux / regulator": 31,
+    "target mutation": 8,
+    "porin loss": 10
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000417105.1",
+     "drug": "colistin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.137,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417425.1",
+     "drug": "colistin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.141,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000406525.1",
+     "drug": "colistin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.212,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000406665.1",
+     "drug": "colistin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.274,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb"
+     ]
+    },
+    {
+     "isolate": "GCA_000406565.1",
+     "drug": "colistin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.275,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000408985.1",
+     "drug": "colistin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.431,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000409005.1",
+     "drug": "colistin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.215,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000709225.1",
+     "drug": "colistin",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.275,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    }
+   ]
+  },
+  "polymyxin-b": {
+   "n": 143,
+   "rule_wrong": 44,
+   "false_susceptible": 38,
+   "false_resistant": 6,
+   "model_correct_on_rule_errors": 30,
+   "model_recovers_false_susceptible": 24,
+   "recovery_rate": 0.632,
+   "mechanisms": {
+    "efflux / regulator": 21,
+    "target mutation": 4,
+    "porin loss": 13
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000417105.1",
+     "drug": "polymyxin-b",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.146,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000417425.1",
+     "drug": "polymyxin-b",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.139,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000406525.1",
+     "drug": "polymyxin-b",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.391,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_000406665.1",
+     "drug": "polymyxin-b",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.172,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:crrb"
+     ]
+    },
+    {
+     "isolate": "GCA_000406565.1",
+     "drug": "polymyxin-b",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.201,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000408985.1",
+     "drug": "polymyxin-b",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.655,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000409005.1",
+     "drug": "polymyxin-b",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.088,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000709225.1",
+     "drug": "polymyxin-b",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.618,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    }
+   ]
+  },
+  "ampicillin-sulbactam": {
+   "n": 343,
+   "rule_wrong": 40,
+   "false_susceptible": 37,
+   "false_resistant": 3,
+   "model_correct_on_rule_errors": 20,
+   "model_recovers_false_susceptible": 19,
+   "recovery_rate": 0.514,
+   "mechanisms": {
+    "target mutation": 9,
+    "efflux / regulator": 24,
+    "porin loss": 4
+   },
+   "examples": [
+    {
+     "isolate": "GCA_022316155.1",
+     "drug": "ampicillin-sulbactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.722,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022315895.1",
+     "drug": "ampicillin-sulbactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.963,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001720765.1",
+     "drug": "ampicillin-sulbactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.993,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk35"
+     ]
+    },
+    {
+     "isolate": "GCA_001874725.1",
+     "drug": "ampicillin-sulbactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.7,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001874715.1",
+     "drug": "ampicillin-sulbactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.156,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_001875075.1",
+     "drug": "ampicillin-sulbactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.963,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_002180075.1",
+     "drug": "ampicillin-sulbactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.992,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:blashv"
+     ]
+    },
+    {
+     "isolate": "GCA_022299835.1",
+     "drug": "ampicillin-sulbactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 1.0,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:blashv",
+      "TRUNC:ramr"
+     ]
+    }
+   ]
+  },
+  "piperacillin-tazobactam": {
+   "n": 1061,
+   "rule_wrong": 321,
+   "false_susceptible": 313,
+   "false_resistant": 8,
+   "model_correct_on_rule_errors": 197,
+   "model_recovers_false_susceptible": 193,
+   "recovery_rate": 0.617,
+   "mechanisms": {
+    "target mutation": 108,
+    "efflux / regulator": 155,
+    "porin loss": 50
+   },
+   "examples": [
+    {
+     "isolate": "GCA_000417465.1",
+     "drug": "piperacillin-tazobactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.797,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra",
+      "POINT:mgrb",
+      "POINT:ramr"
+     ]
+    },
+    {
+     "isolate": "GCA_000408985.1",
+     "drug": "piperacillin-tazobactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.474,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_000709225.1",
+     "drug": "piperacillin-tazobactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.459,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316805.1",
+     "drug": "piperacillin-tazobactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.837,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316865.1",
+     "drug": "piperacillin-tazobactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.857,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316545.1",
+     "drug": "piperacillin-tazobactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.516,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316565.1",
+     "drug": "piperacillin-tazobactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.234,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_022316255.1",
+     "drug": "piperacillin-tazobactam",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.823,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    }
+   ]
+  },
+  "amoxicillin-clavulanate": {
+   "n": 679,
+   "rule_wrong": 186,
+   "false_susceptible": 181,
+   "false_resistant": 5,
+   "model_correct_on_rule_errors": 134,
+   "model_recovers_false_susceptible": 133,
+   "recovery_rate": 0.735,
+   "mechanisms": {
+    "efflux / regulator": 95,
+    "porin loss": 24,
+    "target mutation": 62
+   },
+   "examples": [
+    {
+     "isolate": "GCA_022316805.1",
+     "drug": "amoxicillin-clavulanate",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.81,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316865.1",
+     "drug": "amoxicillin-clavulanate",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.812,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316825.1",
+     "drug": "amoxicillin-clavulanate",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.175,
+     "model_says": "Susceptible",
+     "model_correct": false,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316545.1",
+     "drug": "amoxicillin-clavulanate",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.546,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "efflux / regulator",
+     "evidence": [
+      "emrab",
+      "oqxab"
+     ]
+    },
+    {
+     "isolate": "GCA_022316565.1",
+     "drug": "amoxicillin-clavulanate",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.878,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "porin loss",
+     "evidence": [
+      "TRUNC:ompk36"
+     ]
+    },
+    {
+     "isolate": "GCA_022316255.1",
+     "drug": "amoxicillin-clavulanate",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.964,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022316155.1",
+     "drug": "amoxicillin-clavulanate",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.937,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    },
+    {
+     "isolate": "GCA_022316035.1",
+     "drug": "amoxicillin-clavulanate",
+     "truth": "Resistant",
+     "rule_says": "Susceptible",
+     "model_prob": 0.917,
+     "model_says": "Resistant",
+     "model_correct": true,
+     "missed_mechanism": "target mutation",
+     "evidence": [
+      "POINT:gyra"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -23,8 +23,12 @@ AMPC = {"blaampc", "blacmy", "bladha", "blafox", "blaact", "blamir"}
 # usually insufficient, but ertapenem is the most sensitive to it.
 PORIN = {"TRUNC:ompk35", "TRUNC:ompk36", "POINT:ompk35", "POINT:ompk36"}
 
+# oqxAB is EXCLUDED for the same reason as blaSHV: it is chromosomal in K. pneumoniae and
+# present in ~98% of isolates, so including it makes the rule fire on essentially every genome
+# and collapse to chance. Chromosomal determinants of a species are not evidence of resistance
+# in that species — only acquired or mutated ones are.
 FLUOROQUINOLONE = {"POINT:gyra", "POINT:parc", "POINT:gyrb", "POINT:pare",
-                   "qnra", "qnrb", "qnrs", "qnr", "oqxab"}
+                   "qnra", "qnrb", "qnrs", "qnr"}
 
 AMINOGLYCOSIDE_16S = {"rmt", "arma", "npma"}
 
@@ -63,5 +67,20 @@ RULES = {
     "ampicillin-sulbactam": CARBAPENEMASE | ESBL | AMPC,
     "piperacillin-tazobactam": CARBAPENEMASE | AMPC,
     "amoxicillin-clavulanate": CARBAPENEMASE | AMPC,
-    "nitrofurantoin": {"TRUNC:nfsa", "TRUNC:nfsb", "POINT:nfsa", "POINT:nfsb"},
 }
+
+# Nitrofurantoin is deliberately absent. Its resistance is driven by nfsA/nfsB loss-of-function,
+# which AMRFinderPlus does not call in this dataset, so no rule can fire and any comparison
+# against one would be meaningless rather than favourable.
+
+MIN_FIRE, MAX_FIRE = 0.05, 0.95
+
+
+def coverage_ok(fire_rate):
+    """Guard against the failure that produced three strawmen in this project.
+
+    A rule that never fires, or fires on nearly every isolate, is not a baseline — it is a
+    constant predictor wearing a baseline's clothes, and comparing against it flatters us.
+    Checked automatically now rather than noticed by eye.
+    """
+    return MIN_FIRE <= fire_rate <= MAX_FIRE
