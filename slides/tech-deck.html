@@ -169,27 +169,28 @@ tr.dim td.n{color:var(--faint)}
 
   <!-- 3 ── leakage ──────────────────────────────────────────── -->
   <section class="slide">
-    <div class="eyebrow">Evaluation</div>
-    <h1>Two numbers we refused to report</h1>
+    <div class="eyebrow">Evaluation · we audited our own results</div>
+    <h1>Every accuracy number is guilty until proven</h1>
+    <div class="sub">Both panels are stress tests we ran against ourselves. On the right is a method we deleted.</div>
     <div class="body">
       <div class="cols">
         <div class="panel">
-          <h3>Population structure</h3>
+          <h3>Test 1 — is our headline inflated?</h3>
           <div class="cmp">
             <div><div class="num mute">0.914</div><div class="numlab">random split</div></div>
             <div class="vs">vs</div>
-            <div><div class="num">0.900</div><div class="numlab">clone-aware split</div></div>
+            <div><div class="num good">0.900</div><div class="numlab">clone-aware split<br><b style="color:var(--accent)">← the number we report</b></div></div>
           </div>
-          <div class="verdict">Near-identical clones straddle a random split. We group by genotype profile and <b>quarantine 273 isolates</b> before any modelling.</div>
+          <div class="verdict"><b>Verdict: survives.</b> Near-identical clones straddle a random split, so we grouped by genotype and quarantined 273 isolates before modelling. It barely moved.</div>
         </div>
         <div class="panel danger">
-          <h3>Protein embeddings — dropped</h3>
+          <h3>Test 2 — protein embeddings <span style="color:var(--red)">(not shipped)</span></h3>
           <div class="cmp">
             <div><div class="num bad">0.955</div><div class="numlab">naive cross-validation</div></div>
             <div class="vs">vs</div>
-            <div><div class="num">0.451</div><div class="numlab">family-aware</div></div>
+            <div><div class="num bad">0.451</div><div class="numlab">split by protein family</div></div>
           </div>
-          <div class="verdict"><b>+0.504 of pure leakage.</b> Homologous proteins on both sides of the split. We tested the hypothesis, it failed, and the claim is not in the product.</div>
+          <div class="verdict"><b>Verdict: killed.</b> +0.504 was pure leakage — homologous proteins on both sides of the split. A coin flip scores 0.5. We deleted the feature.</div>
         </div>
       </div>
     </div>
