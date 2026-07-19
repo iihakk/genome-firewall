@@ -2,133 +2,119 @@
 
 **Predicting antibiotic resistance from a bacterial genome — and refusing to guess when it shouldn't.**
 
-Hack-Nation 6th Global AI Hackathon · Challenge 6 · Klebsiella pneumoniae
+Hack-Nation 6th Global AI Hackathon · Challenge 6 · *Klebsiella pneumoniae*
 
 ---
 
 ## The problem
 
-A patient has a serious bacterial infection. Culture-based susceptibility testing takes **48–72
-hours** — the bacteria must be grown against each antibiotic and watched. For those two to three
-days the doctor is guessing. Guess too narrow and the infection advances unchecked; in bloodstream
-infection, delay in effective therapy drives mortality sharply. Guess too broad and you burn
-last-resort drugs, accelerating the resistance that created the problem.
+Culture-based susceptibility testing takes **48–72 hours**. For those two to three days the doctor
+is guessing. Guess too narrow and the infection advances untreated; in bloodstream infection,
+delayed effective therapy drives mortality. Guess too broad and last-resort drugs are burned,
+accelerating the resistance that caused the problem. AMR is associated with **4.7 million deaths**
+a year.
 
 Sequencing takes hours. So the genome can answer, days before the culture does.
 
-## What this does
+## The headline result
 
-Given an assembled bacterial genome, for each antibiotic it returns:
+A ResFinder/PointFinder-style genotype lookup is what a laboratory can run today. Across 20
+antibiotics:
 
-- a **call** — resistant, susceptible, or *indeterminate*
-- a **calibrated probability** — when it says 0.85 it is right about 85% of the time
-- an **evidence panel** — which resistance genes drove the call, what each one does clinically,
-  and which are merely passengers riding the same plasmid
+> **2,111 isolates where lookup reports the drug will work — and it will not.
+> This system correctly identifies 1,380 of them (65%).**
+
+A further **842** isolates have a usable antibiotic discarded by lookup.
+
+Why lookup misses them — mechanisms a gene-presence rule cannot express:
+
+| mechanism | share of dangerous misses |
+|---|---|
+| efflux / regulator | 52% |
+| target mutation | 33% |
+| porin loss | 14% |
+
+This is the argument for the system: not that it is more accurate on average, but that it sees
+mechanisms current practice is structurally blind to.
 
 ## Why it is a firewall, not a classifier
 
-A classifier is forced to answer. Show it a genome carrying a resistance mechanism it was never
-taught and the gene checklist comes back clean — indistinguishable from genuine susceptibility. It
-returns **"susceptible", with high confidence**. The doctor prescribes a drug that does nothing,
-and the confident wrong answer has removed the caution that would otherwise have protected the
-patient. A confidently wrong model is more dangerous than no model.
+A classifier is forced to answer. Show it a genome carrying a mechanism it was never taught and
+the determinant checklist comes back clean — indistinguishable from genuine susceptibility — and
+it returns **"susceptible", confidently**. The doctor prescribes a drug that does nothing, and the
+confident wrong answer has removed the caution that was protecting the patient.
 
-So this system asks a second question first — *have I seen anything like this before?* — and when
-the answer is no, it says so and defers to the laboratory. **Its value is not a better prediction.
-It is knowing when not to make one.**
+So the system asks a second question first — *have I seen anything like this?* — and refuses when
+the answer is no.
 
-The two errors are not symmetric: calling a drug susceptible when it is resistant can kill;
-calling it resistant when it is susceptible wastes a last-resort drug. The abstention thresholds
-in `pipeline/build.py` are asymmetric by design and are a clinical judgement, not a hyperparameter.
+| | |
+|---|---|
+| deferral rate | **19%** |
+| accuracy on answered cases | 0.903 |
+| accuracy if forced to answer everything | 0.839 |
+| **bought by knowing when to stop** | **+0.064** |
 
-## The finding: most reported accuracy in this field is inflated
+## Validation
 
-We measured performance inflation at **two independent levels**, on real data.
+Six tiers, each removing a different crutch:
 
-| Level | Naive split | Honest split | Inflation |
-|---|---|---|---|
-| **Genome** — bacterial lineage (MLST) | 0.915 AUC | **0.892 AUC** | +0.024 |
-| **Protein** — sequence family | 0.955 acc | **0.451 acc** | **+0.504** |
+| tier | mean AUC |
+|---|---|
+| random split (optimistic) | 0.895 |
+| clone-aware | 0.876 |
+| locked holdout | 0.895 |
+| **external** (different curation, no mutation features) | **0.851** |
+| temporal | 0.792 |
+| geographic | 0.799 |
 
-Bacterial genomes are related by descent, and resistance proteins come in families of
-near-identical variants (KPC-2, KPC-3, KPC-18…). Split either at random and near-copies land in
-both training and test, so the model scores by recognising something it has effectively already
-seen. Group by lineage and by protein family instead, and the numbers fall.
+Against the clinical rule: **0.837 vs 0.777** balanced accuracy
+(**+0.06**), winning 13 drugs, tying 7, losing 2.
 
-The genome-level effect is modest but consistent (5 of 6 antibiotics, 12 resampled splits each).
-The protein-level effect is dramatic. **We report the lower numbers throughout.**
+## What we tested that failed
 
-> An early single-split run showed one antibiotic moving the *wrong* way — pure noise. Every metric
-> here is the mean of 12 resampled splits, with standard deviations shown in the interface.
+**Protein language-model embeddings.** Held out all 30 carbapenemases: 100% were still recognised
+as beta-lactam machinery, but **0% as carbapenem-hydrolyzing** — the distinction that decides
+whether the last-resort drug works. Claim dropped; embeddings kept only for novelty detection.
 
-## What we tried that failed
+**Cross-species transfer.** Trained on Klebsiella, tested on E. coli: we score 0.768, the
+species-agnostic rule scores 0.874. **The model does not transfer and should not be deployed
+cross-species.** Colistin scores exactly 0.500 there, independently confirming its exclusion.
 
-We hypothesised that representing genes by **protein language model embeddings** (ESM-2) rather
-than by name would let the system generalise to resistance genes never seen in training — since a
-novel carbapenemase should embed near known ones. We tested it properly and it **half worked**:
+**Three strawman baselines, caught on ourselves.** `blaSHV` is chromosomal in Klebsiella (92% of
+isolates); including it made the rule fire on nearly every genome, score 0.49, and inflated our
+apparent gain from +0.047 to +0.165. Same with `oqxAB` at 98%. There is now an automatic guard
+rejecting any rule firing below 5% or above 95%.
 
-- ✅ Holding out all 30 carbapenemases, **100% were still recognised as beta-lactam machinery.** A
-  gene-presence checklist cannot do this at all — an unseen gene has no feature to be zero.
-- ❌ **0% were identified as carbapenem-hydrolyzing.** All were classified as ordinary
-  beta-lactamases.
+Full detail in [`ARCHITECTURE.md`](ARCHITECTURE.md) and [`VALIDATION_FINDINGS.md`](VALIDATION_FINDINGS.md).
 
-That distinction is the whole clinical question: TEM and SHV are ordinary beta-lactamases and
-meropenem works fine against them. So embeddings captured the chemistry and missed the severity,
-and we dropped the claim. They survive in the shipped system in the role they actually earned —
-**detecting that unfamiliar machinery is present**, which triggers abstention.
+## Data
 
-Full detail, including the measurements that killed it, is in `VALIDATION_FINDINGS.md`.
+**NCBI Pathogen Detection** — primary training source. AMRFinderPlus genotypes carrying acquired
+genes **plus point mutations and truncations**, the mechanisms gene-presence tools cannot see.
 
-## Architecture
-
-```
-BV-BRC API ──> pipeline/build.py ──> ui/predictions.js ──> ui/index.html
-                     │
-                     ├─ gene-presence features        600 genomes × 101 products
-                     ├─ per-drug calibrated model     HistGradientBoosting + isotonic
-                     ├─ lineage-aware evaluation      GroupShuffleSplit on MLST × 12
-                     ├─ novelty gate                  rare/unseen resistance machinery
-                     ├─ SHAP evidence                 per-prediction attribution
-                     └─ clinical annotations          pipeline/annotations.py
-```
-
-The interface never calls a model — predictions are computed offline and embedded, so the demo
-loads instantly and cannot fail live. The tech video shows the pipeline running for real.
+**BV-BRC** — external validation, 7,273 genomes, gene presence only. Filtered to
+`evidence = "Laboratory Method"`; the other ~16M records are another model's predictions.
 
 ## Run it
 
 ```bash
-pip3 install pandas scikit-learn shap
-python3 pipeline/build.py     # ~3 min: pulls metadata, trains, exports
-open ui/index.html            # no server required
+pip3 install pandas scikit-learn shap openai
+python3 pipeline/acquire.py 573 562
+python3 pipeline/ncbi_extract.py
+python3 pipeline/llm_harmonize.py      # needs OPENAI_API_KEY
+python3 pipeline/validate_v2.py
+python3 pipeline/discordance.py
+python3 pipeline/export_ui.py
+open ui/index.html
 ```
-
-Optional, for the embedding experiments: `pip3 install torch transformers`
-
-## Data
-
-**BV-BRC** (Bacterial and Viral Bioinformatics Resource Center) — public, no login.
-
-Critically, we filter to `evidence = "Laboratory Method"`. BV-BRC serves 17.2M AMR records but only
-**1.28M are laboratory-measured**; the rest are another model's predictions. Training on those
-teaches you to imitate a classifier rather than learn biology. The organisers flag this too.
-
-Isolates are real human clinical samples — blood, urine, respiratory, wound.
 
 ## Honest limitations
 
-- *Klebsiella pneumoniae* only.
-- Predictions precomputed for demo speed; pipeline runs live in the tech video.
-- The novelty gate detects that unfamiliar machinery is **present**; it does not identify the
-  mechanism.
-- Clean-vs-cluttered genetic background analysis rests on small samples (n=10, n=14) and is
-  indicative, not conclusive.
-- Gene presence is not gene expression — a resistance gene can be present and silent. We observed
-  exactly this: an isolate carrying Tet(D) that was tetracycline-susceptible.
-- Not a medical device. Every treatment decision stays with a qualified clinician; this system
-  narrows the window in which that decision is a guess, and hands ambiguous cases back to the lab.
-
-## Team
-
-Built by a team of four: an AI engineer, a healthcare professional who defined the clinical
-annotations and abstention thresholds, a business/finance lead, and a communications lead.
+- ***Klebsiella pneumoniae* only** — measured, not assumed. See cross-species above.
+- **Colistin excluded**: loses to the rule and scores at chance cross-species.
+- 80 confident-susceptible errors remain across 2,626 predictions.
+- `invisible_mechanism` unsolved: when every trace of a determinant is deleted, the information is
+  genuinely gone and no gate recovers it.
+- Gene presence is not gene expression — 387 gene/phenotype discordances observed across 324 of
+  683 holdout isolates.
+- Not a medical device. Every treatment decision stays with a qualified clinician.
