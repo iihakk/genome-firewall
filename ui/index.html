@@ -5,14 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Genome Firewall</title>
 <style>
-/* ── design tokens ───────────────────────────────────────────────────────── */
 :root{
   --bg:#0A0D13; --surface:#12161F; --surface-2:#1A202C; --border:#242B38;
   --text:#E8ECF4; --muted:#8792A6; --faint:#5A6478;
   --resistant:#E5484D; --susceptible:#30A46C; --indeterminate:#F5A524; --accent:#2DD4BF;
   --mono:ui-monospace,"JetBrains Mono",SFMono-Regular,Menlo,monospace;
   --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-  --r:6px; --rail:260px; --drawer:400px;
+  --r:6px; --rail:264px; --drawer:410px;
 }
 :root[data-theme="light"]{
   --bg:#FBFCFD; --surface:#FFFFFF; --surface-2:#F4F6F9; --border:#E3E8EF;
@@ -21,117 +20,88 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
-body{
-  background:var(--bg);color:var(--text);font-family:var(--sans);
-  font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;
-  overflow:hidden;
-}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;
+  line-height:1.5;-webkit-font-smoothing:antialiased;overflow:hidden}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
 .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
 
-/* ── header ──────────────────────────────────────────────────────────────── */
-header{
-  height:56px;display:flex;align-items:center;gap:28px;padding:0 20px;
-  border-bottom:1px solid var(--border);background:var(--surface);
-}
+header{height:56px;display:flex;align-items:center;gap:26px;padding:0 20px;
+  border-bottom:1px solid var(--border);background:var(--surface)}
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:.04em;font-size:13px}
 .brand svg{width:18px;height:18px;color:var(--accent)}
-nav{display:flex;gap:2px;margin-left:8px}
-nav button{
-  padding:6px 12px;border-radius:var(--r);color:var(--muted);
-  font-size:13px;font-weight:500;transition:background .12s,color .12s;
-}
+nav{display:flex;gap:2px;margin-left:6px}
+nav button{padding:6px 12px;border-radius:var(--r);color:var(--muted);font-size:13px;
+  font-weight:500;transition:background .12s,color .12s}
 nav button:hover{color:var(--text);background:var(--surface-2)}
 nav button[aria-current="true"]{color:var(--text);background:var(--surface-2)}
 .spacer{flex:1}
-.icon-btn{
-  width:32px;height:32px;border-radius:var(--r);color:var(--muted);
-  display:grid;place-items:center;transition:background .12s,color .12s;
-}
+.icon-btn{width:32px;height:32px;border-radius:var(--r);color:var(--muted);display:grid;
+  place-items:center;transition:background .12s,color .12s}
 .icon-btn:hover{background:var(--surface-2);color:var(--text)}
 
-/* ── layout ──────────────────────────────────────────────────────────────── */
 .app{display:flex;height:calc(100% - 56px)}
-.rail{
-  width:var(--rail);flex:none;border-right:1px solid var(--border);
-  background:var(--surface);overflow-y:auto;
-}
-.rail-head{
-  padding:14px 16px 8px;font-size:10.5px;font-weight:600;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--faint);
-}
-.iso{
-  width:100%;text-align:left;padding:10px 16px;border-left:2px solid transparent;
-  transition:background .12s;display:block;
-}
+.rail{width:var(--rail);flex:none;border-right:1px solid var(--border);
+  background:var(--surface);overflow-y:auto}
+.rail-head{padding:14px 16px 8px;font-size:10.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--faint)}
+.iso{width:100%;text-align:left;padding:10px 16px;border-left:2px solid transparent;
+  transition:background .12s;display:block}
 .iso:hover{background:var(--surface-2)}
 .iso[aria-current="true"]{background:var(--surface-2);border-left-color:var(--accent)}
-.iso .id{font-family:var(--mono);font-size:12.5px;color:var(--text)}
-.iso .sub{font-size:11.5px;color:var(--muted);margin-top:2px;text-transform:capitalize}
-main{flex:1;overflow-y:auto;padding:28px 32px 60px}
-.wrap{max-width:900px}
+.iso .id{font-family:var(--mono);font-size:12.5px}
+.iso .sub{font-size:11.5px;color:var(--muted);margin-top:2px}
+.iso .flag{display:inline-block;margin-top:4px;padding:1px 6px;border-radius:3px;font-size:10px;
+  font-weight:600;letter-spacing:.03em;background:color-mix(in srgb,var(--resistant) 16%,transparent);
+  color:var(--resistant)}
+main{flex:1;overflow-y:auto;padding:26px 32px 60px}
+.wrap{max-width:940px}
 
-/* ── isolate header ──────────────────────────────────────────────────────── */
 h1{font-size:20px;font-weight:600;letter-spacing:-.01em}
 .meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:8px;font-size:12.5px;color:var(--muted)}
 .meta b{font-weight:500;color:var(--text);font-family:var(--mono)}
-.banner{
-  display:flex;align-items:center;gap:10px;margin:22px 0 26px;padding:11px 14px;
+.banner{display:flex;align-items:center;gap:10px;margin:20px 0 8px;padding:11px 14px;
   border:1px solid var(--border);border-radius:var(--r);background:var(--surface);
-  font-size:12.5px;color:var(--muted);
-}
+  font-size:12.5px;color:var(--muted)}
 .banner svg{width:15px;height:15px;color:var(--accent);flex:none}
 .banner b{color:var(--text);font-weight:500}
+.alert{border-color:color-mix(in srgb,var(--resistant) 40%,transparent);
+  background:color-mix(in srgb,var(--resistant) 8%,transparent);margin-bottom:22px}
+.alert svg{color:var(--resistant)}
 
-/* ── antibiotic table ────────────────────────────────────────────────────── */
-.tbl-head,.row{display:grid;grid-template-columns:1fr 130px 168px 20px;align-items:center;gap:14px}
-.tbl-head{
-  padding:0 12px 8px;font-size:10.5px;font-weight:600;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--faint);
-}
-.row{
-  width:100%;text-align:left;padding:13px 12px;border-radius:var(--r);
-  border:1px solid transparent;transition:background .12s,border-color .12s;
-}
+.tbl-head,.row{display:grid;grid-template-columns:1fr 122px 150px 108px 18px;align-items:center;gap:12px}
+.tbl-head{padding:0 12px 8px;font-size:10.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--faint)}
+.row{width:100%;text-align:left;padding:12px;border-radius:var(--r);
+  border:1px solid transparent;transition:background .12s,border-color .12s}
 .row+.row{margin-top:1px}
 .row:hover{background:var(--surface);border-color:var(--border)}
-.row[aria-current="true"]{background:var(--surface);border-color:var(--accent)}
 .drug{font-size:14px;font-weight:500}
-.chip{
-  display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;
-  letter-spacing:.05em;text-transform:uppercase;
-}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;
+  letter-spacing:.05em;text-transform:uppercase}
 .dot{width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
 .chip.r{color:var(--resistant)} .chip.s{color:var(--susceptible)} .chip.i{color:var(--indeterminate)}
 .conf{display:flex;align-items:center;gap:10px}
 .bar{flex:1;height:4px;border-radius:2px;background:var(--surface-2);overflow:hidden}
-.bar i{display:block;height:100%;border-radius:2px;transition:width .5s cubic-bezier(.4,0,.2,1)}
-.pct{font-family:var(--mono);font-size:12.5px;color:var(--muted);width:34px;text-align:right}
+.bar i{display:block;height:100%;border-radius:2px}
+.pct{font-family:var(--mono);font-size:12.5px;color:var(--muted);width:32px;text-align:right}
+.lookup{font-size:11px;font-family:var(--mono);color:var(--faint);text-align:right}
+.lookup.bad{color:var(--resistant);font-weight:600}
 .caret{color:var(--faint);font-size:11px}
-.note{
-  grid-column:1/-1;margin-top:7px;padding-left:2px;font-size:11.5px;
-  color:var(--indeterminate);display:flex;align-items:center;gap:7px;
-}
-.note svg{width:12px;height:12px;flex:none}
+.note{grid-column:1/-1;margin-top:7px;font-size:11.5px;display:flex;align-items:flex-start;gap:7px}
+.note.defer{color:var(--indeterminate)}
+.note.disc{color:var(--resistant)}
+.note svg{width:12px;height:12px;flex:none;margin-top:3px}
 
-/* ── evidence drawer ─────────────────────────────────────────────────────── */
-.scrim{
-  position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;
-  transition:opacity .18s;z-index:20;
-}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;
+  transition:opacity .18s;z-index:20}
 .scrim.open{opacity:1;pointer-events:auto}
-.drawer{
-  position:fixed;top:0;right:0;height:100%;width:min(var(--drawer),100vw);z-index:21;
-  background:var(--surface);border-left:1px solid var(--border);
-  transform:translateX(100%);transition:transform .18s cubic-bezier(.4,0,.2,1);
-  display:flex;flex-direction:column;
-}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(var(--drawer),100vw);z-index:21;
+  background:var(--surface);border-left:1px solid var(--border);transform:translateX(100%);
+  transition:transform .18s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
 .drawer.open{transform:none}
-.drawer-head{
-  padding:18px 20px 14px;border-bottom:1px solid var(--border);
-  display:flex;justify-content:space-between;align-items:flex-start;gap:12px;
-}
+.drawer-head{padding:18px 20px 14px;border-bottom:1px solid var(--border);display:flex;
+  justify-content:space-between;align-items:flex-start;gap:12px}
 .drawer-head h2{font-size:10.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--faint)}
 .drawer-head .d{font-size:16px;font-weight:600;margin-top:5px}
 .drawer-body{flex:1;overflow-y:auto;padding:18px 20px 28px}
@@ -141,66 +111,58 @@ h1{font-size:20px;font-weight:600;letter-spacing:-.01em}
 .ev-name{font-size:13px;font-weight:500}
 .ev-val{font-family:var(--mono);font-size:12px;color:var(--muted);flex:none}
 .ev-bar{height:3px;border-radius:2px;background:var(--surface-2);margin:7px 0 9px;overflow:hidden}
-.ev-bar i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.ev-bar i{display:block;height:100%;border-radius:2px}
 .ev p{font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:6px}
 .ev p.toward{color:var(--faint);font-size:11.5px;margin-top:0}
-.state{
-  display:inline-block;margin-left:6px;padding:1px 6px;border-radius:3px;font-size:10px;
-  font-weight:600;letter-spacing:.04em;text-transform:uppercase;vertical-align:1px;
-}
+.state{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:3px;font-size:10px;
+  font-weight:600;letter-spacing:.04em;text-transform:uppercase;vertical-align:1px}
 .state.on{background:color-mix(in srgb,var(--resistant) 16%,transparent);color:var(--resistant)}
 .state.off{background:var(--surface-2);color:var(--faint)}
-.tag{
-  display:inline-block;margin-top:8px;padding:2px 7px;border-radius:3px;font-size:10.5px;
-  font-weight:500;letter-spacing:.03em;background:var(--surface-2);color:var(--muted);
-}
-.tag.passenger{color:var(--indeterminate)}
-.warn{
-  margin-top:18px;padding:13px 14px;border-radius:var(--r);
-  border:1px solid color-mix(in srgb,var(--indeterminate) 35%,transparent);
-  background:color-mix(in srgb,var(--indeterminate) 8%,transparent);
-}
-.warn h3{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--indeterminate);margin-bottom:7px}
-.warn p{font-size:12.5px;color:var(--muted);line-height:1.55}
-.warn code{font-family:var(--mono);font-size:11.5px;color:var(--text)}
+.tag{display:inline-block;margin-top:8px;padding:2px 7px;border-radius:3px;font-size:10.5px;
+  font-weight:500;background:var(--surface-2);color:var(--muted)}
+.tag.invisible{color:var(--accent)}
+.box{margin-top:16px;padding:13px 14px;border-radius:var(--r)}
+.box h3{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:7px}
+.box p{font-size:12.5px;color:var(--muted);line-height:1.55}
+.box.warn{border:1px solid color-mix(in srgb,var(--indeterminate) 35%,transparent);
+  background:color-mix(in srgb,var(--indeterminate) 8%,transparent)}
+.box.warn h3{color:var(--indeterminate)}
+.box.danger{border:1px solid color-mix(in srgb,var(--resistant) 35%,transparent);
+  background:color-mix(in srgb,var(--resistant) 8%,transparent)}
+.box.danger h3{color:var(--resistant)}
 
-/* ── methods ─────────────────────────────────────────────────────────────── */
-.sec{margin-bottom:40px}
+.sec{margin-bottom:38px}
 .sec>h2{font-size:16px;font-weight:600;margin-bottom:6px}
-.sec>p.lede{font-size:13px;color:var(--muted);max-width:66ch;line-height:1.6}
-.toggle-wrap{
-  margin:22px 0;padding:20px;border:1px solid var(--border);
-  border-radius:var(--r);background:var(--surface);
-}
-.seg{display:inline-flex;padding:3px;border-radius:var(--r);background:var(--surface-2);gap:2px}
-.seg button{
-  padding:7px 15px;border-radius:4px;font-size:12.5px;font-weight:500;color:var(--muted);
-  transition:background .15s,color .15s;
-}
-.seg button[aria-pressed="true"]{background:var(--bg);color:var(--text)}
-.big{display:flex;align-items:baseline;gap:14px;margin-top:20px}
-.big .n{font-family:var(--mono);font-size:40px;font-weight:600;letter-spacing:-.02em}
+.lede{font-size:13px;color:var(--muted);max-width:68ch;line-height:1.6}
+.panel{margin:18px 0;padding:20px;border:1px solid var(--border);border-radius:var(--r);
+  background:var(--surface)}
+.tiers{display:grid;gap:9px}
+.tier{display:grid;grid-template-columns:250px 1fr 60px;align-items:center;gap:14px}
+.tier .lbl{font-size:12.5px;color:var(--muted)}
+.tier .track{height:7px;border-radius:4px;background:var(--surface-2);overflow:hidden}
+.tier .fill{height:100%;border-radius:4px;background:var(--accent);transition:width .6s cubic-bezier(.4,0,.2,1)}
+.tier .val{font-family:var(--mono);font-size:13px;text-align:right}
+.big{display:flex;align-items:baseline;gap:14px;margin-top:6px}
+.big .n{font-family:var(--mono);font-size:38px;font-weight:600;letter-spacing:-.02em}
 .big .lbl{font-size:12.5px;color:var(--muted)}
-.delta{font-family:var(--mono);font-size:13px;color:var(--indeterminate);opacity:0;transition:opacity .3s}
-.delta.show{opacity:1}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:16px}
+.stat div{padding:13px;border:1px solid var(--border);border-radius:var(--r)}
+.stat .k{font-family:var(--mono);font-size:22px;font-weight:600}
+.stat .t{font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.4}
 table{width:100%;border-collapse:collapse;margin-top:14px;font-size:12.5px}
-th{
-  text-align:left;padding:0 10px 9px;font-size:10.5px;font-weight:600;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--faint);border-bottom:1px solid var(--border);
-}
-td{padding:11px 10px;border-bottom:1px solid var(--border)}
+th{text-align:left;padding:0 10px 9px;font-size:10.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--faint);border-bottom:1px solid var(--border)}
+td{padding:10px;border-bottom:1px solid var(--border)}
 td.num{font-family:var(--mono);text-align:right}
+td.win{color:var(--susceptible)} td.loss{color:var(--resistant)}
 .scroll{overflow-x:auto}
-.prov{display:grid;gap:9px;font-size:12.5px;color:var(--muted);max-width:70ch}
-.prov div{display:flex;gap:10px}
-.prov dt{flex:none;width:96px;color:var(--faint)}
 .hide{display:none}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-@media(max-width:860px){
-  .rail{display:none}
-  main{padding:20px 18px 50px}
-  .tbl-head,.row{grid-template-columns:1fr 108px 96px}
-  .tbl-head span:nth-child(4),.caret{display:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media(max-width:900px){
+  .rail{display:none} main{padding:20px 18px 50px}
+  .tbl-head,.row{grid-template-columns:1fr 104px 92px}
+  .tbl-head span:nth-child(n+4),.caret,.lookup{display:none}
+  .tier{grid-template-columns:1fr 60px} .tier .track{display:none}
 }
 </style>
 </head>
@@ -210,8 +172,7 @@ td.num{font-family:var(--mono);text-align:right}
   <div class="brand">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
       <path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7z"/><path d="M12 8.2 16 10.4v4.4L12 17l-4-2.2v-4.4z"/>
-    </svg>
-    GENOME FIREWALL
+    </svg>GENOME FIREWALL
   </div>
   <nav>
     <button id="nav-iso" aria-current="true">Isolates</button>
@@ -220,8 +181,7 @@ td.num{font-family:var(--mono);text-align:right}
   <div class="spacer"></div>
   <button class="icon-btn" id="theme" aria-label="Toggle colour theme">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
-    </svg>
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
   </button>
 </header>
 
@@ -237,268 +197,278 @@ td.num{font-family:var(--mono);text-align:right}
 <aside class="drawer" id="drawer" aria-hidden="true">
   <div class="drawer-head">
     <div><h2>Evidence</h2><div class="d" id="dr-drug"></div></div>
-    <button class="icon-btn" id="dr-close" aria-label="Close evidence panel">
+    <button class="icon-btn" id="dr-close" aria-label="Close">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M18 6 6 18M6 6l12 12"/></svg>
-    </button>
+        <path d="M18 6 6 18M6 6l12 12"/></svg></button>
   </div>
   <div class="drawer-body" id="dr-body"></div>
 </aside>
 
 <script src="predictions.js"></script>
 <script>
-const D = window.PREDICTIONS;
-const $ = s => document.querySelector(s);
-const el = (t,c,x) => { const n=document.createElement(t); if(c)n.className=c; if(x!=null)n.textContent=x; return n; };
-const CLS = {RESISTANT:'r', SUSCEPTIBLE:'s', INDETERMINATE:'i'};
-const COL = {RESISTANT:'var(--resistant)', SUSCEPTIBLE:'var(--susceptible)', INDETERMINATE:'var(--indeterminate)'};
-const ALERT = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>`;
-let cur = 0;
+const D=window.PREDICTIONS,$=s=>document.querySelector(s);
+const el=(t,c,x)=>{const n=document.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n};
+const CLS={RESISTANT:'r',SUSCEPTIBLE:'s',INDETERMINATE:'i'};
+const COL={RESISTANT:'var(--resistant)',SUSCEPTIBLE:'var(--susceptible)',INDETERMINATE:'var(--indeterminate)'};
+const ALERT=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>`;
+let cur=0;
 
-/* ── isolate rail ────────────────────────────────────────────────────────── */
 function rail(){
-  const r = $('#rail');
+  const r=$('#rail');
   D.isolates.forEach((iso,i)=>{
-    const b = el('button','iso'); b.setAttribute('aria-current', i===cur);
-    b.append(el('div','id',iso.genome_id), el('div','sub', `${iso.source} · ${iso.lineage}`));
-    b.onclick = ()=>{ cur=i; render(); };
-    r.append(b);
+    const b=el('button','iso');b.setAttribute('aria-current',i===cur);
+    b.append(el('div','id',iso.genome_id));
+    const m=iso.meta||{};
+    const clean=v=>(v&&String(v).toLowerCase()!=='null'&&String(v).trim())?String(v):null;
+    const bits=[clean(m.source),clean(m.geo),clean(m.year)].filter(Boolean);
+    b.append(el('div','sub',bits.length?bits.join(' · '):'metadata not recorded'));
+    if(iso.drugs.some(d=>d.rule_wrong_and_dangerous)) b.append(el('div','flag','LOOKUP FAILS HERE'));
+    b.onclick=()=>{cur=i;render()};r.append(b);
   });
 }
 
-/* ── isolate view ────────────────────────────────────────────────────────── */
 function isolateView(){
-  const iso = D.isolates[cur], v = $('#view-iso'); v.innerHTML='';
-  v.append(el('h1', null, iso.organism));
-
-  const m = el('div','meta');
-  [['ID',iso.genome_id],['Source',iso.source],['Lineage',iso.lineage],
-   ['Resistance genes',iso.n_resistance_genes]].forEach(([k,val])=>{
-    const d=el('div'); d.append(document.createTextNode(k+' '), el('b',null,val)); m.append(d);
-  });
+  const iso=D.isolates[cur],v=$('#view-iso');v.innerHTML='';
+  v.append(el('h1',null,'Klebsiella pneumoniae'));
+  const m=el('div','meta'),md=iso.meta||{};
+  const cl=v=>(v&&String(v).toLowerCase()!=='null'&&String(v).trim())?String(v):null;
+  [['ID',iso.genome_id],['Source',cl(md.source)||'not recorded'],['Origin',cl(md.geo)||'unknown'],
+   ['Year',cl(md.year)||'—'],['Determinants',iso.n_determinants]].forEach(([k,val])=>{
+    const d=el('div');d.append(document.createTextNode(k+' '),el('b',null,val));m.append(d)});
   v.append(m);
 
-  const ban = el('div','banner');
-  ban.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  const ban=el('div','banner');
+  ban.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
     <span>Culture-based susceptibility testing reports in <b>48–72 hours</b>. This result is available <b>now</b>.</span>`;
   v.append(ban);
 
-  const th = el('div','tbl-head');
-  ['Antibiotic','Call','Confidence',''].forEach(t=>th.append(el('span',null,t)));
+  const dang=iso.drugs.filter(d=>d.rule_wrong_and_dangerous);
+  if(dang.length){
+    const a=el('div','banner alert');
+    a.innerHTML=ALERT+`<span>For <b>${dang.map(d=>d.drug).join(', ')}</b>, a standard genotype
+      lookup finds no known determinant and would report <b>susceptible</b>. This isolate is
+      resistant.</span>`;
+    v.append(a);
+  }
+
+  const th=el('div','tbl-head');
+  ['Antibiotic','Call','Confidence','Lookup says',''].forEach(t=>th.append(el('span',null,t)));
   v.append(th);
 
   iso.drugs.forEach(d=>{
-    const row = el('button','row');
+    const row=el('button','row');
     row.append(el('div','drug',d.drug));
-    const chip = el('div','chip '+CLS[d.call]);
-    chip.append(el('span','dot'), el('span',null, d.call==='INDETERMINATE'?'Indeterminate':d.call.toLowerCase()));
+    const chip=el('div','chip '+CLS[d.call]);
+    chip.append(el('span','dot'),el('span',null,d.call==='INDETERMINATE'?'Indeterminate':d.call.toLowerCase()));
     row.append(chip);
-    const c = el('div','conf'), bar = el('div','bar'), fill = el('i');
-    fill.style.width = (d.probability*100)+'%'; fill.style.background = COL[d.call];
-    bar.append(fill); c.append(bar, el('span','pct', d.probability.toFixed(2)));
-    row.append(c, el('div','caret','›'));
-    if(d.reason){ const n=el('div','note'); n.innerHTML=ALERT+`<span>${d.reason} — deferred to culture</span>`; row.append(n); }
-    row.onclick = ()=> openDrawer(d, iso);
+    const c=el('div','conf'),bar=el('div','bar'),fill=el('i');
+    fill.style.width=(d.probability*100)+'%';fill.style.background=COL[d.call];
+    bar.append(fill);c.append(bar,el('span','pct',d.probability.toFixed(2)));
+    row.append(c);
+    const lk=el('div','lookup'+(d.rule_wrong_and_dangerous?' bad':''),d.rule_says||'—');
+    row.append(lk,el('div','caret','›'));
+    if(d.rule_wrong_and_dangerous){
+      const n=el('div','note disc');
+      n.innerHTML=ALERT+`<span>Lookup reports susceptible — no known determinant. Truth: resistant.</span>`;
+      row.append(n);
+    } else if(d.reason){
+      const n=el('div','note defer');
+      n.innerHTML=ALERT+`<span>${d.reason}</span>`;
+      row.append(n);
+    }
+    row.onclick=()=>openDrawer(d,iso);
     v.append(row);
   });
 }
 
-/* ── evidence drawer ─────────────────────────────────────────────────────── */
-function openDrawer(d, iso){
-  $('#dr-drug').textContent = d.drug;
-  const b = $('#dr-body'); b.innerHTML='';
-
-  const head = el('div','meta');
-  head.style.marginBottom='4px';
-  const s=el('div'); s.append(document.createTextNode('p(resistant) '), el('b',null,d.probability.toFixed(2)));
-  head.append(s, el('div','', 'isotonic-calibrated'));
+function openDrawer(d,iso){
+  $('#dr-drug').textContent=d.drug;
+  const b=$('#dr-body');b.innerHTML='';
+  const head=el('div','meta');head.style.marginBottom='4px';
+  const s=el('div');s.append(document.createTextNode('p(resistant) '),el('b',null,d.probability.toFixed(2)));
+  head.append(s,el('div','','isotonic-calibrated'));
+  if(d.truth) head.append(el('div','','lab result: '+d.truth));
   b.append(head);
 
-  const max = Math.max(...d.evidence.map(e=>Math.abs(e.contribution)), .001);
-  d.evidence.forEach(e=>{
-    const w = el('div','ev'), top = el('div','ev-top');
-    // Sign and presence must be read together, or the panel misleads: a large negative
-    // contribution from an ABSENT gene means "we looked for this and did not find it", which is
-    // evidence FOR susceptibility — not a statement that the gene is there.
-    const toward = e.contribution > 0 ? 'resistant' : 'susceptible';
-    const nm = el('div','ev-name');
-    nm.append(document.createTextNode(e.gene + ' '));
-    nm.append(el('span','state '+(e.present?'on':'off'), e.present?'detected':'not detected'));
-    top.append(nm, el('div','ev-val', (e.contribution>0?'+':'')+e.contribution.toFixed(2)));
-    w.append(top);
-    const bar=el('div','ev-bar'), f=el('i'); f.style.width=(Math.abs(e.contribution)/max*100)+'%';
-    f.style.background = e.contribution>0 ? 'var(--resistant)' : 'var(--susceptible)';
-    if(e.present && e.driver===false) f.style.background='var(--indeterminate)';
-    bar.append(f); w.append(bar);
+  if(d.rule_wrong_and_dangerous){
+    const w=el('div','box danger');
+    w.append(el('h3',null,'Standard lookup would fail here'));
+    w.append(el('p',null,'No determinant in the reference rule set matches this isolate, so a '
+      +'ResFinder-style tool reports susceptible. The laboratory result is resistant. The '
+      +'mechanism is visible below but is not an acquired gene, which is why gene-presence '
+      +'tools cannot see it.'));
+    b.append(w);
+  }
 
-    w.append(el('p','toward', `Pushes this call toward ${toward}.`));
+  const max=Math.max(...(d.evidence||[]).map(e=>Math.abs(e.contribution)),.001);
+  (d.evidence||[]).forEach(e=>{
+    const w=el('div','ev'),top=el('div','ev-top');
+    const toward=e.contribution>0?'resistant':'susceptible';
+    const nm=el('div','ev-name');
+    nm.append(document.createTextNode(e.gene+' '));
+    nm.append(el('span','state '+(e.present?'on':'off'),e.present?'detected':'not detected'));
+    top.append(nm,el('div','ev-val',(e.contribution>0?'+':'')+e.contribution.toFixed(2)));
+    w.append(top);
+    const bar=el('div','ev-bar'),f=el('i');
+    f.style.width=(Math.abs(e.contribution)/max*100)+'%';
+    f.style.background=e.contribution>0?'var(--resistant)':'var(--susceptible)';
+    bar.append(f);w.append(bar);
+    w.append(el('p','toward',`Pushes this call toward ${toward}.`));
     if(e.present){
       if(e.clinical) w.append(el('p',null,e.clinical));
-      if(e.defeats) w.append(el('p',null,'Defeats: '+e.defeats));
-      if(!e.mechanism){
-        // No curated mechanism matched. These are the features that expose the model leaning on
-        // ancestry rather than biology — surfacing them is the point, not an oversight.
-        w.append(el('p',null,'No known resistance mechanism for this protein. The model is using '
-          + 'it as a statistical marker, most likely because it tracks the bacterial lineage '
-          + 'rather than because it causes resistance.'));
-        w.append(el('span','tag passenger','unexplained — likely lineage marker'));
-      }
-      else if(e.driver===false) w.append(el('span','tag passenger','likely passenger — linkage, not causation'));
-      else w.append(el('span','tag', e.mechanism));
+      if(e.token&&(e.token.startsWith('POINT:')||e.token.startsWith('TRUNC:')))
+        w.append(el('span','tag invisible','invisible to gene-presence lookup'));
+      else if(e.mechanism) w.append(el('span','tag',e.mechanism));
     } else {
-      w.append(el('p',null,'Not found in this genome. Absence of this mechanism is part of why the '
-        + 'model leans '+toward+'.'));
+      w.append(el('p',null,'Not found in this genome. Its absence is part of why the model leans '+toward+'.'));
     }
     b.append(w);
   });
 
-  if(iso.unknown_machinery && iso.unknown_machinery.length){
-    const w = el('div','warn');
-    w.append(el('h3',null,'Unfamiliar machinery detected'));
-    const p = el('p'); p.innerHTML =
-      `This genome carries ${iso.unknown_machinery.length} resistance-associated protein(s) the model
-       has effectively never seen. It can tell the machinery is present; it cannot identify the
-       mechanism. Treat predictions here with caution.`;
-    w.append(p);
-    iso.unknown_machinery.forEach(u=>{
-      const q=el('p'); q.style.marginTop='8px';
-      q.innerHTML = `<code>${u.product}</code>`;
-      w.append(q);
-    });
+  if(d.call==='INDETERMINATE'&&d.reason){
+    const w=el('div','box warn');
+    w.append(el('h3',null,'Why we are not answering'));
+    w.append(el('p',null,d.reason.charAt(0).toUpperCase()+d.reason.slice(1)+'.'));
+    w.append(el('p',null,'A confident wrong answer removes the caution that protects the patient. '
+      +'This case is referred to culture.'));
     b.append(w);
   }
-  $('#drawer').classList.add('open'); $('#drawer').setAttribute('aria-hidden','false');
+  $('#drawer').classList.add('open');$('#drawer').setAttribute('aria-hidden','false');
   $('#scrim').classList.add('open');
 }
-function closeDrawer(){
-  $('#drawer').classList.remove('open'); $('#drawer').setAttribute('aria-hidden','true');
-  $('#scrim').classList.remove('open');
-}
+const closeDrawer=()=>{$('#drawer').classList.remove('open');
+  $('#drawer').setAttribute('aria-hidden','true');$('#scrim').classList.remove('open')};
 
-/* ── methods view — the differentiator ───────────────────────────────────── */
-let honest = false;
 function methodsView(){
-  const v = $('#view-met'); v.innerHTML='';
-  const g = D.leakage.genome_level, p = D.leakage.protein_level;
+  const v=$('#view-met');v.innerHTML='';
+  const V=D.validation,DS=D.discordance,DF=D.deferral;
 
-  const s1 = el('div','sec');
-  s1.append(el('h2',null,'Why most reported accuracy is inflated'));
-  const l = el('p','lede');
-  l.textContent = 'Bacterial genomes are related by descent, and resistance proteins come in families '
-    + 'of near-identical variants. Split either one at random and near-copies land in both training '
-    + 'and test, so the model scores well by recognising something it has effectively already seen. '
-    + 'We measured this at both levels, and we report the lower number.';
-  s1.append(l);
+  // 1. the headline claim
+  const s0=el('div','sec');
+  s0.append(el('h2',null,'Where clinical lookup fails'));
+  s0.append(el('p','lede','A ResFinder/PointFinder-style rule is what a laboratory can run today. '
+    +'These are the isolates where it reports the drug will work, and the drug does not — the '
+    +'error that puts a patient on ineffective therapy while a serious infection advances.'));
+  const st=el('div','stat');
+  [[DS.false_susceptible,'isolates where lookup says susceptible but the isolate is resistant'],
+   [DS.recovered,'of those, correctly called resistant by this system'],
+   [Math.round(DS.recovery_rate*100)+'%','recovery rate on the dangerous failures'],
+   [DS.false_resistant,'isolates where lookup discards a drug that would have worked']]
+   .forEach(([k,t])=>{const d=el('div');d.append(el('div','k mono',k),el('div','t',t));st.append(d)});
+  s0.append(st);
+  const mech=el('div','panel');
+  mech.append(el('div','lede','Why the rule missed them:'));
+  const tbl=el('table');
+  tbl.innerHTML='<thead><tr><th>mechanism</th><th style="text-align:right">cases</th><th style="text-align:right">share</th></tr></thead>';
+  const tb=el('tbody');
+  Object.entries(DS.mechanisms||{}).sort((a,b)=>b[1]-a[1]).forEach(([k,n])=>{
+    const tr=el('tr');tr.append(el('td',null,k),el('td','num',n),
+      el('td','num',Math.round(100*n/DS.false_susceptible)+'%'));tb.append(tr)});
+  tbl.append(tb);mech.append(tbl);s0.append(mech);
+  v.append(s0);
 
-  const tw = el('div','toggle-wrap');
-  const seg = el('div','seg');
-  const bR = el('button',null,'Random split'), bH = el('button',null,'Lineage-aware split');
-  seg.append(bR,bH); tw.append(seg);
+  // 2. six tiers
+  const s1=el('div','sec');
+  s1.append(el('h2',null,'Six validation tiers'));
+  s1.append(el('p','lede','Each tier removes a different crutch. A model that holds up only on the '
+    +'first is doing recall, not biology. We report the lower numbers.'));
+  const p1=el('div','panel'),tiers=el('div','tiers');
+  [['random','Random split (optimistic baseline)'],
+   ['clone','Clone-aware — identical genotypes never straddle'],
+   ['holdout','Locked holdout — quarantined, used once'],
+   ['external','External — different curation, no mutation features'],
+   ['temporal','Temporal — trained on the past, tested on the future'],
+   ['geographic','Geographic — trained on some countries, tested on others']]
+   .forEach(([k,lbl])=>{
+     const val=V.mean[k];if(val==null)return;
+     const t=el('div','tier');
+     t.append(el('div','lbl',lbl));
+     const tr=el('div','track'),f=el('div','fill');
+     f.style.width=((val-0.5)/0.5*100)+'%';
+     if(k==='external'||k==='temporal'||k==='geographic') f.style.background='var(--indeterminate)';
+     tr.append(f);t.append(tr,el('div','val mono',val.toFixed(3)));
+     tiers.append(t);
+   });
+  p1.append(tiers);s1.append(p1);v.append(s1);
 
-  const big = el('div','big');
-  const n = el('div','n mono'), lab = el('div','lbl'), dl = el('div','delta mono');
-  big.append(n, lab, dl); tw.append(big);
+  // 3. rule comparison
+  const s2=el('div','sec');
+  s2.append(el('h2',null,'Against the clinical rule, per drug'));
+  s2.append(el('p','lede','Balanced accuracy. The rule is specified carefully: chromosomal '
+    +'determinants such as blaSHV (92% of Klebsiella) and oqxAB (98%) are excluded, because a '
+    +'rule that fires on every isolate is a constant predictor, not a baseline.'));
+  const sc=el('div','scroll'),t2=el('table');
+  t2.innerHTML='<thead><tr><th>antibiotic</th><th style="text-align:right">n</th>'
+    +'<th style="text-align:right">rule</th><th style="text-align:right">model</th>'
+    +'<th style="text-align:right">delta</th><th style="text-align:right">external AUC</th></tr></thead>';
+  const tb2=el('tbody');
+  Object.entries(D.per_drug||{}).filter(([,m])=>m.rule_balanced_acc!=null)
+    .sort((a,b)=>(b[1].model_balanced_acc-b[1].rule_balanced_acc)-(a[1].model_balanced_acc-a[1].rule_balanced_acc))
+    .forEach(([k,m])=>{
+      const d=m.model_balanced_acc-m.rule_balanced_acc;
+      const tr=el('tr');
+      tr.append(el('td',null,k),el('td','num',m.n),
+        el('td','num',m.rule_balanced_acc.toFixed(3)),
+        el('td','num',m.model_balanced_acc.toFixed(3)),
+        el('td','num '+(d>0.02?'win':d<-0.02?'loss':''),(d>0?'+':'')+d.toFixed(3)),
+        el('td','num',m.external!=null?m.external.toFixed(3):'—'));
+      tb2.append(tr)});
+  t2.append(tb2);sc.append(t2);s2.append(sc);
+  const r=V.rule;
+  const sum2=el('p','lede',`Overall: model ${r.mean_model} against rule ${r.mean_rule}, `
+    +`a gain of ${r.mean_gain>0?'+':''}${r.mean_gain}. Wins on ${r.wins} drugs, ties on ${r.ties}, `
+    +`loses on ${r.losses}.`);
+  sum2.style.marginTop='14px'; s2.append(sum2);
+  v.append(s2);
 
-  const sub = el('p','lede'); sub.style.marginTop='12px'; sub.style.fontSize='12.5px';
-  tw.append(sub);
+  // 4. abstention
+  const s3=el('div','sec');
+  s3.append(el('h2',null,'What abstention buys'));
+  s3.append(el('p','lede','The system refuses to answer when confidence is low, when it detects '
+    +'machinery it does not recognise, when the genome looks too sparse to trust, or when the '
+    +'prediction contradicts the isolate’s own resistance profile.'));
+  const st2=el('div','stat');
+  [[Math.round(DF.mean_deferral*100)+'%','of cases deferred to the laboratory'],
+   [DF.answered_accuracy,'accuracy on the cases it does answer'],
+   [DF.accuracy_if_forced,'accuracy if forced to answer everything'],
+   [(DF.accuracy_gain>0?'+':'')+DF.accuracy_gain,'accuracy bought by knowing when to stop']]
+   .forEach(([k,t])=>{const d=el('div');d.append(el('div','k mono',k),el('div','t',t));st2.append(d)});
+  s3.append(st2);
+  const sum3=el('p','lede',`${DF.lethal_errors} confident-susceptible errors remain across `
+    +`${DF.predictions} predictions on quarantined isolates. Reported because it is the error that `
+    +`matters clinically, and it is not zero.`);
+  sum3.style.marginTop='14px'; s3.append(sum3);
+  v.append(s3);
 
-  function paint(animate){
-    const to = honest ? g.honest : g.random;
-    bR.setAttribute('aria-pressed', !honest); bH.setAttribute('aria-pressed', honest);
-    lab.textContent = 'mean AUC across ' + Object.keys(D.metrics).length + ' antibiotics';
-    dl.textContent = honest ? ((g.honest-g.random).toFixed(3)) : '';
-    dl.classList.toggle('show', honest);
-    sub.textContent = honest
-      ? 'Relatives never straddle the split. This is the number that would survive contact with a hospital.'
-      : 'The number most approaches report — and the one we would have reported if we had not checked.';
-    if(!animate || matchMedia('(prefers-reduced-motion:reduce)').matches){ n.textContent=to.toFixed(3); return; }
-    const from = parseFloat(n.textContent)||to, t0=performance.now();
-    (function step(t){
-      const k = Math.min(1,(t-t0)/420), e = 1-Math.pow(1-k,3);
-      n.textContent = (from+(to-from)*e).toFixed(3);
-      if(k<1) requestAnimationFrame(step);
-    })(t0);
-  }
-  bR.onclick=()=>{ honest=false; paint(true); }; bH.onclick=()=>{ honest=true; paint(true); };
-  s1.append(tw);
-
-  const s2 = el('div','sec');
-  s2.append(el('h2',null,'The same failure, one level down'));
-  const l2 = el('p','lede');
-  l2.textContent = 'We tested whether protein language-model embeddings could recognise a resistance '
-    + 'family held out of training. Under a naive split they appeared to classify resistance function '
-    + `at ${p.random} accuracy. Splitting by protein family instead — keeping KPC-2, KPC-3 and KPC-18 `
-    + `together rather than scattered across train and test — gives ${p.honest}. `
-    + 'Same illusion, different scale.';
-  s2.append(l2);
-  const box = el('div','toggle-wrap');
-  const b2 = el('div','big');
-  b2.append(el('div','n mono', p.random.toFixed(3)), el('div','lbl','naive split'));
-  const b3 = el('div','big');
-  b3.append(el('div','n mono', p.honest.toFixed(3)), el('div','lbl','family-aware split'));
-  b3.querySelector('.n').style.color='var(--indeterminate)';
-  box.append(b2,b3); s2.append(box);
-
-  const s3 = el('div','sec');
-  s3.append(el('h2',null,'Per-antibiotic performance'));
-  const sc = el('div','scroll'), t = el('table');
-  t.innerHTML = `<thead><tr><th>Antibiotic</th><th style="text-align:right">n</th>
-    <th style="text-align:right">% resistant</th><th style="text-align:right">AUC random</th>
-    <th style="text-align:right">AUC lineage-aware</th><th style="text-align:right">Brier</th></tr></thead>`;
-  const tb = el('tbody');
-  Object.entries(D.metrics).forEach(([k,m])=>{
-    const tr=el('tr');
-    tr.append(el('td',null,k), el('td','num',m.n), el('td','num',m.pct_resistant+'%'),
-      el('td','num', m.auc_random.toFixed(3)+(m.auc_random_sd?' ±'+m.auc_random_sd.toFixed(3):'')),
-      el('td','num', m.auc_lineage? m.auc_lineage.toFixed(3)+(m.auc_lineage_sd?' ±'+m.auc_lineage_sd.toFixed(3):'') :'—'),
-      el('td','num', m.brier.toFixed(3)));
-    tb.append(tr);
-  });
-  t.append(tb); sc.append(t); s3.append(sc);
-  const foot = el('p','lede'); foot.style.marginTop='12px'; foot.style.fontSize='12px';
-  foot.textContent = `Mean of ${g.repeats||12} resampled splits per antibiotic. Single splits on a few `
-    + 'hundred genomes are noise-dominated — an early single-split run moved one drug the wrong way entirely.';
-  s3.append(foot);
-
-  const s4 = el('div','sec');
+  // 5. provenance
+  const s4=el('div','sec');
   s4.append(el('h2',null,'Provenance'));
-  const pv = el('div','prov');
-  [['Source',D.provenance.source],['Filter',D.provenance.filter],
-   ['Organism',D.provenance.organism],['Genomes',D.provenance.genomes],
-   ['Features',D.provenance.features],['Embeddings',D.provenance.embedding_model],
-   ['Predictions','Precomputed offline for demo speed; the pipeline runs live in the tech video.']]
-   .forEach(([k,val])=>{ const d=el('div'); d.append(el('dt',null,k), el('dd',null,String(val))); pv.append(d); });
-  s4.append(pv);
-
-  v.append(s1,s2,s3,s4);
-  paint(false);
+  const pv=el('div','lede');
+  Object.entries(D.provenance).forEach(([k,val])=>{
+    const d=el('p');d.style.marginTop='7px';
+    d.innerHTML=`<b style="color:var(--text)">${k.replace(/_/g,' ')}</b> — ${val}`;pv.append(d)});
+  s4.append(pv);v.append(s4);
 }
 
-/* ── shell ───────────────────────────────────────────────────────────────── */
 function render(){
-  document.querySelectorAll('.iso').forEach((b,i)=>b.setAttribute('aria-current', i===cur));
-  isolateView(); closeDrawer();
+  document.querySelectorAll('.iso').forEach((b,i)=>b.setAttribute('aria-current',i===cur));
+  isolateView();closeDrawer();
 }
 function show(which){
-  const iso = which==='iso';
-  $('#view-iso').classList.toggle('hide', !iso);
-  $('#view-met').classList.toggle('hide', iso);
-  $('#rail').style.visibility = iso ? 'visible' : 'hidden';
-  $('#nav-iso').setAttribute('aria-current', iso);
-  $('#nav-met').setAttribute('aria-current', !iso);
+  const iso=which==='iso';
+  $('#view-iso').classList.toggle('hide',!iso);$('#view-met').classList.toggle('hide',iso);
+  $('#rail').style.visibility=iso?'visible':'hidden';
+  $('#nav-iso').setAttribute('aria-current',iso);$('#nav-met').setAttribute('aria-current',!iso);
   if(!iso) methodsView(); else closeDrawer();
 }
 $('#nav-iso').onclick=()=>show('iso');
 $('#nav-met').onclick=()=>show('met');
-$('#dr-close').onclick=closeDrawer;
-$('#scrim').onclick=closeDrawer;
-addEventListener('keydown',e=>{ if(e.key==='Escape') closeDrawer(); });
-$('#theme').onclick=()=>{
-  const r=document.documentElement;
-  r.dataset.theme = r.dataset.theme==='dark' ? 'light' : 'dark';
-};
-rail(); render();
+$('#dr-close').onclick=closeDrawer;$('#scrim').onclick=closeDrawer;
+addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
+$('#theme').onclick=()=>{const r=document.documentElement;
+  r.dataset.theme=r.dataset.theme==='dark'?'light':'dark'};
+rail();render();
 </script>
 </body>
 </html>
