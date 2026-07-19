@@ -130,6 +130,10 @@ h1{font-size:20px;font-weight:600;letter-spacing:-.01em}
 .box.danger{border:1px solid color-mix(in srgb,var(--resistant) 35%,transparent);
   background:color-mix(in srgb,var(--resistant) 8%,transparent)}
 .box.danger h3{color:var(--resistant)}
+.box.invest{border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);
+  background:color-mix(in srgb,var(--accent) 7%,transparent)}
+.box.invest h3{color:var(--accent)}
+.box.invest .toward{color:var(--faint);font-size:11.5px;margin-top:10px}
 
 .sec{margin-bottom:38px}
 .sec>h2{font-size:16px;font-weight:600;margin-bottom:6px}
@@ -332,6 +336,24 @@ function openDrawer(d,iso){
     w.append(el('p',null,d.reason.charAt(0).toUpperCase()+d.reason.slice(1)+'.'));
     w.append(el('p',null,'A confident wrong answer removes the caution that protects the patient. '
       +'This case is referred to culture.'));
+    b.append(w);
+  }
+  if(d.investigation){
+    const L=d.investigation,w=el('div','box invest');
+    w.append(el('h3',null,'Investigative lead'));
+    w.append(el('p',null,L.likely_mechanism));
+    if(L.reasoning) w.append(el('p',null,L.reasoning));
+    if(L.drug_classes_at_risk&&L.drug_classes_at_risk.length)
+      w.append(el('p',null,'Classes at risk: '+L.drug_classes_at_risk.join(', ')));
+    const act=el('p');act.innerHTML='<b style="color:var(--text)">Next step</b> — '+L.recommended_action;
+    w.append(act);
+    const c=el('div','conf');c.style.marginTop='10px';
+    const bar=el('div','bar'),f=el('i');
+    f.style.width=(L.confidence*100)+'%';f.style.background='var(--accent)';
+    bar.append(f);c.append(bar,el('span','pct',L.confidence.toFixed(2)));
+    w.append(c);
+    w.append(el('p','toward','A hypothesis for the laboratory, not a prediction. The system '
+      +'declined to call this drug and that refusal stands.'));
     b.append(w);
   }
   $('#drawer').classList.add('open');$('#drawer').setAttribute('aria-hidden','false');
