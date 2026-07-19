@@ -60,6 +60,8 @@ instantly and cannot fail during recording. The pipeline runs live in the tech v
 | `discordance.py` | Where lookup fails and whether we catch it |
 | `deferral.py` | Deferral rate against the safety constraint |
 | `edge_cases.py` / `eval_edges.py` | 93-case behavioural stress benchmark |
+| `cross_species.py` | Klebsiella → E. coli transfer test |
+| `investigator.py` | LLM agent producing investigative leads for abstained cases |
 | `export_ui.py` | Builds the demo payload |
 
 ---
@@ -140,6 +142,18 @@ assembly rather than a clean organism. Took degraded-assembly cases from 65% to 
 
 **4. Coherence** — abstain when the prediction contradicts the isolate's own resistance profile,
 measured against its nearest training neighbours by Jaccard similarity.
+
+### After the refusal: the investigator agent
+
+Abstention alone is a dead end — it tells the clinician to wait 48-72 hours, which is the problem
+we set out to solve. `investigator.py` picks up each refusal and produces a structured
+investigative lead: likely mechanism, drug classes at risk, confidence, and a concrete next step
+for the laboratory.
+
+It is deliberately **not** a prediction. The refusal stands and the lead carries its uncertainty,
+because an agent that quietly converted refusals back into confident answers would defeat the
+mechanism it attaches to. Measured mean confidence across 10 distinct abstentions: **0.55** —
+appropriately conservative for cases the model already found ambiguous.
 
 ---
 
@@ -234,9 +248,33 @@ Iterative hardening: **72% pass / 21 lethal errors → 85% pass / 3 lethal error
 
 ---
 
+## 11b. Cross-species: a measured negative result
+
+Trained on Klebsiella, tested on E. coli it has never seen:
+
+| | balanced accuracy |
+|---|---|
+| within-species (E. coli, upper bound) | 0.869 |
+| **cross-species (Klebsiella → E. coli)** | **0.768** |
+| clinical rule (species-agnostic) | 0.874 |
+
+Transfer retains 88% of within-species performance, but **the rule still wins.** Lookup rules
+encode textbook mechanism and are species-agnostic by construction, so they cross the species gap
+perfectly; a fitted model does not. Our model beats the rule on only 2 of 16 drugs.
+
+The species gap is real biology: `blaSHV` is chromosomal in Klebsiella and acquired in E. coli,
+porin architecture differs, and which determinants are native versus acquired changes entirely.
+
+**Verdict: do not deploy cross-species.** Colistin scores exactly 0.500 — chance — which
+independently confirms excluding it. This result bounds the claim rather than extending it, and
+is reported for that reason.
+
+---
+
 ## 12. Known limitations
 
-- *Klebsiella pneumoniae* only. E. coli, S. aureus and A. baumannii are acquired but unused.
+- ***Klebsiella pneumoniae* only — and now measured, not assumed.** See §11b: cross-species
+  transfer to E. coli loses to the species-agnostic rule baseline.
 - `invisible_mechanism` remains unsolved: when every trace of a determinant is deleted, the
   information is genuinely gone and no gate recovers it. Measured neighbour resistance rates for
   those cases run 0.00–0.44 — they genuinely resemble susceptible genomes.
