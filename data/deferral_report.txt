@@ -1,0 +1,37 @@
+train 1590 / holdout 273 · shared vocabulary 85
+
+drug                              n   defer  answered acc  lethal  coverage acc
+-------------------------------------------------------------------------------
+amikacin                        156     12%         0.949       7         0.910
+amoxicillin-clavulanate          91     12%         0.938       5         0.868
+ampicillin-sulbactam             43      5%         0.951       2         0.953
+aztreonam                        67     13%         0.879       0         0.791
+cefazolin                        71     11%         0.968       0         0.901
+cefepime                        130     40%         0.808       1         0.723
+cefotaxime                      120      6%         0.991       1         0.967
+cefoxitin                        95     26%         0.814       9         0.747
+ceftazidime                     202      7%         0.936       3         0.881
+ceftazidime-avibactam            39     44%         0.955       1         0.692
+ceftriaxone                     152      9%         0.914       4         0.855
+ciprofloxacin                   163     11%         0.848       3         0.804
+colistin                         59     58%         0.800       5         0.746
+ertapenem                       148     32%         0.960       1         0.804
+gentamicin                      161     17%         0.955       5         0.894
+imipenem                        101     20%         0.840       2         0.782
+levofloxacin                    100     22%         0.885       2         0.820
+meropenem                       168     28%         0.926       6         0.833
+nitrofurantoin                   59      3%         0.825       0         0.831
+piperacillin-tazobactam         163     22%         0.819      10         0.779
+tetracycline                     82     22%         0.906       5         0.890
+tobramycin                      113      7%         0.971       3         0.920
+trimethoprim-sulfamethoxazole   143     16%         0.933       5         0.902
+-------------------------------------------------------------------------------
+
+mean deferral rate                : 19%   (previous build: 72%)
+accuracy on answered cases        : 0.903
+accuracy if forced to answer all  : 0.839
+lethal errors among answered      : 80 across 2626 predictions
+
+abstaining buys +0.064 accuracy on the cases it does answer.
+
+wrote /Users/abdulazizal-haidary/development/Hackathon/genome-firewall/data/deferral.json

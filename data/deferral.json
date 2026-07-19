@@ -1,0 +1,280 @@
+{
+ "summary": {
+  "mean_deferral": 0.193,
+  "answered_accuracy": 0.903,
+  "accuracy_if_forced": 0.839,
+  "accuracy_gain": 0.064,
+  "lethal_errors": 80,
+  "predictions": 2626
+ },
+ "per_drug": {
+  "amikacin": {
+   "n": 156,
+   "deferral": 0.115,
+   "answered_accuracy": 0.949,
+   "accuracy_if_forced": 0.91,
+   "lethal_errors": 7,
+   "reasons": {
+    "confidence below clinical threshold": 11,
+    "1 unrecognised resistance protein(s) present": 6,
+    "prediction contradicts this isolate's resist": 1
+   }
+  },
+  "amoxicillin-clavulanate": {
+   "n": 91,
+   "deferral": 0.121,
+   "answered_accuracy": 0.938,
+   "accuracy_if_forced": 0.868,
+   "lethal_errors": 5,
+   "reasons": {
+    "confidence below clinical threshold": 10,
+    "prediction contradicts this isolate's resist": 1
+   }
+  },
+  "ampicillin-sulbactam": {
+   "n": 43,
+   "deferral": 0.047,
+   "answered_accuracy": 0.951,
+   "accuracy_if_forced": 0.953,
+   "lethal_errors": 2,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 2
+   }
+  },
+  "aztreonam": {
+   "n": 67,
+   "deferral": 0.134,
+   "answered_accuracy": 0.879,
+   "accuracy_if_forced": 0.791,
+   "lethal_errors": 0,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 5,
+    "confidence below clinical threshold": 4
+   }
+  },
+  "cefazolin": {
+   "n": 71,
+   "deferral": 0.113,
+   "answered_accuracy": 0.968,
+   "accuracy_if_forced": 0.901,
+   "lethal_errors": 0,
+   "reasons": {
+    "confidence below clinical threshold": 4,
+    "prediction contradicts this isolate's resist": 4
+   }
+  },
+  "cefepime": {
+   "n": 130,
+   "deferral": 0.4,
+   "answered_accuracy": 0.808,
+   "accuracy_if_forced": 0.723,
+   "lethal_errors": 1,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 5,
+    "confidence below clinical threshold": 45,
+    "1 unrecognised resistance protein(s) present": 2
+   }
+  },
+  "cefotaxime": {
+   "n": 120,
+   "deferral": 0.058,
+   "answered_accuracy": 0.991,
+   "accuracy_if_forced": 0.967,
+   "lethal_errors": 1,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 4,
+    "confidence below clinical threshold": 1,
+    "1 unrecognised resistance protein(s) present": 2
+   }
+  },
+  "cefoxitin": {
+   "n": 95,
+   "deferral": 0.263,
+   "answered_accuracy": 0.814,
+   "accuracy_if_forced": 0.747,
+   "lethal_errors": 9,
+   "reasons": {
+    "confidence below clinical threshold": 21,
+    "prediction contradicts this isolate's resist": 3,
+    "1 unrecognised resistance protein(s) present": 1
+   }
+  },
+  "ceftazidime": {
+   "n": 202,
+   "deferral": 0.074,
+   "answered_accuracy": 0.936,
+   "accuracy_if_forced": 0.881,
+   "lethal_errors": 3,
+   "reasons": {
+    "confidence below clinical threshold": 9,
+    "prediction contradicts this isolate's resist": 6
+   }
+  },
+  "ceftazidime-avibactam": {
+   "n": 39,
+   "deferral": 0.436,
+   "answered_accuracy": 0.955,
+   "accuracy_if_forced": 0.692,
+   "lethal_errors": 1,
+   "reasons": {
+    "1 unrecognised resistance protein(s) present": 4,
+    "prediction contradicts this isolate's resist": 11,
+    "confidence below clinical threshold": 2
+   }
+  },
+  "ceftriaxone": {
+   "n": 152,
+   "deferral": 0.086,
+   "answered_accuracy": 0.914,
+   "accuracy_if_forced": 0.855,
+   "lethal_errors": 4,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 8,
+    "confidence below clinical threshold": 5
+   }
+  },
+  "ciprofloxacin": {
+   "n": 163,
+   "deferral": 0.11,
+   "answered_accuracy": 0.848,
+   "accuracy_if_forced": 0.804,
+   "lethal_errors": 3,
+   "reasons": {
+    "confidence below clinical threshold": 12,
+    "prediction contradicts this isolate's resist": 6
+   }
+  },
+  "colistin": {
+   "n": 59,
+   "deferral": 0.576,
+   "answered_accuracy": 0.8,
+   "accuracy_if_forced": 0.746,
+   "lethal_errors": 5,
+   "reasons": {
+    "only 3 resistance determinants detected wher": 2,
+    "confidence below clinical threshold": 31,
+    "only 2 resistance determinants detected wher": 1
+   }
+  },
+  "ertapenem": {
+   "n": 148,
+   "deferral": 0.324,
+   "answered_accuracy": 0.96,
+   "accuracy_if_forced": 0.804,
+   "lethal_errors": 1,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 14,
+    "confidence below clinical threshold": 30,
+    "only 2 resistance determinants detected wher": 1,
+    "1 unrecognised resistance protein(s) present": 3
+   }
+  },
+  "gentamicin": {
+   "n": 161,
+   "deferral": 0.168,
+   "answered_accuracy": 0.955,
+   "accuracy_if_forced": 0.894,
+   "lethal_errors": 5,
+   "reasons": {
+    "confidence below clinical threshold": 18,
+    "only 2 resistance determinants detected wher": 1,
+    "prediction contradicts this isolate's resist": 5,
+    "1 unrecognised resistance protein(s) present": 3
+   }
+  },
+  "imipenem": {
+   "n": 101,
+   "deferral": 0.198,
+   "answered_accuracy": 0.84,
+   "accuracy_if_forced": 0.782,
+   "lethal_errors": 2,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 4,
+    "confidence below clinical threshold": 14,
+    "1 unrecognised resistance protein(s) present": 2
+   }
+  },
+  "levofloxacin": {
+   "n": 100,
+   "deferral": 0.22,
+   "answered_accuracy": 0.885,
+   "accuracy_if_forced": 0.82,
+   "lethal_errors": 2,
+   "reasons": {
+    "confidence below clinical threshold": 13,
+    "1 unrecognised resistance protein(s) present": 2,
+    "prediction contradicts this isolate's resist": 7
+   }
+  },
+  "meropenem": {
+   "n": 168,
+   "deferral": 0.28,
+   "answered_accuracy": 0.926,
+   "accuracy_if_forced": 0.833,
+   "lethal_errors": 6,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 9,
+    "confidence below clinical threshold": 34,
+    "1 unrecognised resistance protein(s) present": 4
+   }
+  },
+  "nitrofurantoin": {
+   "n": 59,
+   "deferral": 0.034,
+   "answered_accuracy": 0.825,
+   "accuracy_if_forced": 0.831,
+   "lethal_errors": 0,
+   "reasons": {
+    "confidence below clinical threshold": 2
+   }
+  },
+  "piperacillin-tazobactam": {
+   "n": 163,
+   "deferral": 0.221,
+   "answered_accuracy": 0.819,
+   "accuracy_if_forced": 0.779,
+   "lethal_errors": 10,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 3,
+    "confidence below clinical threshold": 32,
+    "1 unrecognised resistance protein(s) present": 1
+   }
+  },
+  "tetracycline": {
+   "n": 82,
+   "deferral": 0.22,
+   "answered_accuracy": 0.906,
+   "accuracy_if_forced": 0.89,
+   "lethal_errors": 5,
+   "reasons": {
+    "confidence below clinical threshold": 14,
+    "1 unrecognised resistance protein(s) present": 2,
+    "prediction contradicts this isolate's resist": 2
+   }
+  },
+  "tobramycin": {
+   "n": 113,
+   "deferral": 0.071,
+   "answered_accuracy": 0.971,
+   "accuracy_if_forced": 0.92,
+   "lethal_errors": 3,
+   "reasons": {
+    "prediction contradicts this isolate's resist": 2,
+    "confidence below clinical threshold": 5,
+    "1 unrecognised resistance protein(s) present": 1
+   }
+  },
+  "trimethoprim-sulfamethoxazole": {
+   "n": 143,
+   "deferral": 0.161,
+   "answered_accuracy": 0.933,
+   "accuracy_if_forced": 0.902,
+   "lethal_errors": 5,
+   "reasons": {
+    "confidence below clinical threshold": 11,
+    "prediction contradicts this isolate's resist": 11,
+    "1 unrecognised resistance protein(s) present": 1
+   }
+  }
+ }
+}
