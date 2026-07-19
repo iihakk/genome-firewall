@@ -124,10 +124,10 @@ export function Stat({
   const c =
     tone === "resistant" ? "text-resistant" : tone === "deferred" ? "text-deferred" : "text-ink";
   return (
-    <Card>
+    <Card className="flex h-full flex-col">
       <div className={`tnum font-mono text-[26px] leading-none font-semibold ${c}`}>{value}</div>
       <div className="mt-2 text-[12px] leading-snug text-muted">{label}</div>
-      {note && <div className="tnum mt-1.5 font-mono text-[11px] text-faint">{note}</div>}
+      {note && <div className="tnum mt-auto pt-1.5 font-mono text-[11px] text-faint">{note}</div>}
     </Card>
   );
 }

@@ -40,34 +40,20 @@ const LAST_LINE = ["meropenem", "ertapenem", "imipenem"];
  *  one deferral is a success, not a caveat.
  */
 function triage(s: Specimen) {
-  const flags: { label: string; tone: "resistant" | "deferred" | "accent" | "susceptible"; glyph: string }[] = [];
-
+  const flags: { label: string; tone: "resistant" | "accent" | "susceptible"; glyph: string }[] = [];
   const options = s.drugs.filter((d) => d.call === "SUSCEPTIBLE");
-  const carbR = s.drugs.filter((d) => LAST_LINE.includes(d.drug) && d.call === "RESISTANT").length;
-  const resistant = s.drugs.filter((d) => d.call === "RESISTANT").length;
-  const called = s.drugs.filter((d) => d.call !== "INDETERMINATE").length;
-  const deferred = s.drugs.length - called;
 
-  // The headline: is there a drug to give tonight?
   if (options.length > 0)
     flags.push({
       label: `${options.length} option${options.length > 1 ? "s" : ""} available`,
       tone: "susceptible",
       glyph: "✓",
     });
-  else
-    flags.push({ label: "No confident option", tone: "resistant", glyph: "!" });
+  else flags.push({ label: "No option available", tone: "resistant", glyph: "!" });
 
-  if (carbR > 0) flags.push({ label: "Carbapenem-resistant", tone: "resistant", glyph: "!" });
-  else if (called > 0 && resistant / called >= 0.6)
-    flags.push({ label: "Multi-drug resistant", tone: "resistant", glyph: "!" });
-
+  // Rare and genuinely actionable, so it survives the cull.
   if (s.drugs.some((d) => d.reason?.includes("unrecognised")))
     flags.push({ label: "Unrecognised machinery", tone: "accent", glyph: "◆" });
-
-  // Deferrals are shown as a quiet count, not a warning — they are the expected minority.
-  if (deferred > 0)
-    flags.push({ label: `${deferred} pending`, tone: "deferred", glyph: "·" });
 
   return flags;
 }
@@ -101,7 +87,7 @@ export default function Worklist() {
         }
       />
 
-      <div className="stagger mb-6 grid grid-cols-4 gap-4">
+      <div className="stagger mb-6 grid grid-cols-4 items-stretch gap-4">
         {[
           <Stat key="a" value={rows.length} label="specimens in the system" note={`${inReview} awaiting review`} />,
           <Stat
@@ -114,7 +100,7 @@ export default function Worklist() {
           <Stat
             key="c"
             value={`${rows.filter((s) => s.drugs.some((d) => d.call === "SUSCEPTIBLE")).length}/${rows.length}`}
-            label="specimens with a usable therapy option reported now"
+            label="with a usable therapy option now"
             note={`${Math.round(META.deferral.mean_deferral * 100)}% of individual results pending culture`}
           />,
           <Stat
@@ -124,7 +110,7 @@ export default function Worklist() {
             note={`+${META.deferral.accuracy_gain} vs forced answer`}
           />,
         ].map((el, i) => (
-          <div key={i} style={{ animationDelay: `${i * 45}ms` }}>
+          <div key={i} className="h-full" style={{ animationDelay: `${i * 45}ms` }}>
             {el}
           </div>
         ))}
@@ -154,16 +140,25 @@ export default function Worklist() {
           </div>
         </div>
 
-        <table className="w-full">
+        <table className="w-full table-fixed">
           <thead>
             <tr className="border-b border-line">
-              {["Accession", "Organism", "Source", "Ward", "Status", "Needs attention", "Received"].map(
-                (h) => (
-                  <th key={h} className="px-5 py-2.5 text-left text-[11.5px] font-semibold text-faint">
-                    {h}
-                  </th>
-                ),
-              )}
+              {[
+                ["Accession", "w-[168px]"],
+                ["Organism", "w-[200px]"],
+                ["Source", "w-[124px]"],
+                ["Ward", "w-[166px]"],
+                ["Status", "w-[126px]"],
+                ["Therapy", "w-auto"],
+                ["Received", "w-[104px]"],
+              ].map(([h, w]) => (
+                <th
+                  key={h}
+                  className={`px-5 py-2.5 text-left text-[11.5px] font-semibold text-faint ${w}`}
+                >
+                  {h}
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
@@ -212,14 +207,14 @@ function Row({ s, index, animate }: { s: Specimen; index: number; animate: boole
       <td className="px-5 py-3.5">
         <span className="flex items-center gap-2.5">
           <Dot urgent={s.priority === "urgent"} />
-          <span className="font-mono text-[12.5px] font-medium group-hover:text-accent">
+          <span className="font-mono text-[12.5px] font-medium whitespace-nowrap group-hover:text-accent">
             {s.accession}
           </span>
         </span>
       </td>
-      <td className="px-5 py-3.5 text-[13px] italic">{s.organism}</td>
-      <td className="px-5 py-3.5 text-[13px] text-muted">{s.source}</td>
-      <td className="px-5 py-3.5 text-[13px] text-muted">{s.ward}</td>
+      <td className="truncate px-5 py-3.5 text-[13px] italic">{s.organism}</td>
+      <td className="truncate px-5 py-3.5 text-[13px] text-muted">{s.source}</td>
+      <td className="truncate px-5 py-3.5 text-[13px] whitespace-nowrap text-muted">{s.ward}</td>
       <td className="px-5 py-3.5">
         <Chip tone={st.tone}>
           <span className="font-mono text-[10px]" aria-hidden>

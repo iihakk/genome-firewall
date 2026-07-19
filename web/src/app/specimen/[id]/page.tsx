@@ -111,7 +111,7 @@ export default function SpecimenPage({ params }: { params: Promise<{ id: string 
 
           <Card>
             <SectionLabel>Full panel · {s.drugs.length} antibiotics</SectionLabel>
-            <div className="grid grid-cols-[1fr_136px_120px_130px_50px] items-center gap-3 border-b border-line pb-2 text-[11px] font-semibold text-faint">
+            <div className="grid grid-cols-[210px_132px_1fr_124px_48px] items-center gap-3 border-b border-line pb-2 text-[11px] font-semibold text-faint">
               <span>Antibiotic</span>
               <span>Call</span>
               <span>Confidence</span>
@@ -273,7 +273,7 @@ function DrugRow({
 
   return (
     <div className="group/row border-b border-line last:border-0">
-      <div className="grid grid-cols-[1fr_136px_120px_130px_50px] items-center gap-3 py-2.5">
+      <div className="grid grid-cols-[210px_132px_1fr_124px_48px] items-center gap-3 py-2.5">
         <button
           onClick={onOpen}
           className="flex items-center gap-1.5 text-left text-[13.5px] font-medium hover:text-accent"
