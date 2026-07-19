@@ -21,79 +21,92 @@
   ],
   "unknown": [],
   "lead": {
-   "likely_mechanism": "The presence of aac(6'), aph(3'), and other aminoglycoside-modifying enzymes suggests potential resistance to aminoglycosides like amikacin, but the overall impact is uncertain due to conflicting determinants.",
+   "likely_mechanism": "The presence of aac(6'), aph(3'), and other aminoglycoside-modifying enzymes suggests potential resistance to amikacin through enzymatic modification, but the overall impact is unclear due to conflicting determinants.",
    "drug_classes_at_risk": [
     "aminoglycosides"
    ],
-   "confidence": 0.4,
+   "confidence": 0.5,
    "recommended_action": "Perform phenotypic susceptibility testing for amikacin to confirm resistance or susceptibility.",
-   "reasoning": "The presence of multiple resistance determinants raises concerns about amikacin efficacy, but the predictor's low confidence indicates that the clinical impact is not fully understood. Direct testing will provide the most reliable information for treatment decisions."
+   "reasoning": "The presence of multiple resistance determinants raises uncertainty about the isolate's susceptibility to amikacin. Direct testing will provide the most reliable information for treatment decisions."
   }
  },
  {
-  "isolate": "GCA_000566825.1",
-  "drug": "gentamicin",
-  "reason": "confidence below clinical threshold",
-  "probability": 0.567,
+  "isolate": "GCA_000406765.2",
+  "drug": "meropenem",
+  "reason": "prediction contradicts this isolate's resistance profile \u2014 52% of its 25 closest matches were resistant",
+  "probability": 0.975,
   "known": [
-   "POINT:gyra",
-   "TRUNC:mgrb",
-   "aada",
-   "aph(3'')",
-   "aph(6)",
+   "aac(6')",
    "blakpc",
-   "blaoxa",
    "blashv",
-   "dfr",
    "emrab",
    "fosa",
-   "mph(a)",
-   "mrx",
-   "sul"
+   "oqxab"
   ],
   "unknown": [],
   "lead": {
-   "likely_mechanism": "The presence of multiple aminoglycoside-modifying enzymes (aph(3''), aph(6)) suggests potential resistance to gentamicin, but the overall impact is unclear due to the presence of other determinants that may influence susceptibility.",
+   "likely_mechanism": "The presence of the blaKPC and blaSHV genes suggests that this isolate may produce carbapenemases, which can hydrolyze meropenem and lead to resistance. Additionally, the aac(6') gene indicates potential aminoglycoside resistance, which may complicate treatment options.",
    "drug_classes_at_risk": [
+    "carbapenems",
     "aminoglycosides"
    ],
-   "confidence": 0.6,
-   "recommended_action": "Perform phenotypic susceptibility testing for gentamicin to confirm resistance or susceptibility.",
-   "reasoning": "Given the presence of aminoglycoside-modifying enzymes, it's crucial to verify the susceptibility of this isolate to gentamicin through direct testing, as the genetic determinants alone do not provide a clear interpretation."
+   "confidence": 0.8,
+   "recommended_action": "Perform a phenotypic susceptibility test for meropenem to confirm resistance.",
+   "reasoning": "Given the presence of multiple resistance determinants, including known carbapenemases, a phenotypic test will provide critical information on the actual susceptibility of this isolate to meropenem."
   }
  },
  {
-  "isolate": "GCA_031044415.2",
-  "drug": "meropenem",
-  "reason": "confidence below clinical threshold",
-  "probability": 0.366,
+  "isolate": "GCA_000406765.2",
+  "drug": "ceftriaxone",
+  "reason": "prediction contradicts this isolate's resistance profile \u2014 44% of its 25 closest matches were resistant",
+  "probability": 0.975,
   "known": [
-   "POINT:gyra",
-   "POINT:ramr",
-   "aac(3)",
    "aac(6')",
-   "aada",
-   "blactx-m",
-   "blaoxa",
+   "blakpc",
    "blashv",
-   "blatem",
-   "cata",
-   "dfr",
    "emrab",
    "fosa",
-   "mph(a)"
+   "oqxab"
   ],
   "unknown": [],
   "lead": {
-   "likely_mechanism": "The presence of multiple beta-lactamase genes (blaCTX-M, blaOXA, blaSHV, blaTEM) suggests potential resistance to carbapenems like meropenem, while aminoglycoside-modifying enzymes (aac(3), aac(6')) may indicate reduced susceptibility to aminoglycosides. The gyrase mutation (POINT:gyra) could also suggest altered target sites affecting fluoroquinolone efficacy, but its impact on meropenem is less clear.",
+   "likely_mechanism": "The presence of aac(6') suggests potential aminoglycoside resistance, while blakpc and blashv indicate beta-lactamase production that could hydrolyze ceftriaxone. The emrab determinant may confer resistance to carbapenems, and fosa and oqxab could indicate efflux pump activity, further complicating the resistance profile.",
    "drug_classes_at_risk": [
     "beta-lactams",
     "aminoglycosides",
-    "fluoroquinolones"
+    "carbapenems"
    ],
-   "confidence": 0.6,
-   "recommended_action": "Perform a phenotypic susceptibility test for meropenem to confirm resistance.",
-   "reasoning": "Given the presence of multiple beta-lactamase genes, there is a significant risk of resistance to meropenem. A phenotypic test will provide the most reliable information on the isolate's susceptibility."
+   "confidence": 0.7,
+   "recommended_action": "Perform phenotypic susceptibility testing for ceftriaxone to confirm resistance.",
+   "reasoning": "Given the complex resistance determinants present, phenotypic testing will provide a clearer picture of the isolate's susceptibility to ceftriaxone, which is critical for effective treatment."
+  }
+ },
+ {
+  "isolate": "GCA_000406765.2",
+  "drug": "trimethoprim-sulfamethoxazole",
+  "reason": "confidence below clinical threshold",
+  "probability": 0.433,
+  "known": [
+   "aac(6')",
+   "blakpc",
+   "blashv",
+   "emrab",
+   "fosa",
+   "oqxab"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The presence of aac(6') suggests potential aminoglycoside resistance, while blakpc and blashv indicate possible beta-lactam resistance mechanisms. The emrab determinant may confer resistance to carbapenems, and fosa and oqxab could affect fluoroquinolone and sulfonamide efficacy, respectively.",
+   "drug_classes_at_risk": [
+    "aminoglycosides",
+    "beta-lactams",
+    "carbapenems",
+    "fluoroquinolones",
+    "sulfonamides"
+   ],
+   "confidence": 0.4,
+   "recommended_action": "Perform phenotypic susceptibility testing for trimethoprim-sulfamethoxazole to confirm resistance or susceptibility.",
+   "reasoning": "The predictor's low confidence indicates that the resistance determinants present may interact in complex ways, making it difficult to predict susceptibility accurately. Direct testing will provide the most reliable information for treatment decisions."
   }
  },
  {
@@ -117,205 +130,346 @@
   ],
   "unknown": [],
   "lead": {
-   "likely_mechanism": "The presence of multiple resistance determinants suggests a complex resistance profile that may involve efflux pumps and enzymatic degradation of antibiotics, potentially leading to reduced susceptibility to fluoroquinolones like levofloxacin.",
+   "likely_mechanism": "The presence of multiple resistance determinants suggests a complex resistance profile that may involve efflux pumps and enzymatic degradation, potentially leading to reduced susceptibility to fluoroquinolones like levofloxacin.",
    "drug_classes_at_risk": [
     "fluoroquinolones",
     "aminoglycosides",
     "beta-lactams",
     "sulfonamides"
    ],
-   "confidence": 0.4,
-   "recommended_action": "Perform phenotypic susceptibility testing for levofloxacin to determine the actual resistance level.",
-   "reasoning": "The predictor's low confidence indicates that the resistance mechanisms present are not straightforward, making it essential to confirm susceptibility through laboratory testing."
+   "confidence": 0.6,
+   "recommended_action": "Perform phenotypic susceptibility testing for levofloxacin to confirm resistance or susceptibility.",
+   "reasoning": "Given the ambiguity in the resistance determinants detected, phenotypic testing will provide the most reliable information on the isolate's susceptibility to levofloxacin."
   }
  },
  {
-  "isolate": "GCA_043861595.1",
-  "drug": "ertapenem",
+  "isolate": "GCA_000406505.1",
+  "drug": "ceftriaxone",
   "reason": "confidence below clinical threshold",
-  "probability": 0.464,
+  "probability": 0.587,
   "known": [
+   "blakpc",
+   "blashv",
+   "emrab",
+   "fosa",
+   "oqxab"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The detected resistance determinants suggest a potential for beta-lactamase production (blakpc, blashv) and efflux mechanisms (oqxab), which could compromise ceftriaxone efficacy.",
+   "drug_classes_at_risk": [
+    "beta-lactams"
+   ],
+   "confidence": 0.6,
+   "recommended_action": "Perform phenotypic susceptibility testing for ceftriaxone to confirm resistance.",
+   "reasoning": "The presence of multiple resistance determinants indicates a complex resistance profile that may affect ceftriaxone. Direct testing will provide the most reliable information on the isolate's susceptibility."
+  }
+ },
+ {
+  "isolate": "GCA_000409125.1",
+  "drug": "meropenem",
+  "reason": "prediction contradicts this isolate's resistance profile \u2014 20% of its 25 closest matches were resistant",
+  "probability": 0.724,
+  "known": [
+   "POINT:gyra",
+   "POINT:ramr",
+   "TRUNC:ompk36",
+   "aac(3)",
    "aac(6')",
-   "aada",
    "aph(3'')",
-   "aph(3')",
    "aph(6)",
-   "arr",
-   "blacmy",
+   "blactx-m",
+   "blakpc",
    "blaoxa",
    "blashv",
-   "cmla",
-   "dfr",
-   "emrab",
-   "flor",
-   "fosa"
-  ],
-  "unknown": [],
-  "lead": {
-   "likely_mechanism": "The presence of multiple aminoglycoside-modifying enzymes (aac(6'), aada, aph(3''), aph(3'), aph(6)) suggests potential resistance mechanisms that could affect the efficacy of certain beta-lactams, including ertapenem, though the exact impact is unclear.",
-   "drug_classes_at_risk": [
-    "beta-lactams",
-    "aminoglycosides"
-   ],
-   "confidence": 0.4,
-   "recommended_action": "Perform phenotypic susceptibility testing for ertapenem to confirm resistance or susceptibility.",
-   "reasoning": "The presence of various resistance determinants raises concerns about the potential for reduced susceptibility to ertapenem, but the exact relationship is uncertain. Phenotypic testing will provide the most reliable information on the isolate's response to this antibiotic."
-  }
- },
- {
-  "isolate": "GCA_022064525.1",
-  "drug": "meropenem",
-  "reason": "prediction contradicts this isolate's resistance profile \u2014 72% of its 25 closest matches were resistant",
-  "probability": 0.256,
-  "known": [
-   "aac(6')",
-   "aada",
-   "blashv",
    "cata",
    "dfr",
-   "emrab",
-   "fosa",
-   "mph(a)",
-   "mrx",
-   "oqxab",
-   "sul"
+   "emrab"
   ],
   "unknown": [],
   "lead": {
-   "likely_mechanism": "The presence of multiple resistance determinants suggests a complex resistance mechanism, potentially involving enzymatic degradation of the antibiotic and efflux pump activity, which may lead to reduced susceptibility to meropenem.",
+   "likely_mechanism": "The presence of multiple beta-lactamase genes (e.g., blaCTX-M, blaKPC, blaOXA) suggests that this isolate may have a high level of resistance to carbapenems like meropenem, likely due to enzymatic degradation of the drug.",
    "drug_classes_at_risk": [
     "beta-lactams",
-    "aminoglycosides",
-    "macrolides",
-    "sulfonamides",
-    "fluoroquinolones"
+    "carbapenems"
    ],
-   "confidence": 0.7,
-   "recommended_action": "Perform phenotypic susceptibility testing for meropenem to confirm resistance.",
-   "reasoning": "Given the high percentage of resistant matches and the presence of multiple resistance genes, it is crucial to verify the susceptibility of this isolate to meropenem through direct testing."
-  }
- },
- {
-  "isolate": "GCA_022064525.1",
-  "drug": "ertapenem",
-  "reason": "prediction contradicts this isolate's resistance profile \u2014 88% of its 25 closest matches were resistant",
-  "probability": 0.261,
-  "known": [
-   "aac(6')",
-   "aada",
-   "blashv",
-   "cata",
-   "dfr",
-   "emrab",
-   "fosa",
-   "mph(a)",
-   "mrx",
-   "oqxab",
-   "sul"
-  ],
-  "unknown": [],
-  "lead": {
-   "likely_mechanism": "The presence of multiple resistance determinants suggests a complex resistance mechanism, potentially involving enzymatic degradation of beta-lactams and efflux pumps, which could compromise the efficacy of ertapenem.",
-   "drug_classes_at_risk": [
-    "beta-lactams",
-    "aminoglycosides",
-    "macrolides",
-    "sulfonamides",
-    "fluoroquinolones"
-   ],
-   "confidence": 0.7,
-   "recommended_action": "Perform phenotypic susceptibility testing for ertapenem and consider alternative treatment options based on the resistance profile.",
-   "reasoning": "Given the high percentage of resistant matches and the presence of multiple resistance genes, it is crucial to confirm the susceptibility of this isolate to ertapenem through direct testing."
-  }
- },
- {
-  "isolate": "GCA_022075965.1",
-  "drug": "meropenem",
-  "reason": "prediction contradicts this isolate's resistance profile \u2014 88% of its 25 closest matches were resistant",
-  "probability": 0.256,
-  "known": [
-   "aac(3)",
-   "aac(6')",
-   "aada",
-   "aph(4)",
-   "blashv",
-   "cmla",
-   "emrab",
-   "fosa",
-   "oqxab",
-   "sul"
-  ],
-  "unknown": [],
-  "lead": {
-   "likely_mechanism": "The presence of multiple aminoglycoside-modifying enzymes (aac(3), aac(6'), aph(4)) suggests potential resistance mechanisms that could also affect other classes of antibiotics, including carbapenems, through various pathways such as efflux or enzymatic degradation.",
-   "drug_classes_at_risk": [
-    "aminoglycosides",
-    "carbapenems",
-    "sulfonamides"
-   ],
-   "confidence": 0.7,
+   "confidence": 0.8,
    "recommended_action": "Perform a phenotypic susceptibility test for meropenem to confirm resistance.",
-   "reasoning": "Given the high percentage of resistant matches and the presence of multiple resistance determinants, it is crucial to verify the susceptibility of this isolate to meropenem through direct testing."
+   "reasoning": "Given the complex resistance profile and the presence of multiple beta-lactamases, a phenotypic test will provide critical information on the actual susceptibility of this isolate to meropenem."
   }
  },
  {
-  "isolate": "GCA_022075965.1",
+  "isolate": "GCA_000409125.1",
   "drug": "ertapenem",
-  "reason": "prediction contradicts this isolate's resistance profile \u2014 84% of its 25 closest matches were resistant",
-  "probability": 0.164,
+  "reason": "prediction contradicts this isolate's resistance profile \u2014 12% of its 25 closest matches were resistant",
+  "probability": 0.966,
   "known": [
+   "POINT:gyra",
+   "POINT:ramr",
+   "TRUNC:ompk36",
    "aac(3)",
    "aac(6')",
-   "aada",
-   "aph(4)",
+   "aph(3'')",
+   "aph(6)",
+   "blactx-m",
+   "blakpc",
+   "blaoxa",
    "blashv",
-   "cmla",
-   "emrab",
-   "fosa",
-   "oqxab",
-   "sul"
+   "cata",
+   "dfr",
+   "emrab"
   ],
   "unknown": [],
   "lead": {
-   "likely_mechanism": "The presence of multiple aminoglycoside-modifying enzymes (aac(3), aac(6'), aph(4)) suggests that this isolate may have a broad resistance mechanism affecting multiple antibiotic classes, potentially including carbapenems through indirect effects or co-resistance.",
+   "likely_mechanism": "The presence of multiple beta-lactamase genes (blaCTX-M, blaKPC, blaOXA, blaSHV) suggests that this isolate may have a high level of resistance to carbapenems, including ertapenem, due to enzymatic degradation. Additionally, the presence of aac(3) and aac(6') indicates potential aminoglycoside resistance, which may complicate treatment options.",
    "drug_classes_at_risk": [
-    "aminoglycosides",
-    "carbapenems",
-    "sulfonamides",
-    "fluoroquinolones"
+    "beta-lactams",
+    "aminoglycosides"
    ],
-   "confidence": 0.7,
-   "recommended_action": "Perform a phenotypic susceptibility test for ertapenem to confirm resistance.",
-   "reasoning": "Given the high percentage of resistant matches and the presence of multiple resistance determinants, it is prudent to confirm the resistance profile through direct testing."
+   "confidence": 0.8,
+   "recommended_action": "Perform a phenotypic susceptibility test for ertapenem and consider alternative treatment options based on the resistance profile.",
+   "reasoning": "The complex resistance determinants detected suggest a significant risk of resistance to ertapenem, which is supported by the predictor's observation of resistance in similar isolates. A phenotypic test will provide definitive susceptibility data to guide treatment."
   }
  },
  {
-  "isolate": "GCA_022075965.1",
-  "drug": "trimethoprim-sulfamethoxazole",
-  "reason": "confidence below clinical threshold",
-  "probability": 0.572,
+  "isolate": "GCA_000409125.1",
+  "drug": "piperacillin-tazobactam",
+  "reason": "prediction contradicts this isolate's resistance profile \u2014 36% of its 25 closest matches were resistant",
+  "probability": 0.853,
   "known": [
+   "POINT:gyra",
+   "POINT:ramr",
+   "TRUNC:ompk36",
    "aac(3)",
    "aac(6')",
-   "aada",
-   "aph(4)",
+   "aph(3'')",
+   "aph(6)",
+   "blactx-m",
+   "blakpc",
+   "blaoxa",
    "blashv",
-   "cmla",
-   "emrab",
-   "fosa",
-   "oqxab",
-   "sul"
+   "cata",
+   "dfr",
+   "emrab"
   ],
   "unknown": [],
   "lead": {
-   "likely_mechanism": "The presence of the sul gene suggests potential resistance to sulfonamides, while the aac and aph genes indicate possible aminoglycoside resistance mechanisms. However, the overall combination of determinants does not provide a clear picture of trimethoprim-sulfamethoxazole susceptibility.",
+   "likely_mechanism": "The presence of multiple beta-lactamase genes (blactx-m, blakpc, blaoxa) suggests that this isolate may have a significant ability to hydrolyze piperacillin-tazobactam, leading to resistance. Additionally, the presence of aminoglycoside-modifying enzymes (aac(3), aac(6'), aph(3''), aph(6)) indicates potential cross-resistance to other classes of antibiotics.",
    "drug_classes_at_risk": [
-    "sulfonamides",
+    "beta-lactams",
+    "aminoglycosides"
+   ],
+   "confidence": 0.8,
+   "recommended_action": "Perform phenotypic susceptibility testing for piperacillin-tazobactam and consider alternative treatment options based on the resistance profile.",
+   "reasoning": "Given the complex resistance determinants present, including multiple beta-lactamases, it is crucial to confirm the susceptibility of this isolate to piperacillin-tazobactam through direct testing. This will help guide appropriate therapy and avoid ineffective treatment."
+  }
+ },
+ {
+  "isolate": "GCA_000566845.1",
+  "drug": "ertapenem",
+  "reason": "only 2 resistance determinants detected where comparable isolates carry 11 \u2014 assembly may be incomplete",
+  "probability": 0.088,
+  "known": [
+   "blashv",
+   "emrab",
+   "oqxab"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The detected resistance determinants suggest potential mechanisms of beta-lactam resistance, possibly through beta-lactamase production and efflux pump activity, but the incomplete assembly raises concerns about additional resistance factors that may be present.",
+   "drug_classes_at_risk": [
+    "beta-lactams"
+   ],
+   "confidence": 0.4,
+   "recommended_action": "Perform whole genome sequencing to identify any missing resistance determinants and assess the complete resistance profile.",
+   "reasoning": "The incomplete assembly of resistance determinants indicates that there may be additional factors contributing to resistance that are not currently detected. Whole genome sequencing will provide a comprehensive view of the resistance mechanisms at play."
+  }
+ },
+ {
+  "isolate": "GCA_000566845.1",
+  "drug": "gentamicin",
+  "reason": "only 2 resistance determinants detected where comparable isolates carry 12 \u2014 assembly may be incomplete",
+  "probability": 0.138,
+  "known": [
+   "blashv",
+   "emrab",
+   "oqxab"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The detected resistance determinants suggest potential mechanisms for reduced susceptibility to aminoglycosides, but the incomplete assembly raises concerns about the presence of additional resistance genes that could further impact gentamicin efficacy.",
+   "drug_classes_at_risk": [
     "aminoglycosides"
    ],
    "confidence": 0.4,
-   "recommended_action": "Perform phenotypic susceptibility testing for trimethoprim-sulfamethoxazole.",
-   "reasoning": "Given the ambiguity in resistance determinants, direct testing will provide the most reliable information on susceptibility to trimethoprim-sulfamethoxazole."
+   "recommended_action": "Perform whole genome sequencing to identify any missing resistance determinants and assess the complete resistance profile.",
+   "reasoning": "The incomplete assembly of resistance determinants may hide critical information about the isolate's susceptibility. Understanding the full genetic context is essential for accurate treatment decisions."
+  }
+ },
+ {
+  "isolate": "GCA_002239875.1",
+  "drug": "meropenem",
+  "reason": "confidence below clinical threshold",
+  "probability": 0.56,
+  "known": [
+   "TRUNC:ramr",
+   "aac(3)",
+   "aac(6')",
+   "blactx-m",
+   "blaoxa",
+   "blashv",
+   "blatem",
+   "dfr",
+   "emrab",
+   "fosa",
+   "oqxab",
+   "qnrb",
+   "tet"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The presence of multiple beta-lactamase genes (blaCTX-M, blaOXA, blaSHV, blaTEM) suggests a potential for hydrolysis of meropenem, while aminoglycoside-modifying enzymes (aac(3), aac(6')) may indicate cross-resistance to other classes of antibiotics.",
+   "drug_classes_at_risk": [
+    "beta-lactams",
+    "aminoglycosides"
+   ],
+   "confidence": 0.6,
+   "recommended_action": "Perform phenotypic susceptibility testing for meropenem to confirm resistance or susceptibility.",
+   "reasoning": "Given the presence of several beta-lactamase genes, there is a significant risk of resistance to meropenem. Phenotypic testing will provide the most reliable information on the isolate's susceptibility profile."
+  }
+ },
+ {
+  "isolate": "GCA_002239875.1",
+  "drug": "ertapenem",
+  "reason": "confidence below clinical threshold",
+  "probability": 0.427,
+  "known": [
+   "TRUNC:ramr",
+   "aac(3)",
+   "aac(6')",
+   "blactx-m",
+   "blaoxa",
+   "blashv",
+   "blatem",
+   "dfr",
+   "emrab",
+   "fosa",
+   "oqxab",
+   "qnrb",
+   "tet"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The presence of multiple beta-lactamase genes (blaCTX-M, blaOXA, blaSHV, blaTEM) suggests a potential for hydrolysis of carbapenems, while aminoglycoside-modifying enzymes (aac(3), aac(6')) may indicate cross-resistance to other classes of antibiotics.",
+   "drug_classes_at_risk": [
+    "beta-lactams",
+    "aminoglycosides"
+   ],
+   "confidence": 0.6,
+   "recommended_action": "Perform phenotypic susceptibility testing for ertapenem to confirm resistance or susceptibility.",
+   "reasoning": "The presence of several beta-lactamase genes raises concerns about the effectiveness of ertapenem, but the exact impact on susceptibility is uncertain. Phenotypic testing will provide definitive information on the isolate's resistance profile."
+  }
+ },
+ {
+  "isolate": "GCA_002239875.1",
+  "drug": "trimethoprim-sulfamethoxazole",
+  "reason": "prediction contradicts this isolate's resistance profile \u2014 84% of its 25 closest matches were resistant",
+  "probability": 0.246,
+  "known": [
+   "TRUNC:ramr",
+   "aac(3)",
+   "aac(6')",
+   "blactx-m",
+   "blaoxa",
+   "blashv",
+   "blatem",
+   "dfr",
+   "emrab",
+   "fosa",
+   "oqxab",
+   "qnrb",
+   "tet"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The presence of the dfr gene suggests potential resistance to trimethoprim, while the ramr and other beta-lactamase genes indicate a complex resistance profile that may affect susceptibility to sulfonamides as well.",
+   "drug_classes_at_risk": [
+    "trimethoprim",
+    "sulfonamides",
+    "beta-lactams"
+   ],
+   "confidence": 0.8,
+   "recommended_action": "Perform phenotypic susceptibility testing for trimethoprim-sulfamethoxazole to confirm resistance.",
+   "reasoning": "Given the high percentage of resistant matches and the presence of resistance determinants, phenotypic testing is essential to clarify the isolate's susceptibility profile."
+  }
+ },
+ {
+  "isolate": "GCA_002239875.1",
+  "drug": "piperacillin-tazobactam",
+  "reason": "prediction contradicts this isolate's resistance profile \u2014 20% of its 25 closest matches were resistant",
+  "probability": 0.731,
+  "known": [
+   "TRUNC:ramr",
+   "aac(3)",
+   "aac(6')",
+   "blactx-m",
+   "blaoxa",
+   "blashv",
+   "blatem",
+   "dfr",
+   "emrab",
+   "fosa",
+   "oqxab",
+   "qnrb",
+   "tet"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The presence of multiple beta-lactamase genes (blactx-m, blaoxa, blashv, blatem) suggests that this isolate may have a significant ability to hydrolyze piperacillin, leading to resistance. Additionally, the presence of efflux pump genes (oqxab, qnrb) may further contribute to reduced susceptibility by actively pumping out the drug.",
+   "drug_classes_at_risk": [
+    "beta-lactams",
+    "aminoglycosides",
+    "tetracyclines",
+    "quinolones"
+   ],
+   "confidence": 0.8,
+   "recommended_action": "Perform phenotypic susceptibility testing for piperacillin-tazobactam to confirm resistance.",
+   "reasoning": "Given the complex resistance profile, including multiple beta-lactamases, it is crucial to verify the susceptibility of this isolate to piperacillin-tazobactam through direct testing."
+  }
+ },
+ {
+  "isolate": "GCA_002246035.1",
+  "drug": "gentamicin",
+  "reason": "confidence below clinical threshold",
+  "probability": 0.604,
+  "known": [
+   "POINT:gyra",
+   "aada",
+   "blactx-m",
+   "blandm",
+   "blaoxa",
+   "blashv",
+   "ble",
+   "dfr",
+   "emrab",
+   "fosa",
+   "oqxab",
+   "oqxb",
+   "sul",
+   "tet"
+  ],
+  "unknown": [],
+  "lead": {
+   "likely_mechanism": "The presence of multiple resistance determinants suggests a complex resistance profile that may involve efflux pumps and enzymatic degradation of aminoglycosides like gentamicin.",
+   "drug_classes_at_risk": [
+    "aminoglycosides",
+    "beta-lactams",
+    "sulfonamides",
+    "tetracyclines"
+   ],
+   "confidence": 0.4,
+   "recommended_action": "Perform phenotypic susceptibility testing for gentamicin to confirm resistance.",
+   "reasoning": "The predictor's inability to provide a confident interpretation indicates that the resistance mechanisms may be multifactorial and not easily predictable. Direct testing will provide the most reliable information on the isolate's susceptibility to gentamicin."
   }
  }
 ]

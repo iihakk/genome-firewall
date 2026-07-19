@@ -84,11 +84,11 @@ export default function SpecimenPage({ params }: { params: Promise<{ id: string 
             )}
 
             <SectionLabel>Predicted susceptibility</SectionLabel>
-            <div className="grid grid-cols-[1fr_128px_120px_92px_16px] items-center gap-3 border-b border-line pb-2 text-[11px] font-semibold text-faint">
+            <div className="grid grid-cols-[196px_136px_1fr_150px_44px] items-center gap-3 border-b border-line pb-2 text-[11px] font-semibold text-faint">
               <span>Antibiotic</span>
               <span>Call</span>
               <span>Confidence</span>
-              <span className="text-right">Lookup says</span>
+              <span className="text-right">Driver</span>
               <span />
             </div>
 
@@ -221,10 +221,15 @@ function DrugRow({
   const [reason, setReason] = useState("");
   const [to, setTo] = useState<Call>("RESISTANT");
   const excluded = EXCLUDED_DRUGS[d.drug];
+  // The determinant actually carrying this call — what a clinician wants to see at a glance.
+  const driver = d.evidence.filter((e) => e.present).sort(
+    (a, b) => Math.abs(b.contribution) - Math.abs(a.contribution),
+  )[0];
+  const driverInvisible = Boolean(driver?.invisibleToLookup);
 
   return (
     <div className="group/row border-b border-line last:border-0">
-      <div className="grid grid-cols-[1fr_128px_120px_92px_16px] items-center gap-3 py-3">
+      <div className="grid grid-cols-[196px_136px_1fr_150px_44px] items-center gap-3 py-3">
         <button onClick={onOpen} className="flex items-center gap-2 text-left text-[13.5px] font-medium hover:text-accent">
           {d.drug}
           {excluded && (
@@ -240,30 +245,60 @@ function DrugRow({
         </button>
         <CallChip call={d.call} />
         <Meter value={d.probability} call={d.call} />
-        <span
-          className={`tnum text-right font-mono text-[11.5px] ${
-            d.lookupDangerouslyWrong ? "font-bold text-resistant" : "text-faint"
-          }`}
-        >
-          {d.lookupSays ? d.lookupSays.charAt(0) + d.lookupSays.slice(1).toLowerCase() : "—"}
+        <span className="flex justify-end">
+          {driver ? (
+            <span
+              title={
+                driverInvisible
+                  ? "A chromosomal mechanism. Gene-presence methods cannot detect this."
+                  : driver.clinical
+              }
+              className={`truncate rounded px-1.5 py-0.5 font-mono text-[11px] ${
+                driverInvisible
+                  ? "bg-accent-soft text-accent ring-1 ring-accent-line"
+                  : "text-faint"
+              }`}
+            >
+              {prettyToken(driver.token)}
+            </span>
+          ) : (
+            <span className="font-mono text-[11px] text-faint">—</span>
+          )}
         </span>
-        <button onClick={onOpen} className="text-faint hover:text-accent" aria-label="Evidence">
-          ›
-        </button>
+        <span className="flex items-center justify-end gap-1">
+          {canEdit && (
+            <button
+              onClick={onEdit}
+              title="Override this call"
+              aria-label={`Override ${d.drug}`}
+              className="rounded p-0.5 text-faint opacity-0 transition-opacity duration-150 group-hover/row:opacity-100 hover:text-accent focus-visible:opacity-100"
+            >
+              <svg className="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+                <path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />
+              </svg>
+            </button>
+          )}
+          <button onClick={onOpen} className="text-faint hover:text-accent" aria-label="Evidence">
+            ›
+          </button>
+        </span>
       </div>
 
       {d.lookupDangerouslyWrong && (
         <div className="flex items-start gap-2 pb-3 text-[11.5px] text-resistant">
           <WarnIcon className="mt-0.5 size-3.5 shrink-0" />
           <span>
-            Lookup reports susceptible — no acquired determinant. Truth: resistant.
-            {d.evidence.find((e) => e.invisibleToLookup && e.present) && (
+            {driverInvisible ? (
               <>
-                {" "}
-                Driver:{" "}
-                <span className="font-mono">
-                  {prettyToken(d.evidence.find((e) => e.invisibleToLookup && e.present)!.token)}
-                </span>
+                Driven by a chromosomal mechanism (
+                <span className="font-mono">{prettyToken(driver.token)}</span>), which methods that
+                screen only for acquired genes cannot detect.
+              </>
+            ) : (
+              <>
+                No determinant in the reference rule set matches this isolate, so a rule-based method
+                reports it susceptible. This call rests on the wider resistance profile rather than a
+                single named gene — weaker evidence, and worth confirming.
               </>
             )}
           </span>
@@ -281,40 +316,29 @@ function DrugRow({
         </div>
       )}
 
-      {canEdit && (
-        <div className="pb-3">
-          {!editing ? (
-            <button
-              onClick={onEdit}
-              className="text-[11.5px] text-faint opacity-0 transition-opacity duration-150 group-hover/row:opacity-100 hover:text-accent focus-visible:opacity-100"
-            >
-              Override this call
-            </button>
-          ) : (
-            <div className="flex flex-wrap items-center gap-2 rounded-[10px] bg-surface-2 p-3">
-              <select
-                value={to}
-                onChange={(e) => setTo(e.target.value as Call)}
-                className="rounded-[8px] border border-line bg-surface px-2.5 py-1.5 text-[12.5px]"
-              >
-                <option value="RESISTANT">Resistant</option>
-                <option value="SUSCEPTIBLE">Susceptible</option>
-                <option value="INDETERMINATE">Deferred</option>
-              </select>
-              <input
-                value={reason}
-                onChange={(e) => setReason(e.target.value)}
-                placeholder="Reason (required)"
-                className="min-w-[220px] flex-1 rounded-[8px] border border-line bg-surface px-2.5 py-1.5 text-[12.5px]"
-              />
-              <Button disabled={!reason.trim()} onClick={() => onOverride(to, reason.trim())}>
-                Record override
-              </Button>
-              <Button variant="ghost" onClick={onEdit}>
-                Cancel
-              </Button>
-            </div>
-          )}
+      {editing && (
+        <div className="flex flex-wrap items-center gap-2 rounded-[10px] bg-surface-2 p-3 mb-3">
+          <select
+            value={to}
+            onChange={(e) => setTo(e.target.value as Call)}
+            className="rounded-[8px] border border-line bg-surface px-2.5 py-1.5 text-[12.5px]"
+          >
+            <option value="RESISTANT">Resistant</option>
+            <option value="SUSCEPTIBLE">Susceptible</option>
+            <option value="INDETERMINATE">Deferred</option>
+          </select>
+          <input
+            value={reason}
+            onChange={(e) => setReason(e.target.value)}
+            placeholder="Reason (required, recorded in the audit trail)"
+            className="min-w-[260px] flex-1 rounded-[8px] border border-line bg-surface px-2.5 py-1.5 text-[12.5px]"
+          />
+          <Button disabled={!reason.trim()} onClick={() => onOverride(to, reason.trim())}>
+            Record override
+          </Button>
+          <Button variant="ghost" onClick={onEdit}>
+            Cancel
+          </Button>
         </div>
       )}
     </div>

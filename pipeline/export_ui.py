@@ -155,12 +155,44 @@ def main():
                            determinants=sorted(feats[g]),
                            drugs=rec, _res=n_res, _ind=n_ind, _disc=n_disc))
 
-    # Prefer isolates that demonstrate something: a discordance, an abstention, and a drug that
-    # still works. An all-resistant panel hides the clinical value, which is finding the survivor.
-    def score(i):
-        mixed = any(d["call"] == "SUSCEPTIBLE" for d in i["drugs"])
-        return (-(i["_disc"] > 0), -(i["_ind"] > 0), -mixed, -i["_res"])
-    demo = sorted(scored, key=score)[:N_DEMO]
+    # Sample REPRESENTATIVELY, not favourably.
+    #
+    # An earlier version sorted isolates carrying a lookup failure and a deferral to the top,
+    # which put both flags on 100% of the demo set. A flag that fires on every record carries no
+    # information and makes the system look broken. The demo should show the true mix, including
+    # the ordinary isolates where everything agrees.
+    n_disc = sum(1 for i in scored if i["_disc"] > 0)
+    n_ind = sum(1 for i in scored if i["_ind"] > 0)
+    print(f"   population: {100*n_disc/len(scored):.0f}% have >=1 lookup failure, "
+          f"{100*n_ind/len(scored):.0f}% have >=1 deferral (n={len(scored)})")
+
+    # Proportional strata, so the demo mirrors the bench rather than flattering it.
+    strata = {
+        "both": [i for i in scored if i["_disc"] > 0 and i["_ind"] > 0],
+        "disc_only": [i for i in scored if i["_disc"] > 0 and i["_ind"] == 0],
+        "ind_only": [i for i in scored if i["_disc"] == 0 and i["_ind"] > 0],
+        "clean": [i for i in scored if i["_disc"] == 0 and i["_ind"] == 0],
+    }
+    demo, used = [], set()
+    for name, pool in strata.items():
+        share = len(pool) / max(len(scored), 1)
+        take = max(1, round(share * N_DEMO)) if pool else 0
+        # Within a stratum prefer isolates where at least one drug still works — an all-resistant
+        # panel hides the clinical value, which is finding the survivor.
+        pool = sorted(pool, key=lambda i: -any(d["call"] == "SUSCEPTIBLE" for d in i["drugs"]))
+        for i in pool[:take]:
+            if i["genome_id"] not in used:
+                used.add(i["genome_id"])
+                demo.append(i)
+    for i in scored:
+        if len(demo) >= N_DEMO:
+            break
+        if i["genome_id"] not in used:
+            used.add(i["genome_id"])
+            demo.append(i)
+    demo = demo[:N_DEMO]
+    print(f"   demo mix: {sum(1 for i in demo if i['_disc']>0)} with a lookup failure, "
+          f"{sum(1 for i in demo if i['_ind']>0)} with a deferral, of {len(demo)}")
 
     for iso in demo:
         for d in iso["drugs"]:

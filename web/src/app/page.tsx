@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { PageHeader } from "@/components/Rail";
 import { Button, Card, Chip, Dot, Stat, relTime } from "@/components/ui";
@@ -24,6 +25,38 @@ const STATUS_LABEL: Record<
   reconciled: { text: "Reconciled", glyph: "✓", tone: "susceptible" },
 };
 
+/** Carbapenems are the last line. Resistance here is an infection-control event, not a data point. */
+const LAST_LINE = ["meropenem", "ertapenem", "imipenem"];
+
+/** Worklist flags answer one question: what does this specimen need from me next?
+ *
+ *  An earlier version flagged "genotype lookup would fail here", which is a claim about a
+ *  competing method rather than a clinical instruction — useful when evaluating the system,
+ *  useless when triaging a bench. That comparison now lives on Validation and Reconciliation,
+ *  where a reader is actually assessing the tool.
+ */
+function triage(s: Specimen) {
+  const flags: { label: string; tone: "resistant" | "deferred" | "accent"; glyph: string }[] = [];
+
+  const carbR = s.drugs.filter((d) => LAST_LINE.includes(d.drug) && d.call === "RESISTANT").length;
+  if (carbR > 0)
+    flags.push({ label: "Carbapenem-resistant", tone: "resistant", glyph: "!" });
+
+  const resistant = s.drugs.filter((d) => d.call === "RESISTANT").length;
+  const called = s.drugs.filter((d) => d.call !== "INDETERMINATE").length;
+  if (carbR === 0 && called > 0 && resistant / called >= 0.6)
+    flags.push({ label: "Multi-drug resistant", tone: "resistant", glyph: "!" });
+
+  const deferred = s.drugs.filter((d) => d.call === "INDETERMINATE").length;
+  if (deferred > 0)
+    flags.push({ label: `${deferred} awaiting culture`, tone: "deferred", glyph: "?" });
+
+  const novel = s.drugs.some((d) => d.reason?.includes("unrecognised"));
+  if (novel) flags.push({ label: "Unrecognised machinery", tone: "accent", glyph: "◆" });
+
+  return flags;
+}
+
 export default function Worklist() {
   const { rows, ready } = useSpecimens();
   const [filter, setFilter] = useState<"all" | SpecimenStatus>("all");
@@ -34,7 +67,9 @@ export default function Worklist() {
   );
 
   const inReview = rows.filter((s) => s.status === "review").length;
-  const flagged = rows.filter((s) => s.drugs.some((d) => d.lookupDangerouslyWrong)).length;
+  const critical = rows.filter((s) =>
+    s.drugs.some((d) => LAST_LINE.includes(d.drug) && d.call === "RESISTANT"),
+  ).length;
 
   return (
     <>
@@ -52,24 +87,33 @@ export default function Worklist() {
       />
 
       <div className="stagger mb-6 grid grid-cols-4 gap-4">
-        <Stat value={rows.length} label="specimens in the system" note={`${inReview} awaiting review`} />
-        <Stat
-          value={`${Math.round(META.deferral.mean_deferral * 100)}%`}
-          label="deferred to culture"
-          note="within expected range"
-          tone="deferred"
-        />
-        <Stat
-          value={META.deferral.answered_accuracy.toFixed(3)}
-          label="accuracy on answered cases"
-          note={`+${META.deferral.accuracy_gain} vs forced answer`}
-        />
-        <Stat
-          value={flagged}
-          label="specimens where genotype lookup would fail"
-          note="each reviewed individually"
-          tone="resistant"
-        />
+        {[
+          <Stat key="a" value={rows.length} label="specimens in the system" note={`${inReview} awaiting review`} />,
+          <Stat
+            key="b"
+            value={critical}
+            label="carbapenem-resistant isolates"
+            note="infection control notified"
+            tone="resistant"
+          />,
+          <Stat
+            key="c"
+            value={`${Math.round(META.deferral.mean_deferral * 100)}%`}
+            label="of results deferred to culture"
+            note="within expected range"
+            tone="deferred"
+          />,
+          <Stat
+            key="d"
+            value={META.deferral.answered_accuracy.toFixed(3)}
+            label="accuracy on answered cases"
+            note={`+${META.deferral.accuracy_gain} vs forced answer`}
+          />,
+        ].map((el, i) => (
+          <div key={i} style={{ animationDelay: `${i * 45}ms` }}>
+            {el}
+          </div>
+        ))}
       </div>
 
       <Card pad={false} className="overflow-hidden">
@@ -99,16 +143,18 @@ export default function Worklist() {
         <table className="w-full">
           <thead>
             <tr className="border-b border-line">
-              {["Accession", "Organism", "Source", "Ward", "Status", "Flags", "Received"].map((h) => (
-                <th key={h} className="px-5 py-2.5 text-left text-[11.5px] font-semibold text-faint">
-                  {h}
-                </th>
-              ))}
+              {["Accession", "Organism", "Source", "Ward", "Status", "Needs attention", "Received"].map(
+                (h) => (
+                  <th key={h} className="px-5 py-2.5 text-left text-[11.5px] font-semibold text-faint">
+                    {h}
+                  </th>
+                ),
+              )}
             </tr>
           </thead>
-          <tbody className={ready ? "stagger" : ""}>
-            {shown.map((s) => (
-              <Row key={s.id} s={s} />
+          <tbody>
+            {shown.map((s, i) => (
+              <Row key={s.id} s={s} index={i} animate={ready} />
             ))}
             {shown.length === 0 && (
               <tr>
@@ -126,20 +172,36 @@ export default function Worklist() {
   );
 }
 
-function Row({ s }: { s: Specimen }) {
+function Row({ s, index, animate }: { s: Specimen; index: number; animate: boolean }) {
+  const router = useRouter();
   const st = STATUS_LABEL[s.status];
-  const danger = s.drugs.filter((d) => d.lookupDangerouslyWrong).length;
-  const deferred = s.drugs.filter((d) => d.call === "INDETERMINATE").length;
+  const flags = triage(s);
+  const href = `/specimen/${s.id}`;
 
   return (
-    <tr className="group border-b border-line transition-colors duration-150 last:border-0 hover:bg-surface-2">
+    <tr
+      onClick={() => router.push(href)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          router.push(href);
+        }
+      }}
+      tabIndex={0}
+      role="link"
+      aria-label={`Open ${s.accession}`}
+      className={`group cursor-pointer border-b border-line transition-colors duration-150 last:border-0 hover:bg-surface-2 focus-visible:bg-surface-2 ${
+        animate ? "stagger-row" : ""
+      }`}
+      style={animate ? { animation: "rise 0.45s var(--ease-out) backwards", animationDelay: `${index * 35}ms` } : undefined}
+    >
       <td className="px-5 py-3.5">
-        <Link href={`/specimen/${s.id}`} className="flex items-center gap-2.5">
+        <span className="flex items-center gap-2.5">
           <Dot urgent={s.priority === "urgent"} />
           <span className="font-mono text-[12.5px] font-medium group-hover:text-accent">
             {s.accession}
           </span>
-        </Link>
+        </span>
       </td>
       <td className="px-5 py-3.5 text-[13px] italic">{s.organism}</td>
       <td className="px-5 py-3.5 text-[13px] text-muted">{s.source}</td>
@@ -154,23 +216,15 @@ function Row({ s }: { s: Specimen }) {
       </td>
       <td className="px-5 py-3.5">
         <div className="flex flex-wrap gap-1.5">
-          {danger > 0 && (
-            <Chip tone="resistant">
+          {flags.map((f) => (
+            <Chip key={f.label} tone={f.tone}>
               <span className="font-mono text-[10px]" aria-hidden>
-                !
+                {f.glyph}
               </span>
-              Lookup fails ×{danger}
+              {f.label}
             </Chip>
-          )}
-          {deferred > 0 && (
-            <Chip tone="deferred">
-              <span className="font-mono text-[10px]" aria-hidden>
-                ?
-              </span>
-              {deferred} deferred
-            </Chip>
-          )}
-          {danger === 0 && deferred === 0 && <span className="text-[12px] text-faint">—</span>}
+          ))}
+          {flags.length === 0 && <span className="text-[12px] text-faint">—</span>}
         </div>
       </td>
       <td className="tnum px-5 py-3.5 font-mono text-[12px] text-muted">{relTime(s.receivedAt)}</td>

@@ -136,25 +136,9 @@
 }
 
 .stagger > * {
-  animation: rise 0.5s var(--ease-out) backwards;
-}
-.stagger > *:nth-child(1) {
-  animation-delay: 0.02s;
-}
-.stagger > *:nth-child(2) {
-  animation-delay: 0.06s;
-}
-.stagger > *:nth-child(3) {
-  animation-delay: 0.1s;
-}
-.stagger > *:nth-child(4) {
-  animation-delay: 0.14s;
-}
-.stagger > *:nth-child(5) {
-  animation-delay: 0.18s;
-}
-.stagger > *:nth-child(6) {
-  animation-delay: 0.22s;
+  animation: rise 0.45s var(--ease-out) backwards;
+  /* Delay is set inline per index so the effect covers a list of any length.
+     A fixed set of nth-child rules only animated the first handful. */
 }
 
 @media (prefers-reduced-motion: reduce) {
