@@ -171,7 +171,7 @@ tr.dim td.n{color:var(--faint)}
   <section class="slide">
     <div class="eyebrow">Evaluation · we audited our own results</div>
     <h1>Every accuracy number is guilty until proven</h1>
-    <div class="sub">Both panels are stress tests we ran against ourselves. On the right is a method we deleted.</div>
+    <div class="sub">Two stress tests we ran against our own results. Both cost us something.</div>
     <div class="body">
       <div class="cols">
         <div class="panel">
@@ -183,14 +183,14 @@ tr.dim td.n{color:var(--faint)}
           </div>
           <div class="verdict"><b>Verdict: survives.</b> Near-identical clones straddle a random split, so we grouped by genotype and quarantined 273 isolates before modelling. It barely moved.</div>
         </div>
-        <div class="panel danger">
-          <h3>Test 2 — protein embeddings <span style="color:var(--red)">(not shipped)</span></h3>
+        <div class="panel">
+          <h3>Test 2 — is the baseline we beat a fair one?</h3>
           <div class="cmp">
-            <div><div class="num bad">0.955</div><div class="numlab">naive cross-validation</div></div>
+            <div><div class="num mute">+0.165</div><div class="numlab">vs our first baseline</div></div>
             <div class="vs">vs</div>
-            <div><div class="num bad">0.451</div><div class="numlab">split by protein family</div></div>
+            <div><div class="num good">+0.047</div><div class="numlab">vs a repaired baseline<br><b style="color:var(--accent)">← the gain we claim</b></div></div>
           </div>
-          <div class="verdict"><b>Verdict: killed.</b> +0.504 was pure leakage — homologous proteins on both sides of the split. A coin flip scores 0.5. We deleted the feature.</div>
+          <div class="verdict"><b>Verdict: we were flattering ourselves.</b> Three rules fired on 92–98% of isolates, or none. Beating a crippled baseline is not a result — so we added a coverage guard and gave back two thirds of our own advantage.</div>
         </div>
       </div>
     </div>
