@@ -1,0 +1,7353 @@
+{
+ "Multiple antibiotic resistance protein MarB": {
+  "input": "Multiple antibiotic resistance protein MarB",
+  "family": "mar",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Undecaprenyl phosphate-aminoarabinose flippase subunit ArnF": {
+  "input": "Undecaprenyl phosphate-aminoarabinose flippase subunit ArnF",
+  "family": "arn",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.7
+ },
+ "1-deoxy-D-xylulose 5-phosphate reductoisomerase (EC 1.1.1.267)": {
+  "input": "1-deoxy-D-xylulose 5-phosphate reductoisomerase (EC 1.1.1.267)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Outer membrane porin OmpC": {
+  "input": "Outer membrane porin OmpC",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug resistance protein MdtG": {
+  "input": "Multidrug resistance protein MdtG",
+  "family": "mdt",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "DNA-binding transcriptional dual regulator SoxS": {
+  "input": "DNA-binding transcriptional dual regulator SoxS",
+  "family": "sox",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Outer membrane channel TolC (OpmH)": {
+  "input": "Outer membrane channel TolC (OpmH)",
+  "family": "tolC",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "DNA-binding protein H-NS": {
+  "input": "DNA-binding protein H-NS",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycosides efflux system AcrAD-TolC, inner-membrane proton/drug antiporter AcrD (RND type)": {
+  "input": "Aminoglycosides efflux system AcrAD-TolC, inner-membrane proton/drug antiporter AcrD (RND type)",
+  "family": "acr",
+  "kind": "efflux",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.8
+ },
+ "AcrZ membrane protein associated with AcrAB-TolC multidrug efflux pump": {
+  "input": "AcrZ membrane protein associated with AcrAB-TolC multidrug efflux pump",
+  "family": "acr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Prolyl endopeptidase (EC 3.4.21.26)": {
+  "input": "Prolyl endopeptidase (EC 3.4.21.26)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcriptional regulator, MarR family": {
+  "input": "Transcriptional regulator, MarR family",
+  "family": "mar",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Undecaprenyl-phosphate 4-deoxy-4-formamido-L-arabinose transferase (EC 2.4.2.53)": {
+  "input": "Undecaprenyl-phosphate 4-deoxy-4-formamido-L-arabinose transferase (EC 2.4.2.53)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system EmrAB-OMF, inner-membrane proton/drug antiporter EmrB (MFS type)": {
+  "input": "Multidrug efflux system EmrAB-OMF, inner-membrane proton/drug antiporter EmrB (MFS type)",
+  "family": "emr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "SSU ribosomal protein S12p (S23e)": {
+  "input": "SSU ribosomal protein S12p (S23e)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux pump MdtM (of MFS type)": {
+  "input": "Multidrug efflux pump MdtM (of MFS type)",
+  "family": "mdt",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "Carbohydrate-selective porin OprB": {
+  "input": "Carbohydrate-selective porin OprB",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system AcrAB-TolC, inner-membrane proton/drug antiporter AcrB (RND type)": {
+  "input": "Multidrug efflux system AcrAB-TolC, inner-membrane proton/drug antiporter AcrB (RND type)",
+  "family": "acr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Multidrug efflux system MdtABC-TolC, inner-membrane proton/drug antiporter MdtB (RND type)": {
+  "input": "Multidrug efflux system MdtABC-TolC, inner-membrane proton/drug antiporter MdtB (RND type)",
+  "family": "mdt",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Transcriptional regulator of acrAB operon, AcrR": {
+  "input": "Transcriptional regulator of acrAB operon, AcrR",
+  "family": "acr",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Glyoxalase family protein": {
+  "input": "Glyoxalase family protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "16S rRNA (guanine(527)-N(7))-methyltransferase (EC 2.1.1.170)": {
+  "input": "16S rRNA (guanine(527)-N(7))-methyltransferase (EC 2.1.1.170)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system MdtABC-TolC, membrane fusion component MdtA": {
+  "input": "Multidrug efflux system MdtABC-TolC, membrane fusion component MdtA",
+  "family": "mdt",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Macrolide export ATP-binding/permease protein MacB": {
+  "input": "Macrolide export ATP-binding/permease protein MacB",
+  "family": "mac",
+  "kind": "efflux",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.7
+ },
+ "MFS-type transporter => TcuC": {
+  "input": "MFS-type transporter => TcuC",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "LysR family transcriptional activator LeuO": {
+  "input": "LysR family transcriptional activator LeuO",
+  "family": "lysR",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "RND efflux system, membrane fusion protein": {
+  "input": "RND efflux system, membrane fusion protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Response regulator BaeR": {
+  "input": "Response regulator BaeR",
+  "family": "bae",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "D-alanine--D-alanine ligase (EC 6.3.2.4)": {
+  "input": "D-alanine--D-alanine ligase (EC 6.3.2.4)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Translation elongation factor Tu": {
+  "input": "Translation elongation factor Tu",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Cob(I)alamin adenosyltransferase (EC 2.5.1.17)": {
+  "input": "Cob(I)alamin adenosyltransferase (EC 2.5.1.17)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => SHV family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => SHV family",
+  "family": "blaSHV",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Multidrug efflux pump MdfA/Cmr (of MFS type), broad spectrum": {
+  "input": "Multidrug efflux pump MdfA/Cmr (of MFS type), broad spectrum",
+  "family": "mdf",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Two-component system response regulator OmpR": {
+  "input": "Two-component system response regulator OmpR",
+  "family": "ompR",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "UDP-4-amino-4-deoxy-L-arabinose formyltransferase (EC 2.1.2.13) / UDP-glucuronic acid oxidase (UDP-4-keto-hexauronic acid decarboxylating) (EC 1.1.1.305)": {
+  "input": "UDP-4-amino-4-deoxy-L-arabinose formyltransferase (EC 2.1.2.13) / UDP-glucuronic acid oxidase (UDP-4-keto-hexauronic acid decarboxylating) (EC 1.1.1.305)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "SSU ribosomal protein S10p (S20e)": {
+  "input": "SSU ribosomal protein S10p (S20e)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system AcrAB-TolC, membrane fusion component AcrA": {
+  "input": "Multidrug efflux system AcrAB-TolC, membrane fusion component AcrA",
+  "family": "acr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => CTX-M family, extended-spectrum": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => CTX-M family, extended-spectrum",
+  "family": "blaCTX-M",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Multiple antibiotic resistance protein MarA": {
+  "input": "Multiple antibiotic resistance protein MarA",
+  "family": "mar",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "putative acetyltransferase": {
+  "input": "putative acetyltransferase",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcription termination factor Rho": {
+  "input": "Transcription termination factor Rho",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase (EC 2.7.8.5)": {
+  "input": "CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase (EC 2.7.8.5)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Osmolarity sensory histidine kinase EnvZ": {
+  "input": "Osmolarity sensory histidine kinase EnvZ",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "UDP-N-acetylglucosamine 1-carboxyvinyltransferase (EC 2.5.1.7)": {
+  "input": "UDP-N-acetylglucosamine 1-carboxyvinyltransferase (EC 2.5.1.7)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => TEM family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => TEM family",
+  "family": "blaTEM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 1
+ },
+ "DNA gyrase subunit A (EC 5.99.1.3)": {
+  "input": "DNA gyrase subunit A (EC 5.99.1.3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Sensory histidine kinase BaeS": {
+  "input": "Sensory histidine kinase BaeS",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Multidrug efflux pump EmrD (of MFS type)": {
+  "input": "Multidrug efflux pump EmrD (of MFS type)",
+  "family": "emrAB",
+  "kind": "efflux",
+  "drugs": [
+   "multidrug"
+  ],
+  "confidence": 0.9
+ },
+ "Undecaprenyl-diphosphatase (EC 3.6.1.27)": {
+  "input": "Undecaprenyl-diphosphatase (EC 3.6.1.27)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)": {
+  "input": "DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "hypothetical protein": {
+  "input": "hypothetical protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Putative multidrug resistance outer membrane protein MdtQ": {
+  "input": "Putative multidrug resistance outer membrane protein MdtQ",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Kdo2-lipid A phosphoethanolamine transferase EptB (EC 2.7.8.42)": {
+  "input": "Kdo2-lipid A phosphoethanolamine transferase EptB (EC 2.7.8.42)",
+  "family": "eptB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "Cyclic AMP receptor protein": {
+  "input": "Cyclic AMP receptor protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "LPS-assembly protein LptD @ Organic solvent tolerance protein precursor": {
+  "input": "LPS-assembly protein LptD @ Organic solvent tolerance protein precursor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "DNA topoisomerase IV subunit A (EC 5.99.1.3)": {
+  "input": "DNA topoisomerase IV subunit A (EC 5.99.1.3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux transporter MdtK/NorM (MATE family)": {
+  "input": "Multidrug efflux transporter MdtK/NorM (MATE family)",
+  "family": "mdtK",
+  "kind": "efflux",
+  "drugs": [
+   "multidrug"
+  ],
+  "confidence": 0.9
+ },
+ "DNA topoisomerase IV subunit B (EC 5.99.1.3)": {
+  "input": "DNA topoisomerase IV subunit B (EC 5.99.1.3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "AsmA protein": {
+  "input": "AsmA protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcriptional regulator SlyA": {
+  "input": "Transcriptional regulator SlyA",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "SSU rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase (EC 2.1.1.182)": {
+  "input": "SSU rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase (EC 2.1.1.182)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Hybrid sensory histidine kinase in two-component regulatory system with EvgA": {
+  "input": "Hybrid sensory histidine kinase in two-component regulatory system with EvgA",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Alanine racemase (EC 5.1.1.1)": {
+  "input": "Alanine racemase (EC 5.1.1.1)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Lipid A phosphoethanolamine transferase EptA/PmrC (EC 2.7.8.43)": {
+  "input": "Lipid A phosphoethanolamine transferase EptA/PmrC (EC 2.7.8.43)",
+  "family": "eptA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "Multidrug efflux system MdtABC-TolC, inner-membrane proton/drug antiporter MdtC (RND type)": {
+  "input": "Multidrug efflux system MdtABC-TolC, inner-membrane proton/drug antiporter MdtC (RND type)",
+  "family": "mdtABC",
+  "kind": "efflux",
+  "drugs": [
+   "multidrug"
+  ],
+  "confidence": 0.9
+ },
+ "Dihydropteroate synthase (EC 2.5.1.15)": {
+  "input": "Dihydropteroate synthase (EC 2.5.1.15)",
+  "family": "sul",
+  "kind": "acquired_gene",
+  "drugs": [
+   "sulfonamide"
+  ],
+  "confidence": 0.8
+ },
+ "Positive transcription regulator EvgA": {
+  "input": "Positive transcription regulator EvgA",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Outer membrane protein A precursor": {
+  "input": "Outer membrane protein A precursor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Hexose phosphate transport protein UhpT": {
+  "input": "Hexose phosphate transport protein UhpT",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcriptional regulator, MarR family / Acetyltransferase (GNAT)": {
+  "input": "Transcriptional regulator, MarR family / Acetyltransferase (GNAT)",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Signal transduction protein PmrD, part of PhoPQ-PmrD-PmrAB multicomponent regulatory system": {
+  "input": "Signal transduction protein PmrD, part of PhoPQ-PmrD-PmrAB multicomponent regulatory system",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "DNA gyrase subunit B (EC 5.99.1.3)": {
+  "input": "DNA gyrase subunit B (EC 5.99.1.3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Glycerophosphoryl diester phosphodiesterase (EC 3.1.4.46)": {
+  "input": "Glycerophosphoryl diester phosphodiesterase (EC 3.1.4.46)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Outer membrane porin OmpF": {
+  "input": "Outer membrane porin OmpF",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Fosmidomycin resistance protein": {
+  "input": "Fosmidomycin resistance protein",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "Inner membrane protein YbaL, KefB/KefC family": {
+  "input": "Inner membrane protein YbaL, KefB/KefC family",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system EmrAB-OMF, membrane fusion component EmrA": {
+  "input": "Multidrug efflux system EmrAB-OMF, membrane fusion component EmrA",
+  "family": "emrAB",
+  "kind": "efflux",
+  "drugs": [
+   "multidrug"
+  ],
+  "confidence": 0.9
+ },
+ "Macrolide-specific efflux protein MacA": {
+  "input": "Macrolide-specific efflux protein MacA",
+  "family": "macA",
+  "kind": "efflux",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "Outer membrane low permeability porin, OprD family => OccD6/OprQ involved in adhesion": {
+  "input": "Outer membrane low permeability porin, OprD family => OccD6/OprQ involved in adhesion",
+  "family": "oprD",
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Redox-sensitive transcriptional activator SoxR": {
+  "input": "Redox-sensitive transcriptional activator SoxR",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "UDP-4-amino-4-deoxy-L-arabinose--oxoglutarate aminotransferase (EC 2.6.1.87)": {
+  "input": "UDP-4-amino-4-deoxy-L-arabinose--oxoglutarate aminotransferase (EC 2.6.1.87)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "3-oxoacyl-[acyl-carrier-protein] synthase, KASII (EC 2.3.1.179)": {
+  "input": "3-oxoacyl-[acyl-carrier-protein] synthase, KASII (EC 2.3.1.179)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Translation elongation factor G": {
+  "input": "Translation elongation factor G",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Small multidrug resistance (SMR) efflux transporter => SugE, quaternary ammonium compounds": {
+  "input": "Small multidrug resistance (SMR) efflux transporter => SugE, quaternary ammonium compounds",
+  "family": "smr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Fosfomycin resistance protein FosA": {
+  "input": "Fosfomycin resistance protein FosA",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "RND efflux system, inner membrane transporter": {
+  "input": "RND efflux system, inner membrane transporter",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Cell division protein FtsI [Peptidoglycan synthetase] (EC 2.4.1.129)": {
+  "input": "Cell division protein FtsI [Peptidoglycan synthetase] (EC 2.4.1.129)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Sensor histidine kinase PhoQ (EC 2.7.13.3)": {
+  "input": "Sensor histidine kinase PhoQ (EC 2.7.13.3)",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Multidrug efflux system AcrEF-TolC, membrane fusion component AcrE": {
+  "input": "Multidrug efflux system AcrEF-TolC, membrane fusion component AcrE",
+  "family": "acrEF",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multiple antibiotic resistance protein MarR": {
+  "input": "Multiple antibiotic resistance protein MarR",
+  "family": "marA",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug resistance transporter => Bicyclomycin resistance protein Bcr-1": {
+  "input": "Multidrug resistance transporter => Bicyclomycin resistance protein Bcr-1",
+  "family": "bcr-1",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Dihydrofolate reductase (EC 1.5.1.3)": {
+  "input": "Dihydrofolate reductase (EC 1.5.1.3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system AcrEF-TolC, inner-membrane proton/drug antiporter AcrF (RND type)": {
+  "input": "Multidrug efflux system AcrEF-TolC, inner-membrane proton/drug antiporter AcrF (RND type)",
+  "family": "acrEF",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "DNA-directed RNA polymerase beta' subunit (EC 2.7.7.6)": {
+  "input": "DNA-directed RNA polymerase beta' subunit (EC 2.7.7.6)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycoside 3''-nucleotidyltransferase (EC 2.7.7.-) => ANT(3'')-Ia (AadA family)": {
+  "input": "Aminoglycoside 3''-nucleotidyltransferase (EC 2.7.7.-) => ANT(3'')-Ia (AadA family)",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Glyoxalase/bleomycin resistance protein/dioxygenase": {
+  "input": "Glyoxalase/bleomycin resistance protein/dioxygenase",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => KPC family, carbapenem-hydrolyzing": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => KPC family, carbapenem-hydrolyzing",
+  "family": "blaKPC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "Multidrug resistance regulator EmrR (MprA)": {
+  "input": "Multidrug resistance regulator EmrR (MprA)",
+  "family": "emrR",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Two-component transcriptional regulatory protein BasR/PmrA (activated by BasS/PmrB)": {
+  "input": "Two-component transcriptional regulatory protein BasR/PmrA (activated by BasS/PmrB)",
+  "family": "pmrA",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Isoleucyl-tRNA synthetase (EC 6.1.1.5)": {
+  "input": "Isoleucyl-tRNA synthetase (EC 6.1.1.5)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Copper sensory histidine kinase CpxA": {
+  "input": "Copper sensory histidine kinase CpxA",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Probable acrEF/envCD operon repressor EnvR": {
+  "input": "Probable acrEF/envCD operon repressor EnvR",
+  "family": "acrEF",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Spermidine export protein MdtJ": {
+  "input": "Spermidine export protein MdtJ",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-1 family": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-1 family",
+  "family": "blaOXA-1",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "Pentapeptide repeat protein QnrB family => Quinolone resistance protein QnrB10": {
+  "input": "Pentapeptide repeat protein QnrB family => Quinolone resistance protein QnrB10",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "Aminoglycoside 3''-phosphotransferase (EC 2.7.1.87) => APH(3'')-I": {
+  "input": "Aminoglycoside 3''-phosphotransferase (EC 2.7.1.87) => APH(3'')-I",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Sensor protein BasS/PmrB (activates BasR/PmrA)": {
+  "input": "Sensor protein BasS/PmrB (activates BasR/PmrA)",
+  "family": "pmrB",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Catalase-peroxidase KatG (EC 1.11.1.21)": {
+  "input": "Catalase-peroxidase KatG (EC 1.11.1.21)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "4-deoxy-4-formamido-L-arabinose-phosphoundecaprenol deformylase ArnD (EC 3.5.1.n3)": {
+  "input": "4-deoxy-4-formamido-L-arabinose-phosphoundecaprenol deformylase ArnD (EC 3.5.1.n3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycoside N(6')-acetyltransferase (EC 2.3.1.82) => AAC(6')-Ib-cr fluoroquinolone-acetylating": {
+  "input": "Aminoglycoside N(6')-acetyltransferase (EC 2.3.1.82) => AAC(6')-Ib-cr fluoroquinolone-acetylating",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "Aminoglycoside 6-phosphotransferase (EC 2.7.1.72) => APH(6)-Ic/APH(6)-Id": {
+  "input": "Aminoglycoside 6-phosphotransferase (EC 2.7.1.72) => APH(6)-Ic/APH(6)-Id",
+  "family": "aph(6)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Dihydropteroate synthase type-2 (EC 2.5.1.15) @ Sulfonamide resistance protein": {
+  "input": "Dihydropteroate synthase type-2 (EC 2.5.1.15) @ Sulfonamide resistance protein",
+  "family": "sul",
+  "kind": "acquired_gene",
+  "drugs": [
+   "sulfonamide"
+  ],
+  "confidence": 0.9
+ },
+ "N-(3-oxohexanoyl)-L-homoserine lactone-binding transcriptional activator @ N-(3-oxooctanoyl)-L-homoserine lactone-binding transcriptional activator": {
+  "input": "N-(3-oxohexanoyl)-L-homoserine lactone-binding transcriptional activator @ N-(3-oxooctanoyl)-L-homoserine lactone-binding transcriptional activator",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Small multidrug resistance (SMR) efflux transporter => QacE delta 1, quaternary ammonium compounds": {
+  "input": "Small multidrug resistance (SMR) efflux transporter => QacE delta 1, quaternary ammonium compounds",
+  "family": "smr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug resistance protein MdtH": {
+  "input": "Multidrug resistance protein MdtH",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Aminoglycoside N(3)-acetyltransferase (EC 2.3.1.81) => AAC(3)-II,III,IV,VI,VIII,IX,X": {
+  "input": "Aminoglycoside N(3)-acetyltransferase (EC 2.3.1.81) => AAC(3)-II,III,IV,VI,VIII,IX,X",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Undecaprenyl phosphate-aminoarabinose flippase subunit ArnE": {
+  "input": "Undecaprenyl phosphate-aminoarabinose flippase subunit ArnE",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Enoyl-[acyl-carrier-protein] reductase [NADH] (EC 1.3.1.9)": {
+  "input": "Enoyl-[acyl-carrier-protein] reductase [NADH] (EC 1.3.1.9)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Spermidine export protein MdtI": {
+  "input": "Spermidine export protein MdtI",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Carbon storage regulator": {
+  "input": "Carbon storage regulator",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Outer membrane porin OmpN": {
+  "input": "Outer membrane porin OmpN",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Uncharacterized transporter MdtD of major facilitator superfamily (MFS)": {
+  "input": "Uncharacterized transporter MdtD of major facilitator superfamily (MFS)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Hydrogen peroxide-inducible genes activator => OxyR": {
+  "input": "Hydrogen peroxide-inducible genes activator => OxyR",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Macrolide 2'-phosphotransferase => Mph(A) family": {
+  "input": "Macrolide 2'-phosphotransferase => Mph(A) family",
+  "family": "mph",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "Undecaprenyl phosphate-alpha-4-amino-4-deoxy-L-arabinose arabinosyl transferase (EC 2.4.2.43) @ Polymyxin resistance protein PmrK": {
+  "input": "Undecaprenyl phosphate-alpha-4-amino-4-deoxy-L-arabinose arabinosyl transferase (EC 2.4.2.43) @ Polymyxin resistance protein PmrK",
+  "family": "pmrK",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "Multidrug efflux pump MdtL (of MFS type)": {
+  "input": "Multidrug efflux pump MdtL (of MFS type)",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Transcriptional activator RamA": {
+  "input": "Transcriptional activator RamA",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Transcriptional regulatory protein PhoP": {
+  "input": "Transcriptional regulatory protein PhoP",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Chromosome (plasmid) partitioning protein ParA": {
+  "input": "Chromosome (plasmid) partitioning protein ParA",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Undecaprenyl-diphosphatase BcrC (EC 3.6.1.27), conveys bacitracin resistance": {
+  "input": "Undecaprenyl-diphosphatase BcrC (EC 3.6.1.27), conveys bacitracin resistance",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Chloramphenicol O-acetyltransferase (EC 2.3.1.28) => CatA2 family": {
+  "input": "Chloramphenicol O-acetyltransferase (EC 2.3.1.28) => CatA2 family",
+  "family": "catA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "chloramphenicol"
+  ],
+  "confidence": 0.9
+ },
+ "Copper-sensing two-component system response regulator CpxR": {
+  "input": "Copper-sensing two-component system response regulator CpxR",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "LSU ribosomal protein L6p (L9e)": {
+  "input": "LSU ribosomal protein L6p (L9e)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Tetracycline resistance, MFS efflux pump => Tet(D)": {
+  "input": "Tetracycline resistance, MFS efflux pump => Tet(D)",
+  "family": "tet",
+  "kind": "efflux",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "Tetracycline resistance, MFS efflux pump => Tet(A)": {
+  "input": "Tetracycline resistance, MFS efflux pump => Tet(A)",
+  "family": "tet",
+  "kind": "efflux",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "Lipid A export permease/ATP-binding protein MsbA": {
+  "input": "Lipid A export permease/ATP-binding protein MsbA",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Tetracycline resistance, MFS efflux pump => Tet(B)": {
+  "input": "Tetracycline resistance, MFS efflux pump => Tet(B)",
+  "family": "tet",
+  "kind": "efflux",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-10 family": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-10 family",
+  "family": "blaOXA-10",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Class D beta-lactamase (EC 3.5.2.6)": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycoside N(6')-acetyltransferase (EC 2.3.1.82) => AAC(6')-Ib/AAC(6')-II": {
+  "input": "Aminoglycoside N(6')-acetyltransferase (EC 2.3.1.82) => AAC(6')-Ib/AAC(6')-II",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Pentapeptide repeat protein QnrB family": {
+  "input": "Pentapeptide repeat protein QnrB family",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "Aminoglycoside 3'-phosphotransferase (EC 2.7.1.95) => APH(3')-III/APH(3')-IV/APH(3')-VI/APH(3')-VII": {
+  "input": "Aminoglycoside 3'-phosphotransferase (EC 2.7.1.95) => APH(3')-III/APH(3')-IV/APH(3')-VI/APH(3')-VII",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Aminoglycoside 4-phosphotransferase (EC 2.7.1.-) => APH(4)-I": {
+  "input": "Aminoglycoside 4-phosphotransferase (EC 2.7.1.-) => APH(4)-I",
+  "family": "aph(4)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Small multidrug resistance (SMR) efflux transporter => QacE, quaternary ammonium compounds": {
+  "input": "Small multidrug resistance (SMR) efflux transporter => QacE, quaternary ammonium compounds",
+  "family": "qacE",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Chloramphenicol O-acetyltransferase (EC 2.3.1.28) => CatB family": {
+  "input": "Chloramphenicol O-acetyltransferase (EC 2.3.1.28) => CatB family",
+  "family": "catB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "chloramphenicol"
+  ],
+  "confidence": 0.9
+ },
+ "Subclass B1 beta-lactamase (EC 3.5.2.6) => NDM family": {
+  "input": "Subclass B1 beta-lactamase (EC 3.5.2.6) => NDM family",
+  "family": "blaNDM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Chromosome (plasmid) partitioning protein ParB": {
+  "input": "Chromosome (plasmid) partitioning protein ParB",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "rifampin ADP-ribosyl transferase": {
+  "input": "rifampin ADP-ribosyl transferase",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycoside 3'-phosphotransferase (EC 2.7.1.95) => APH(3')-I": {
+  "input": "Aminoglycoside 3'-phosphotransferase (EC 2.7.1.95) => APH(3')-I",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Chloramphenicol O-acetyltransferase (EC 2.3.1.28) => CatA1/CatA4 family": {
+  "input": "Chloramphenicol O-acetyltransferase (EC 2.3.1.28) => CatA1/CatA4 family",
+  "family": "catA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "chloramphenicol"
+  ],
+  "confidence": 0.9
+ },
+ "Aminoglycoside 2''-nucleotidyltransferase (EC 2.7.7.46) => ANT(2'')-Ia (AadB family)": {
+  "input": "Aminoglycoside 2''-nucleotidyltransferase (EC 2.7.7.46) => ANT(2'')-Ia (AadB family)",
+  "family": "ant(2'')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "DNA translocase FtsK": {
+  "input": "DNA translocase FtsK",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Mobile element protein": {
+  "input": "Mobile element protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class C beta-lactamase (EC 3.5.2.6) => DHA/MOR family": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6) => DHA/MOR family",
+  "family": "blaDHA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Class C beta-lactamase (EC 3.5.2.6) => CMY/CMY-2/CFE/LAT family": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6) => CMY/CMY-2/CFE/LAT family",
+  "family": "blaCMY",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => LAP family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => LAP family",
+  "family": "blaLAP",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "PhoP/PhoQ regulator MgrB": {
+  "input": "PhoP/PhoQ regulator MgrB",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Fluoride ion transporter CrcB": {
+  "input": "Fluoride ion transporter CrcB",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Chloramphenicol resistance, MFS efflux pump => CmlA family": {
+  "input": "Chloramphenicol resistance, MFS efflux pump => CmlA family",
+  "family": "cmlA",
+  "kind": "efflux",
+  "drugs": [
+   "chloramphenicol"
+  ],
+  "confidence": 0.9
+ },
+ "Outer membrane factor (OMF) lipoprotein associated wth EmrAB-OMF efflux system": {
+  "input": "Outer membrane factor (OMF) lipoprotein associated wth EmrAB-OMF efflux system",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Chloramphenicol/florfenicol resistance, MFS efflux pump => FloR family": {
+  "input": "Chloramphenicol/florfenicol resistance, MFS efflux pump => FloR family",
+  "family": "floR",
+  "kind": "efflux",
+  "drugs": [
+   "chloramphenicol"
+  ],
+  "confidence": 0.9
+ },
+ "Transcriptional regulator, AcrR family": {
+  "input": "Transcriptional regulator, AcrR family",
+  "family": "acrR",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Macrolide 2'-phosphotransferase => Mph(E)/Mph(G) family": {
+  "input": "Macrolide 2'-phosphotransferase => Mph(E)/Mph(G) family",
+  "family": "mph",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "Tetracycline resistance regulatory protein TetR": {
+  "input": "Tetracycline resistance regulatory protein TetR",
+  "family": "tetR",
+  "kind": "regulator",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.8
+ },
+ "Multidrug efflux system EmrKY-TolC, inner-membrane proton/drug antiporter EmrY (MFS type)": {
+  "input": "Multidrug efflux system EmrKY-TolC, inner-membrane proton/drug antiporter EmrY (MFS type)",
+  "family": "emr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Aminoglycoside N(6')-acetyltransferase (EC 2.3.1.82) => AAC(6')-Ia (and related AACs)": {
+  "input": "Aminoglycoside N(6')-acetyltransferase (EC 2.3.1.82) => AAC(6')-Ia (and related AACs)",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Resolvase/integrase Bin": {
+  "input": "Resolvase/integrase Bin",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "FIG004798: Putative cytoplasmic protein": {
+  "input": "FIG004798: Putative cytoplasmic protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Macrolide resistance, MFS efflux pump => Mef(B)": {
+  "input": "Macrolide resistance, MFS efflux pump => Mef(B)",
+  "family": "mef",
+  "kind": "efflux",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "ABC-F type ribosomal protection protein => Msr(E)": {
+  "input": "ABC-F type ribosomal protection protein => Msr(E)",
+  "family": "msr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "Transcriptional regulator AmpR, LysR family": {
+  "input": "Transcriptional regulator AmpR, LysR family",
+  "family": "ampR",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Aminoglycoside 3'-phosphotransferase (EC 2.7.1.95) => APH(3')-II/APH(3')-XV": {
+  "input": "Aminoglycoside 3'-phosphotransferase (EC 2.7.1.95) => APH(3')-II/APH(3')-XV",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Two component system sensor histidine kinase MtrB": {
+  "input": "Two component system sensor histidine kinase MtrB",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycoside 3''-nucleotidyltransferase (EC 2.7.7.-) => APH(3'')-Ia (AadA family)": {
+  "input": "Aminoglycoside 3''-nucleotidyltransferase (EC 2.7.7.-) => APH(3'')-Ia (AadA family)",
+  "family": "aph(3'')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Enoyl-[acyl-carrier-protein] reductase [NADH] (EC 1.3.1.9), FabV => refractory to triclosan": {
+  "input": "Enoyl-[acyl-carrier-protein] reductase [NADH] (EC 1.3.1.9), FabV => refractory to triclosan",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Diaminopimelate decarboxylase and/or diaminopimelate epimerase leader peptide": {
+  "input": "Diaminopimelate decarboxylase and/or diaminopimelate epimerase leader peptide",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Protein with ParB-like nuclease domain in PFGI-1-like cluster": {
+  "input": "Protein with ParB-like nuclease domain in PFGI-1-like cluster",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class C beta-lactamase (EC 3.5.2.6) => BlaEC family": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6) => BlaEC family",
+  "family": "blaEC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Multidrug efflux system MdtEF-TolC, membrane fusion component MdtE": {
+  "input": "Multidrug efflux system MdtEF-TolC, membrane fusion component MdtE",
+  "family": "mdt",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug efflux system MdtEF-TolC, inner-membrane proton/drug antiporter MdtF (RND type)": {
+  "input": "Multidrug efflux system MdtEF-TolC, inner-membrane proton/drug antiporter MdtF (RND type)",
+  "family": "mdt",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug resistance transporter => Bicyclomycin resistance protein Bcr": {
+  "input": "Multidrug resistance transporter => Bicyclomycin resistance protein Bcr",
+  "family": "bcr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug resistance outer membrane protein MdtP": {
+  "input": "Multidrug resistance outer membrane protein MdtP",
+  "family": "mdtP",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Transcriptional regulator GadW, AraC family": {
+  "input": "Transcriptional regulator GadW, AraC family",
+  "family": "gadW",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Lipopolysaccharide core heptose(II)-phosphate phosphatase @ Polymyxin resistance protein PmrG": {
+  "input": "Lipopolysaccharide core heptose(II)-phosphate phosphatase @ Polymyxin resistance protein PmrG",
+  "family": "pmrG",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "Uncharacterized protein YbjC": {
+  "input": "Uncharacterized protein YbjC",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Membrane fusion component MdtO of tripartite multidrug resistance system": {
+  "input": "Membrane fusion component MdtO of tripartite multidrug resistance system",
+  "family": "mdt",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug efflux system EmrKY-TolC, membrane fusion component EmrK": {
+  "input": "Multidrug efflux system EmrKY-TolC, membrane fusion component EmrK",
+  "family": "emr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "ABC-type siderophore export system, fused ATPase and permease components": {
+  "input": "ABC-type siderophore export system, fused ATPase and permease components",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "UDP-glucose 6-dehydrogenase (EC 1.1.1.22)": {
+  "input": "UDP-glucose 6-dehydrogenase (EC 1.1.1.22)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Translation elongation factor P": {
+  "input": "Translation elongation factor P",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Inner membrane component MdtN of tripartite multidrug resistance system": {
+  "input": "Inner membrane component MdtN of tripartite multidrug resistance system",
+  "family": "mdt",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Transcriptional activator GadE": {
+  "input": "Transcriptional activator GadE",
+  "family": "gadE",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Uncharacterized lipoprotein YeaY": {
+  "input": "Uncharacterized lipoprotein YeaY",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Phosphoenolpyruvate-protein phosphotransferase of PTS system (EC 2.7.3.9)": {
+  "input": "Phosphoenolpyruvate-protein phosphotransferase of PTS system (EC 2.7.3.9)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "L-O-lysylphosphatidylglycerol synthase (EC 2.3.2.3)": {
+  "input": "L-O-lysylphosphatidylglycerol synthase (EC 2.3.2.3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Uncharacterized protein, YdfD family": {
+  "input": "Uncharacterized protein, YdfD family",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Outer membrane low permeability porin, OprD family => OccD2/OpdC": {
+  "input": "Outer membrane low permeability porin, OprD family => OccD2/OpdC",
+  "family": "oprD",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "Serine/threonine protein kinase PrkC, regulator of stationary phase": {
+  "input": "Serine/threonine protein kinase PrkC, regulator of stationary phase",
+  "family": "prkC",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Tetracycline resistance, MFS efflux pump => Tet(J)": {
+  "input": "Tetracycline resistance, MFS efflux pump => Tet(J)",
+  "family": "tet",
+  "kind": "efflux",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "Multidrug resistance transporter, Bcr/CflA family": {
+  "input": "Multidrug resistance transporter, Bcr/CflA family",
+  "family": "bcr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => MexI of MexHI-OpmD system": {
+  "input": "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => MexI of MexHI-OpmD system",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug efflux system, membrane fusion component => MexH of MexHI-OpmD system": {
+  "input": "Multidrug efflux system, membrane fusion component => MexH of MexHI-OpmD system",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "PTS system, N,N'-diacetylchitobiose-specific IIB component (EC 2.7.1.196)": {
+  "input": "PTS system, N,N'-diacetylchitobiose-specific IIB component (EC 2.7.1.196)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => MexQ of MexPQ-OpmE system": {
+  "input": "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => MexQ of MexPQ-OpmE system",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug efflux system, outer membrane factor lipoprotein of OprM/OprM family": {
+  "input": "Multidrug efflux system, outer membrane factor lipoprotein of OprM/OprM family",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Erythromycin esterase (EC 3.1.1.-) => EreA family": {
+  "input": "Erythromycin esterase (EC 3.1.1.-) => EreA family",
+  "family": "ereA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.8
+ },
+ "Multidrug efflux system, membrane fusion component => MexP of MexPQ-OpmE system": {
+  "input": "Multidrug efflux system, membrane fusion component => MexP of MexPQ-OpmE system",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-2 family": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-2 family",
+  "family": "blaOXA-2",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-48 family, some variants carbapenem-hydrolyzing": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-48 family, some variants carbapenem-hydrolyzing",
+  "family": "blaOXA-48",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => OKP-B family, broad-spectrum": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => OKP-B family, broad-spectrum",
+  "family": "blaOKP-B",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.8
+ },
+ "23S rRNA (adenine(2058)-N(6))-dimethyltransferase (EC 2.1.1.184) => Erm(B)": {
+  "input": "23S rRNA (adenine(2058)-N(6))-dimethyltransferase (EC 2.1.1.184) => Erm(B)",
+  "family": "ermB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "Transcriptional regulator, HxlR family": {
+  "input": "Transcriptional regulator, HxlR family",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "IncF plasmid conjugative transfer surface exclusion protein TraT": {
+  "input": "IncF plasmid conjugative transfer surface exclusion protein TraT",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class A beta-lactamase (EC 3.5.2.6)": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6)",
+  "family": "blaTEM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.8
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => LEN family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => LEN family",
+  "family": "blaLEN",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.8
+ },
+ "Class C beta-lactamase (EC 3.5.2.6) => FOX/TRU family, cephalosporin-hydrolyzing": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6) => FOX/TRU family, cephalosporin-hydrolyzing",
+  "family": "blaFOX",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => CARB/PSE family, carbenicillin-hydrolyzing": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => CARB/PSE family, carbenicillin-hydrolyzing",
+  "family": "blaCARB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "Outer membrane porin OmpD": {
+  "input": "Outer membrane porin OmpD",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Beta-lactamase (EC 3.5.2.6)": {
+  "input": "Beta-lactamase (EC 3.5.2.6)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Putative periplasmic protein": {
+  "input": "Putative periplasmic protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "small multidrug resistance family (SMR) protein": {
+  "input": "small multidrug resistance family (SMR) protein",
+  "family": "smr",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Outer membrane low permeability porin, OprD family": {
+  "input": "Outer membrane low permeability porin, OprD family",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Efflux transport system, outer membrane factor (OMF) lipoprotein": {
+  "input": "Efflux transport system, outer membrane factor (OMF) lipoprotein",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.35), FabG4": {
+  "input": "3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.35), FabG4",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-51 family, carbapenem-hydrolyzing": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-51 family, carbapenem-hydrolyzing",
+  "family": "blaOXA-51",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Probable transcription regulator protein of MDR efflux pump cluster": {
+  "input": "Probable transcription regulator protein of MDR efflux pump cluster",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Probable (3R)-hydroxyacyl-CoA dehydratase HtdX": {
+  "input": "Probable (3R)-hydroxyacyl-CoA dehydratase HtdX",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class C beta-lactamase (EC 3.5.2.6) => ADC family": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6) => ADC family",
+  "family": "blaADC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.8
+ },
+ "Two-component transcriptional response regulator, LuxR family": {
+  "input": "Two-component transcriptional response regulator, LuxR family",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Aminoglycoside 3''-nucleotidyltransferase, putative": {
+  "input": "Aminoglycoside 3''-nucleotidyltransferase, putative",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.8
+ },
+ "Osmosensitive K+ channel histidine kinase KdpD": {
+  "input": "Osmosensitive K+ channel histidine kinase KdpD",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Glycosyltransferase": {
+  "input": "Glycosyltransferase",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Uncharacterized MFS-type transporter": {
+  "input": "Uncharacterized MFS-type transporter",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Lipid A phosphoethanolamine transferase, putative": {
+  "input": "Lipid A phosphoethanolamine transferase, putative",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "Acetyltransferase, CysE/LacA/LpxA/NodL family": {
+  "input": "Acetyltransferase, CysE/LacA/LpxA/NodL family",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Putative DNA-binding protein": {
+  "input": "Putative DNA-binding protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Lipid A 4'-phosphatase LpxF-like, putative": {
+  "input": "Lipid A 4'-phosphatase LpxF-like, putative",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Acetyltransferase, GNAT family": {
+  "input": "Acetyltransferase, GNAT family",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Methyl viologen resistance protein SmvA": {
+  "input": "Methyl viologen resistance protein SmvA",
+  "family": "smvA",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Transcriptional regulator, LysR family": {
+  "input": "Transcriptional regulator, LysR family",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Xenobiotic acyltransferase XAT family": {
+  "input": "Xenobiotic acyltransferase XAT family",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcriptional regulator, MerR family": {
+  "input": "Transcriptional regulator, MerR family",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-24 family, carbapenem-hydrolyzing": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-24 family, carbapenem-hydrolyzing",
+  "family": "blaOXA-24",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "RNase adapter protein RapZ": {
+  "input": "RNase adapter protein RapZ",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => OKP-A family, broad-spectrum": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => OKP-A family, broad-spectrum",
+  "family": "blaOKP-A",
+  "kind": "acquired_gene",
+  "drugs": [
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "DNA replication protein": {
+  "input": "DNA replication protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => GES family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => GES family",
+  "family": "blaGES",
+  "kind": "acquired_gene",
+  "drugs": [
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Tetracycline resistance, ribosomal protection type => Tet(M)": {
+  "input": "Tetracycline resistance, ribosomal protection type => Tet(M)",
+  "family": "blaTet(M)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "Heterodimeric efflux ABC transporter, multidrug resistance => LmrD subunit of LmrCD": {
+  "input": "Heterodimeric efflux ABC transporter, multidrug resistance => LmrD subunit of LmrCD",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)": {
+  "input": "D-alanyl-D-alanine carboxypeptidase (EC 3.4.16.4)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Enoyl-[acyl-carrier-protein] reductase [FMN, NADH] (EC 1.3.1.9), FabK => refractory to triclosan": {
+  "input": "Enoyl-[acyl-carrier-protein] reductase [FMN, NADH] (EC 1.3.1.9), FabK => refractory to triclosan",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Cell envelope stress response system LiaFSR, sensor histidine kinase LiaS(VraS)": {
+  "input": "Cell envelope stress response system LiaFSR, sensor histidine kinase LiaS(VraS)",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Cell envelope stress response system LiaFSR, response regulator LiaR(VraR)": {
+  "input": "Cell envelope stress response system LiaFSR, response regulator LiaR(VraR)",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Multidrug resistance protein ErmB": {
+  "input": "Multidrug resistance protein ErmB",
+  "family": "ermB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide",
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "Membrane protein LiaF(VraT), specific inhibitor of LiaRS(VraRS) signaling pathway": {
+  "input": "Membrane protein LiaF(VraT), specific inhibitor of LiaRS(VraRS) signaling pathway",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Heterodimeric efflux ABC transporter, multidrug resistance => LmrC subunit of LmrCD": {
+  "input": "Heterodimeric efflux ABC transporter, multidrug resistance => LmrC subunit of LmrCD",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Taurine ABC transporter, permease protein TauC": {
+  "input": "Taurine ABC transporter, permease protein TauC",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Small multidrug resistance (SMR) efflux transporter => EmrE, broad substrate specificity": {
+  "input": "Small multidrug resistance (SMR) efflux transporter => EmrE, broad substrate specificity",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Transcriptional regulator, AraC family": {
+  "input": "Transcriptional regulator, AraC family",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Transcriptional regulator GadX, AraC family": {
+  "input": "Transcriptional regulator GadX, AraC family",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => SCO family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => SCO family",
+  "family": "blaSCO",
+  "kind": "acquired_gene",
+  "drugs": [
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => MexB of MexAB-OprM": {
+  "input": "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => MexB of MexAB-OprM",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Topoisomerase IV subunit A (EC 5.99.1.-)": {
+  "input": "Topoisomerase IV subunit A (EC 5.99.1.-)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Tetracycline resistance, ribosomal protection type => Tet(W)": {
+  "input": "Tetracycline resistance, ribosomal protection type => Tet(W)",
+  "family": "blaTet(W)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "putative acid phosphatase": {
+  "input": "putative acid phosphatase",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Beta-lactamase class C-like and penicillin binding proteins (PBPs) superfamily": {
+  "input": "Beta-lactamase class C-like and penicillin binding proteins (PBPs) superfamily",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcriptional regulator for ferulate or vanillate catabolism": {
+  "input": "Transcriptional regulator for ferulate or vanillate catabolism",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Tetracycline resistance, MFS efflux pump => Tet(C)": {
+  "input": "Tetracycline resistance, MFS efflux pump => Tet(C)",
+  "family": "blaTet(C)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "Cysteine dioxygenase (EC 1.13.11.20)": {
+  "input": "Cysteine dioxygenase (EC 1.13.11.20)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Fumarate reductase iron-sulfur protein (EC 1.3.5.4)": {
+  "input": "Fumarate reductase iron-sulfur protein (EC 1.3.5.4)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Mercuric transport protein, MerE": {
+  "input": "Mercuric transport protein, MerE",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system, outer membrane factor lipoprotein => OprJ of MexCD-OprJ system": {
+  "input": "Multidrug efflux system, outer membrane factor lipoprotein => OprJ of MexCD-OprJ system",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => MexD of MexCD-OprJ system": {
+  "input": "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => MexD of MexCD-OprJ system",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Multidrug efflux system, membrane fusion component => MexC of MexCD-OprJ system": {
+  "input": "Multidrug efflux system, membrane fusion component => MexC of MexCD-OprJ system",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "putative fimbrial chaperone protein": {
+  "input": "putative fimbrial chaperone protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycoside 6-phosphotransferase, putative": {
+  "input": "Aminoglycoside 6-phosphotransferase, putative",
+  "family": "aph(6)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Class C beta-lactamase (EC 3.5.2.6)": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6)",
+  "family": "blaAmpC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Alanyl-tRNA synthetase (EC 6.1.1.7)": {
+  "input": "Alanyl-tRNA synthetase (EC 6.1.1.7)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "DNA-binding response regulator KdpE": {
+  "input": "DNA-binding response regulator KdpE",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Uncharacterized transporter YeeO": {
+  "input": "Uncharacterized transporter YeeO",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Putrescine aminotransferase (EC 2.6.1.82)": {
+  "input": "Putrescine aminotransferase (EC 2.6.1.82)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Cys regulon transcriptional activator CysB": {
+  "input": "Cys regulon transcriptional activator CysB",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Glycerol-3-phosphate transporter": {
+  "input": "Glycerol-3-phosphate transporter",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Oxygen-insensitive NADPH nitroreductase (EC 1.-.-.-)": {
+  "input": "Oxygen-insensitive NADPH nitroreductase (EC 1.-.-.-)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "DNA-binding transcriptional dual regulator Rob": {
+  "input": "DNA-binding transcriptional dual regulator Rob",
+  "family": "regulator",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "iron aquisition outermembrane yersiniabactin receptor (FyuA,Psn,pesticin receptor) @ Outer membrane receptor for ferric siderophore": {
+  "input": "iron aquisition outermembrane yersiniabactin receptor (FyuA,Psn,pesticin receptor) @ Outer membrane receptor for ferric siderophore",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "VapB protein (antitoxin to VapC)": {
+  "input": "VapB protein (antitoxin to VapC)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcription-repair coupling factor": {
+  "input": "Transcription-repair coupling factor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Subclass B1 beta-lactamase (EC 3.5.2.6) => IMP family": {
+  "input": "Subclass B1 beta-lactamase (EC 3.5.2.6) => IMP family",
+  "family": "blaIMP",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Lincosamide nucleotidyltransferase => Lnu(F)/Lnu(G)": {
+  "input": "Lincosamide nucleotidyltransferase => Lnu(F)/Lnu(G)",
+  "family": "Lnu(F)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "lincosamide"
+  ],
+  "confidence": 0.9
+ },
+ "Bleomycin resistance protein": {
+  "input": "Bleomycin resistance protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Lipid A phosphatidylethanolamine transferase (EC 2.7.8.43) => colistin resistance MCR-3": {
+  "input": "Lipid A phosphatidylethanolamine transferase (EC 2.7.8.43) => colistin resistance MCR-3",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-134 family, carbapenem-hydrolyzing": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-134 family, carbapenem-hydrolyzing",
+  "family": "blaOXA-134",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "Acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase (EC 2.3.1.129)": {
+  "input": "Acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase (EC 2.3.1.129)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase (EC 3.5.1.108)": {
+  "input": "UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase (EC 3.5.1.108)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcriptional regulator of catabolic arginine decarboxylase (adiA)": {
+  "input": "Transcriptional regulator of catabolic arginine decarboxylase (adiA)",
+  "family": "regulator",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Adenylate cyclase (EC 4.6.1.1)": {
+  "input": "Adenylate cyclase (EC 4.6.1.1)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => TriC of TriABC-OpmH system": {
+  "input": "Multidrug efflux system, inner membrane proton/drug antiporter (RND type) => TriC of TriABC-OpmH system",
+  "family": "efflux",
+  "kind": "efflux",
+  "drugs": [
+   "multidrug"
+  ],
+  "confidence": 0.9
+ },
+ "PKHD-type hydroxylase YbiX": {
+  "input": "PKHD-type hydroxylase YbiX",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => VEB family, extended-spectrum": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => VEB family, extended-spectrum",
+  "family": "blaVEB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Tetracycline resistance, MFS efflux pump => Tet(G)": {
+  "input": "Tetracycline resistance, MFS efflux pump => Tet(G)",
+  "family": "Tet(G)",
+  "kind": "efflux",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "Integral membrane indolylacetylinositol arabinosyltransferase EmbB (EC 2.4.2.-)": {
+  "input": "Integral membrane indolylacetylinositol arabinosyltransferase EmbB (EC 2.4.2.-)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Integral membrane indolylacetylinositol arabinosyltransferase EmbA (EC 2.4.2.-)": {
+  "input": "Integral membrane indolylacetylinositol arabinosyltransferase EmbA (EC 2.4.2.-)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycoside 2'-N-acetyltransferase (EC 2.3.1.59) => AAC(2')-I": {
+  "input": "Aminoglycoside 2'-N-acetyltransferase (EC 2.3.1.59) => AAC(2')-I",
+  "family": "aac(2')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-23 family, carbapenem-hydrolyzing": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-23 family, carbapenem-hydrolyzing",
+  "family": "blaOXA-23",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => PER family, extended-spectrum": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => PER family, extended-spectrum",
+  "family": "blaPER",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Two component system response regulator MtrA": {
+  "input": "Two component system response regulator MtrA",
+  "family": "regulator",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Phage tail sheath monomer": {
+  "input": "Phage tail sheath monomer",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Glycerol-3-phosphate dehydrogenase [NAD(P)+] (EC 1.1.1.94)": {
+  "input": "Glycerol-3-phosphate dehydrogenase [NAD(P)+] (EC 1.1.1.94)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Exodeoxyribonuclease V beta chain (EC 3.1.11.5)": {
+  "input": "Exodeoxyribonuclease V beta chain (EC 3.1.11.5)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "NrfD protein": {
+  "input": "NrfD protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Subclass B1 beta-lactamase (EC 3.5.2.6) => VIM family": {
+  "input": "Subclass B1 beta-lactamase (EC 3.5.2.6) => VIM family",
+  "family": "blaVIM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Aminoglycoside N(3)-acetyltransferase (EC 2.3.1.81) => AAC(3)-I": {
+  "input": "Aminoglycoside N(3)-acetyltransferase (EC 2.3.1.81) => AAC(3)-I",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Aminoglycoside N(6')-acetyltransferase (EC 2.3.1.82) => AAC(6')-Ic,f,g,h,j,k,l,r-z": {
+  "input": "Aminoglycoside N(6')-acetyltransferase (EC 2.3.1.82) => AAC(6')-Ic,f,g,h,j,k,l,r-z",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Ethidium bromide-methyl viologen resistance protein EmrE": {
+  "input": "Ethidium bromide-methyl viologen resistance protein EmrE",
+  "family": "emrAB",
+  "kind": "efflux",
+  "drugs": [
+   "multidrug"
+  ],
+  "confidence": 0.9
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => FONA/SFO family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => FONA/SFO family",
+  "family": "blaFONA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "bleomycin resistance protein": {
+  "input": "bleomycin resistance protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "FIG00731336: hypothetical protein": {
+  "input": "FIG00731336: hypothetical protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "23S rRNA (adenine(2058)-N(6))-dimethyltransferase (EC 2.1.1.184) => Erm(42)": {
+  "input": "23S rRNA (adenine(2058)-N(6))-dimethyltransferase (EC 2.1.1.184) => Erm(42)",
+  "family": "erm(42)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "Nucleoside triphosphate pyrophosphohydrolase MazG (EC 3.6.1.8)": {
+  "input": "Nucleoside triphosphate pyrophosphohydrolase MazG (EC 3.6.1.8)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class D beta-lactamase (EC 3.5.2.6) => OXA-58 family, carbapenem-hydrolyzing": {
+  "input": "Class D beta-lactamase (EC 3.5.2.6) => OXA-58 family, carbapenem-hydrolyzing",
+  "family": "blaOXA-58",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "Enoyl-[acyl-carrier-protein] reductase (EC 1.3.1.104), FabL-like, predicted": {
+  "input": "Enoyl-[acyl-carrier-protein] reductase (EC 1.3.1.104), FabL-like, predicted",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "FIG00641289: hypothetical protein": {
+  "input": "FIG00641289: hypothetical protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Esterase ybfF (EC 3.1.-.-)": {
+  "input": "Esterase ybfF (EC 3.1.-.-)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Phage lysin": {
+  "input": "Phage lysin",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Ferric hydroxamate outer membrane receptor FhuA": {
+  "input": "Ferric hydroxamate outer membrane receptor FhuA",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "C4-dicarboxylate transport system permease large protein": {
+  "input": "C4-dicarboxylate transport system permease large protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Type IV secretory pathway, VirD2 components (relaxase)": {
+  "input": "Type IV secretory pathway, VirD2 components (relaxase)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Asenic metallochaperone ArsD, transfers trivalent metalloids to ArsAB pump": {
+  "input": "Asenic metallochaperone ArsD, transfers trivalent metalloids to ArsAB pump",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => OXY family, extended-spectrum": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => OXY family, extended-spectrum",
+  "family": "blaOXA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Bis-ABC ATPase YheS": {
+  "input": "Bis-ABC ATPase YheS",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28)": {
+  "input": "N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Oligopeptide ABC transporter, permease protein OppC (TC 3.A.1.5.1)": {
+  "input": "Oligopeptide ABC transporter, permease protein OppC (TC 3.A.1.5.1)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "PTS system, galactitol-specific IIC component": {
+  "input": "PTS system, galactitol-specific IIC component",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "RND efflux system, inner membrane transporter CmeB": {
+  "input": "RND efflux system, inner membrane transporter CmeB",
+  "family": null,
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "ribosomal RNA methyltransferase": {
+  "input": "ribosomal RNA methyltransferase",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => BlaZ family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => BlaZ family",
+  "family": "blaBlaZ",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "Aminoglycoside 2''-phosphotransferase (EC 2.7.1.190) => APH(2'')": {
+  "input": "Aminoglycoside 2''-phosphotransferase (EC 2.7.1.190) => APH(2'')",
+  "family": "aph(2'')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Phage tail tip, assembly protein L": {
+  "input": "Phage tail tip, assembly protein L",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Methylglyoxal synthase (EC 4.2.3.3)": {
+  "input": "Methylglyoxal synthase (EC 4.2.3.3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "FIG116849: hypothetical protein": {
+  "input": "FIG116849: hypothetical protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Erythromycin esterase (EC 3.1.1.-) => EreB family": {
+  "input": "Erythromycin esterase (EC 3.1.1.-) => EreB family",
+  "family": "ereB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "Class C beta-lactamase (EC 3.5.2.6) => ACC family, cephalosporin-hydrolyzing": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6) => ACC family, cephalosporin-hydrolyzing",
+  "family": "blaACC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Type I restriction-modification system, restriction subunit R (EC 3.1.21.3)": {
+  "input": "Type I restriction-modification system, restriction subunit R (EC 3.1.21.3)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Electron transport complex protein RnfC": {
+  "input": "Electron transport complex protein RnfC",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Inner membrane transport protein YdiM": {
+  "input": "Inner membrane transport protein YdiM",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Right origin-binding protein": {
+  "input": "Right origin-binding protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Tetrathionate reductase two-component response regulator": {
+  "input": "Tetrathionate reductase two-component response regulator",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Outer membrane protein C precursor": {
+  "input": "Outer membrane protein C precursor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Cell division protein FtsA": {
+  "input": "Cell division protein FtsA",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Uncharacterized protein YahF, possible CoA ligase": {
+  "input": "Uncharacterized protein YahF, possible CoA ligase",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Phage terminase, small subunit": {
+  "input": "Phage terminase, small subunit",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Membrane protein TcaA associated with Teicoplanin resistance": {
+  "input": "Membrane protein TcaA associated with Teicoplanin resistance",
+  "family": "tcaA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "teicoplanin"
+  ],
+  "confidence": 0.9
+ },
+ "MFS-type transporter quinolone resistance protein NorA": {
+  "input": "MFS-type transporter quinolone resistance protein NorA",
+  "family": "qnr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "Teicoplanin resistance transporter, TcaB family => TcaB2": {
+  "input": "Teicoplanin resistance transporter, TcaB family => TcaB2",
+  "family": "tcaB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "teicoplanin"
+  ],
+  "confidence": 0.9
+ },
+ "Ferric hydroxamate ABC transporter (TC 3.A.1.14.3), permease component FhuB": {
+  "input": "Ferric hydroxamate ABC transporter (TC 3.A.1.14.3), permease component FhuB",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Prepilin peptidase dependent protein A precursor": {
+  "input": "Prepilin peptidase dependent protein A precursor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Outer membrane protein N precursor": {
+  "input": "Outer membrane protein N precursor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Transcriptional regulator NanR": {
+  "input": "Transcriptional regulator NanR",
+  "family": null,
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "L-Proline/Glycine betaine transporter ProP": {
+  "input": "L-Proline/Glycine betaine transporter ProP",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "Trehalose-6-phosphate hydrolase (EC 3.2.1.93)": {
+  "input": "Trehalose-6-phosphate hydrolase (EC 3.2.1.93)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Xylulose kinase (EC 2.7.1.17)": {
+  "input": "Xylulose kinase (EC 2.7.1.17)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Qnr": {
+  "input": "Qnr",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "Phosphoethanolamine transferase EptA specific for the 1 phosphate group of core-lipid A": {
+  "input": "Phosphoethanolamine transferase EptA specific for the 1 phosphate group of core-lipid A",
+  "family": "eptA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "Ribosomal RNA methyltransferase (Gentamicin- resistance methyltransferase)": {
+  "input": "Ribosomal RNA methyltransferase (Gentamicin- resistance methyltransferase)",
+  "family": "cfr",
+  "kind": "regulator",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.7
+ },
+ "Outer membrane low permeability porin, OprD family => OccK8/OprE anaerobically-induced": {
+  "input": "Outer membrane low permeability porin, OprD family => OccK8/OprE anaerobically-induced",
+  "family": "OprD",
+  "kind": "target",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.6
+ },
+ "16S rRNA (guanine(1405)-N(7))-methyltransferase (EC 2.1.1.179)": {
+  "input": "16S rRNA (guanine(1405)-N(7))-methyltransferase (EC 2.1.1.179)",
+  "family": "armA",
+  "kind": "regulator",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.7
+ },
+ "Beta-lactamase class D": {
+  "input": "Beta-lactamase class D",
+  "family": "blaOXA-48",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.8
+ },
+ "Outer membrane protein F precursor": {
+  "input": "Outer membrane protein F precursor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Lincosamide nucleotidyltransferase => Lnu(B)": {
+  "input": "Lincosamide nucleotidyltransferase => Lnu(B)",
+  "family": "lnuB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "lincosamide"
+  ],
+  "confidence": 0.9
+ },
+ "Tas protein, an NADP(H)-dependent aldo-keto reductase": {
+  "input": "Tas protein, an NADP(H)-dependent aldo-keto reductase",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "2-isopropylmalate synthase (EC 2.3.3.13)": {
+  "input": "2-isopropylmalate synthase (EC 2.3.3.13)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Xanthine-guanine phosphoribosyltransferase (EC 2.4.2.22)": {
+  "input": "Xanthine-guanine phosphoribosyltransferase (EC 2.4.2.22)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Outer membrane porin, OmpS": {
+  "input": "Outer membrane porin, OmpS",
+  "family": "OmpS",
+  "kind": "target",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.5
+ },
+ "Valine--pyruvate aminotransferase (EC 2.6.1.66)": {
+  "input": "Valine--pyruvate aminotransferase (EC 2.6.1.66)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Uncharacterized protein YaeR with similarity to glyoxylase family": {
+  "input": "Uncharacterized protein YaeR with similarity to glyoxylase family",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "rpoE leader peptide RseD": {
+  "input": "rpoE leader peptide RseD",
+  "family": "rseD",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "S-(hydroxymethyl)glutathione dehydrogenase (EC 1.1.1.284)": {
+  "input": "S-(hydroxymethyl)glutathione dehydrogenase (EC 1.1.1.284)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "23S rRNA (adenine(2503)-C(8))-methyltransferase (EC 2.1.1.224) => Cfr, multiple antibiotic resistance": {
+  "input": "23S rRNA (adenine(2503)-C(8))-methyltransferase (EC 2.1.1.224) => Cfr, multiple antibiotic resistance",
+  "family": "cfr",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "6'-N-acetyltransferase": {
+  "input": "6'-N-acetyltransferase",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.7
+ },
+ "Psp operon transcriptional activator": {
+  "input": "Psp operon transcriptional activator",
+  "family": "psp",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "Phosphoglucosamine mutase (EC 5.4.2.10)": {
+  "input": "Phosphoglucosamine mutase (EC 5.4.2.10)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "MFS-type transporter Rv2994 family => implicated in rifampicin, ofloxacin efflux": {
+  "input": "MFS-type transporter Rv2994 family => implicated in rifampicin, ofloxacin efflux",
+  "family": "MFS",
+  "kind": "efflux",
+  "drugs": [
+   "rifampicin",
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "Uncharacterized protein YjiS": {
+  "input": "Uncharacterized protein YjiS",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Lysine decarboxylase, inducible (EC 4.1.1.18)": {
+  "input": "Lysine decarboxylase, inducible (EC 4.1.1.18)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "LSU ribosomal protein L31p @ LSU ribosomal protein L31p, zinc-independent": {
+  "input": "LSU ribosomal protein L31p @ LSU ribosomal protein L31p, zinc-independent",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "23S rRNA (guanine(748)-N(1))-methyltransferase (EC 2.1.1.188)": {
+  "input": "23S rRNA (guanine(748)-N(1))-methyltransferase (EC 2.1.1.188)",
+  "family": "ermB",
+  "kind": "regulator",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.7
+ },
+ "Subclass B3 beta-lactamase (EC 3.5.2.6)": {
+  "input": "Subclass B3 beta-lactamase (EC 3.5.2.6)",
+  "family": "blaNDM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.8
+ },
+ "Transcriptional regulator, LacI family": {
+  "input": "Transcriptional regulator, LacI family",
+  "family": "lacI",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "23S rRNA (adenine(2058)-N(6))-dimethyltransferase (EC 2.1.1.184) => Erm(A)": {
+  "input": "23S rRNA (adenine(2058)-N(6))-dimethyltransferase (EC 2.1.1.184) => Erm(A)",
+  "family": "ermA",
+  "kind": "regulator",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.8
+ },
+ "Aminoglycoside 9-nucleotidyltransferase (EC 2.7.7.-) => ANT(9)-I": {
+  "input": "Aminoglycoside 9-nucleotidyltransferase (EC 2.7.7.-) => ANT(9)-I",
+  "family": "ant(9)-I",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Class C beta-lactamase (EC 3.5.2.6) => ACT/MIR family, cephalosporin-hydrolyzing": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6) => ACT/MIR family, cephalosporin-hydrolyzing",
+  "family": "blaCMY",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.8
+ },
+ "Chloramphenicol O-acetyltransferase (EC 2.3.1.28) CatA superfamily": {
+  "input": "Chloramphenicol O-acetyltransferase (EC 2.3.1.28) CatA superfamily",
+  "family": "catA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "RND multidrug efflux transporter; Acriflavin resistance protein": {
+  "input": "RND multidrug efflux transporter; Acriflavin resistance protein",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Transcription repressor": {
+  "input": "Transcription repressor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Phage eae protein": {
+  "input": "Phage eae protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Polymyxin resistance protein ArnC, glycosyl transferase (EC 2.4.-.-)": {
+  "input": "Polymyxin resistance protein ArnC, glycosyl transferase (EC 2.4.-.-)",
+  "family": "arnC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "CrcB protein": {
+  "input": "CrcB protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Lipid A export ATP-binding/permease protein MsbA (EC 3.6.3.25)": {
+  "input": "Lipid A export ATP-binding/permease protein MsbA (EC 3.6.3.25)",
+  "family": "msbA",
+  "kind": "efflux",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.7
+ },
+ "Multidrug translocase MdfA": {
+  "input": "Multidrug translocase MdfA",
+  "family": "mdfA",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "D-alanine--D-alanine ligase A (EC 6.3.2.4)": {
+  "input": "D-alanine--D-alanine ligase A (EC 6.3.2.4)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Outer membrane protein Imp, required for envelope biogenesis / Organic solvent tolerance protein precursor": {
+  "input": "Outer membrane protein Imp, required for envelope biogenesis / Organic solvent tolerance protein precursor",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Phage protein": {
+  "input": "Phage protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug-efflux transporter, major facilitator superfamily (MFS) (TC 2.A.1)": {
+  "input": "Multidrug-efflux transporter, major facilitator superfamily (MFS) (TC 2.A.1)",
+  "family": "efflux",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "RND efflux system, membrane fusion protein CmeA": {
+  "input": "RND efflux system, membrane fusion protein CmeA",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Tetracycline efflux protein TetA": {
+  "input": "Tetracycline efflux protein TetA",
+  "family": "tet",
+  "kind": "efflux",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 1
+ },
+ "Polymyxin resistance protein ArnT, undecaprenyl phosphate-alpha-L-Ara4N transferase; Melittin resistance protein PqaB": {
+  "input": "Polymyxin resistance protein ArnT, undecaprenyl phosphate-alpha-L-Ara4N transferase; Melittin resistance protein PqaB",
+  "family": "arn",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "Carbon storage regulator homolog": {
+  "input": "Carbon storage regulator homolog",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "RND efflux system, outer membrane lipoprotein, NodT family": {
+  "input": "RND efflux system, outer membrane lipoprotein, NodT family",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Aminoglycoside 3'-phosphotransferase 2 (EC 2.7.1.95) @ Streptomycin 3'-kinase StrB (EC 2.7.1.87)": {
+  "input": "Aminoglycoside 3'-phosphotransferase 2 (EC 2.7.1.95) @ Streptomycin 3'-kinase StrB (EC 2.7.1.87)",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Putative ATP-binding component of a transport system": {
+  "input": "Putative ATP-binding component of a transport system",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "MFS superfamily export protein YceL": {
+  "input": "MFS superfamily export protein YceL",
+  "family": "efflux",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "Multidrug resistance protein B": {
+  "input": "Multidrug resistance protein B",
+  "family": "acrAB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Phosphoethanolamine transferase specific for the outer Kdo residue of lipopolysaccharide": {
+  "input": "Phosphoethanolamine transferase specific for the outer Kdo residue of lipopolysaccharide",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug resistance protein A": {
+  "input": "Multidrug resistance protein A",
+  "family": "acrAB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Multidrug transporter MdtB": {
+  "input": "Multidrug transporter MdtB",
+  "family": "efflux",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Probable transcriptional activator for leuABCD operon": {
+  "input": "Probable transcriptional activator for leuABCD operon",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Probable RND efflux membrane fusion protein": {
+  "input": "Probable RND efflux membrane fusion protein",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Cell division protein FtsI": {
+  "input": "Cell division protein FtsI",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Transcriptional regulator, TetR family": {
+  "input": "Transcriptional regulator, TetR family",
+  "family": "regulator",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug transporter MdtD": {
+  "input": "Multidrug transporter MdtD",
+  "family": "efflux",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Topoisomerase IV subunit B (EC 5.99.1.-)": {
+  "input": "Topoisomerase IV subunit B (EC 5.99.1.-)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Multidrug transporter MdtC": {
+  "input": "Multidrug transporter MdtC",
+  "family": "efflux",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Membrane fusion protein of RND family multidrug efflux pump": {
+  "input": "Membrane fusion protein of RND family multidrug efflux pump",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Multidrug resistance protein D": {
+  "input": "Multidrug resistance protein D",
+  "family": "acrAB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Regulatory protein SoxS": {
+  "input": "Regulatory protein SoxS",
+  "family": "regulator",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Transcription repressor of multidrug efflux pump acrAB operon, TetR (AcrR) family": {
+  "input": "Transcription repressor of multidrug efflux pump acrAB operon, TetR (AcrR) family",
+  "family": "regulator",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Aminoglycoside 3'-phosphotransferase (EC 2.7.1.95)": {
+  "input": "Aminoglycoside 3'-phosphotransferase (EC 2.7.1.95)",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Putative inner membrane protein": {
+  "input": "Putative inner membrane protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Virulence-associated protein vagC": {
+  "input": "Virulence-associated protein vagC",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "TcuC: integral membrane protein used to transport tricarballylate across the cell membrane": {
+  "input": "TcuC: integral membrane protein used to transport tricarballylate across the cell membrane",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Streptomycin 3''-O-adenylyltransferase (EC 2.7.7.47) @ Spectinomycin 9-O-adenylyltransferase": {
+  "input": "Streptomycin 3''-O-adenylyltransferase (EC 2.7.7.47) @ Spectinomycin 9-O-adenylyltransferase",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Multidrug resistance RND efflux system inner membrane transporter MexF": {
+  "input": "Multidrug resistance RND efflux system inner membrane transporter MexF",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "FIG00732879: hypothetical protein": {
+  "input": "FIG00732879: hypothetical protein",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Aminoglycoside N(3')-acetyltransferase (EC 2.3.1.81)": {
+  "input": "Aminoglycoside N(3')-acetyltransferase (EC 2.3.1.81)",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "Uncharacterized dehydrogenase Pfl_3523": {
+  "input": "Uncharacterized dehydrogenase Pfl_3523",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Periplasmic fimbrial chaperone StfD": {
+  "input": "Periplasmic fimbrial chaperone StfD",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => PLA family": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => PLA family",
+  "family": "blaTEM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "Tetracycline resistance, MFS efflux pump => unclassified": {
+  "input": "Tetracycline resistance, MFS efflux pump => unclassified",
+  "family": "tet",
+  "kind": "efflux",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.8
+ },
+ "Multidrug efflux system, outer membrane factor lipoprotein => OprM of MexAB-OprM": {
+  "input": "Multidrug efflux system, outer membrane factor lipoprotein => OprM of MexAB-OprM",
+  "family": "acrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "Fosfomycin resistance protein FosX": {
+  "input": "Fosfomycin resistance protein FosX",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "ABC transporter, permease protein (cluster 3, basic aa/glutamine/opines)": {
+  "input": "ABC transporter, permease protein (cluster 3, basic aa/glutamine/opines)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Class C beta-lactamase (EC 3.5.2.6) => CMY-1/MOX family": {
+  "input": "Class C beta-lactamase (EC 3.5.2.6) => CMY-1/MOX family",
+  "family": "blaCMY",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "Mg/Co/Ni transporter MgtE, CBS domain-containing": {
+  "input": "Mg/Co/Ni transporter MgtE, CBS domain-containing",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Tetracycline resistance, MFS efflux pump => Tet(L)": {
+  "input": "Tetracycline resistance, MFS efflux pump => Tet(L)",
+  "family": "tet(L)",
+  "kind": "efflux",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "Phage protein (ACLAME 66)": {
+  "input": "Phage protein (ACLAME 66)",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "Macrolide 2'-phosphotransferase => Mph(B) family": {
+  "input": "Macrolide 2'-phosphotransferase => Mph(B) family",
+  "family": "mph(B)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "Outer membrane factor (OMF) lipoprotein associated wth MdtABC efflux system": {
+  "input": "Outer membrane factor (OMF) lipoprotein associated wth MdtABC efflux system",
+  "family": "mdfA",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "Class A beta-lactamase (EC 3.5.2.6) => BEL family, extended-spectrum": {
+  "input": "Class A beta-lactamase (EC 3.5.2.6) => BEL family, extended-spectrum",
+  "family": "blaBEL",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:crrB_Q10L": {
+  "input": "POINT:crrB_Q10L",
+  "family": null,
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "POINT:gyrA_S83I": {
+  "input": "POINT:gyrA_S83I",
+  "family": null,
+  "kind": "POINT",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_E42RfsTer47": {
+  "input": "POINT:ompK35_E42RfsTer47",
+  "family": null,
+  "kind": "TRUNC",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ompK36_D135DGD": {
+  "input": "POINT:ompK36_D135DGD",
+  "family": null,
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "POINT:parC_S80I": {
+  "input": "POINT:parC_S80I",
+  "family": null,
+  "kind": "POINT",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "aac(6')-Ib": {
+  "input": "aac(6')-Ib",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaKPC": {
+  "input": "blaKPC",
+  "family": "blaKPC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "blaSHV": {
+  "input": "blaSHV",
+  "family": "blaSHV",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "emrD": {
+  "input": "emrD",
+  "family": "emrAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "fosA": {
+  "input": "fosA",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "oqxA": {
+  "input": "oqxA",
+  "family": "oqxAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "oqxB": {
+  "input": "oqxB",
+  "family": "oqxAB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "aadA2": {
+  "input": "aadA2",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "catA1": {
+  "input": "catA1",
+  "family": "catA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "dfrA12": {
+  "input": "dfrA12",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "mph(A)": {
+  "input": "mph(A)",
+  "family": "mph(A)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "mrx(A)": {
+  "input": "mrx(A)",
+  "family": "mrx",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "sul1": {
+  "input": "sul1",
+  "family": "sul",
+  "kind": "acquired_gene",
+  "drugs": [
+   "sulfonamide"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:gyrA_D87N": {
+  "input": "POINT:gyrA_D87N",
+  "family": null,
+  "kind": "POINT",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ramR_W185Ter": {
+  "input": "POINT:ramR_W185Ter",
+  "family": "marA",
+  "kind": "TRUNC",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "aac(3)-IVa": {
+  "input": "aac(3)-IVa",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aph(4)-Ia": {
+  "input": "aph(4)-Ia",
+  "family": "aph(4)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaOXA": {
+  "input": "blaOXA",
+  "family": "blaOXA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "sul3": {
+  "input": "sul3",
+  "family": "sul",
+  "kind": "acquired_gene",
+  "drugs": [
+   "sulfonamide"
+  ],
+  "confidence": 0.9
+ },
+ "cmlA1": {
+  "input": "cmlA1",
+  "family": "cmlA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "estX": {
+  "input": "estX",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0
+ },
+ "aadA1": {
+  "input": "aadA1",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "ant(2'')-Ia": {
+  "input": "ant(2'')-Ia",
+  "family": "ant(2'')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "ant(3'')": {
+  "input": "ant(3'')",
+  "family": "ant(3'')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aphA16": {
+  "input": "aphA16",
+  "family": "aphA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaLAP": {
+  "input": "blaLAP",
+  "family": "blaLAP",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "blaTEM": {
+  "input": "blaTEM",
+  "family": "blaTEM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "penicillin",
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "oqxA11": {
+  "input": "oqxA11",
+  "family": "oqxAB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.8
+ },
+ "oqxB19": {
+  "input": "oqxB19",
+  "family": "oqxAB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.8
+ },
+ "qnrS1": {
+  "input": "qnrS1",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "aac(6')-Ib'": {
+  "input": "aac(6')-Ib'",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aph(3')-Ia": {
+  "input": "aph(3')-Ia",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:phoQ_D438N": {
+  "input": "POINT:phoQ_D438N",
+  "family": "phoQ",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:gyrA_D87A": {
+  "input": "POINT:gyrA_D87A",
+  "family": "gyrA",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:gyrA_S83F": {
+  "input": "POINT:gyrA_S83F",
+  "family": "gyrA",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_C28Y": {
+  "input": "POINT:mgrB_C28Y",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ramR_A19V": {
+  "input": "POINT:ramR_A19V",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "aac(3)-IIe": {
+  "input": "aac(3)-IIe",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aph(3'')-Ib": {
+  "input": "aph(3'')-Ib",
+  "family": "aph(3'')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aph(6)-Id": {
+  "input": "aph(6)-Id",
+  "family": "aph(6)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaCTX-M": {
+  "input": "blaCTX-M",
+  "family": "blaCTX-M",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "catB3": {
+  "input": "catB3",
+  "family": "catA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.8
+ },
+ "dfrA14": {
+  "input": "dfrA14",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "sul2": {
+  "input": "sul2",
+  "family": "sul",
+  "kind": "acquired_gene",
+  "drugs": [
+   "sulfonamide"
+  ],
+  "confidence": 0.9
+ },
+ "tet(A)": {
+  "input": "tet(A)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:rpsJ_V57L": {
+  "input": "POINT:rpsJ_V57L",
+  "family": "rpsJ",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "dfrA19": {
+  "input": "dfrA19",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "oqxA10": {
+  "input": "oqxA10",
+  "family": "oqxAB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:crrB_L94M": {
+  "input": "POINT:crrB_L94M",
+  "family": "crrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "fosA5": {
+  "input": "fosA5",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "oqxB5": {
+  "input": "oqxB5",
+  "family": "oqxAB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.8
+ },
+ "aadA5": {
+  "input": "aadA5",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_T136TDT": {
+  "input": "POINT:ompK36_T136TDT",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "POINT:ompK36_Q313Ter": {
+  "input": "POINT:ompK36_Q313Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aac(6')-Ib-cr5": {
+  "input": "aac(6')-Ib-cr5",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:gyrA_S83T": {
+  "input": "POINT:gyrA_S83T",
+  "family": "gyrA",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "ampC_Kaer": {
+  "input": "ampC_Kaer",
+  "family": "ampC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.8
+ },
+ "ampC-Kaer": {
+  "input": "ampC-Kaer",
+  "family": "ampC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ramR_Q11TfsTer42": {
+  "input": "POINT:ramR_Q11TfsTer42",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "aac(3)-IId": {
+  "input": "aac(3)-IId",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "dfrA17": {
+  "input": "dfrA17",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:gyrA_D87Y": {
+  "input": "POINT:gyrA_D87Y",
+  "family": "gyrA",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:cirA_Q562Ter": {
+  "input": "POINT:cirA_Q562Ter",
+  "family": "cirA",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "fosA10": {
+  "input": "fosA10",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_I12HfsTer13": {
+  "input": "POINT:mgrB_I12HfsTer13",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ompK36_D290TfsTer18": {
+  "input": "POINT:ompK36_D290TfsTer18",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_E181Ter": {
+  "input": "POINT:ompK36_E181Ter",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "tet(D)": {
+  "input": "tet(D)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_K3Ter": {
+  "input": "POINT:mgrB_K3Ter",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:oqxR_D95E": {
+  "input": "POINT:oqxR_D95E",
+  "family": "oqxR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:oqxR_V113I": {
+  "input": "POINT:oqxR_V113I",
+  "family": "oqxR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "blaLEN": {
+  "input": "blaLEN",
+  "family": "blaLEN",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.8
+ },
+ "oqxB9": {
+  "input": "oqxB9",
+  "family": "oqxB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ompK35_E312Ter": {
+  "input": "POINT:ompK35_E312Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_G198RfsTer9": {
+  "input": "POINT:ompK36_G198RfsTer9",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_Q122Ter": {
+  "input": "POINT:ramR_Q122Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "dfrA50": {
+  "input": "dfrA50",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:mgrB_Q30Ter": {
+  "input": "POINT:mgrB_Q30Ter",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_G36GALLNKTer": {
+  "input": "POINT:ompK36_G36GALLNKTer",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aac(6')-Ib3": {
+  "input": "aac(6')-Ib3",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "floR": {
+  "input": "floR",
+  "family": "floR",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.8
+ },
+ "qnrB4": {
+  "input": "qnrB4",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:crrB_S195N": {
+  "input": "POINT:crrB_S195N",
+  "family": "crrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ompK35_E132K": {
+  "input": "POINT:ompK35_E132K",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ramR_R98HfsTer2": {
+  "input": "POINT:ramR_R98HfsTer2",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "dfrA5": {
+  "input": "dfrA5",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.8
+ },
+ "qnrB1": {
+  "input": "qnrB1",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:acrR_V165I": {
+  "input": "POINT:acrR_V165I",
+  "family": "acrR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:acrR_Y114F": {
+  "input": "POINT:acrR_Y114F",
+  "family": "acrR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:mgrB_W6Ter": {
+  "input": "POINT:mgrB_W6Ter",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_T50IfsTer23": {
+  "input": "POINT:ramR_T50IfsTer23",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aac(3)-Ib": {
+  "input": "aac(3)-Ib",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaOKP-B": {
+  "input": "blaOKP-B",
+  "family": "blaOKP-B",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.8
+ },
+ "dfrA21": {
+  "input": "dfrA21",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_G108LfsTer9": {
+  "input": "POINT:ompK36_G108LfsTer9",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aac(3)-VIa": {
+  "input": "aac(3)-VIa",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "arr": {
+  "input": "arr",
+  "family": "arr",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "oqxB25": {
+  "input": "oqxB25",
+  "family": "oqxB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "qnrB19": {
+  "input": "qnrB19",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_Q23Ter": {
+  "input": "POINT:ramR_Q23Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "oqxB16": {
+  "input": "oqxB16",
+  "family": "oqxB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ompK35_Y108TerfsTer0": {
+  "input": "POINT:ompK35_Y108TerfsTer0",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "blaNDM": {
+  "input": "blaNDM",
+  "family": "blaNDM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "ble": {
+  "input": "ble",
+  "family": "ble",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "catB": {
+  "input": "catB",
+  "family": "catB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "erm(B)": {
+  "input": "erm(B)",
+  "family": "erm",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.8
+ },
+ "rmtF1": {
+  "input": "rmtF1",
+  "family": "rmtF",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:parC_E84K": {
+  "input": "POINT:parC_E84K",
+  "family": "null",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.8
+ },
+ "aadA16": {
+  "input": "aadA16",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "dfrA27": {
+  "input": "dfrA27",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "floR2": {
+  "input": "floR2",
+  "family": "floR",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "oqxB32": {
+  "input": "oqxB32",
+  "family": "oqxB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "rmtB1": {
+  "input": "rmtB1",
+  "family": "rmtB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "tet(G)": {
+  "input": "tet(G)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_F300LfsTer25": {
+  "input": "POINT:ompK35_F300LfsTer25",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "catA2": {
+  "input": "catA2",
+  "family": "catA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "qnrB9": {
+  "input": "qnrB9",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:gyrA_D87G": {
+  "input": "POINT:gyrA_D87G",
+  "family": "null",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_T96PfsTer7": {
+  "input": "POINT:ompK35_T96PfsTer7",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "armA": {
+  "input": "armA",
+  "family": "armA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "ere(A)": {
+  "input": "ere(A)",
+  "family": "ere(A)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "dfrA1": {
+  "input": "dfrA1",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:gyrA_S83Y": {
+  "input": "POINT:gyrA_S83Y",
+  "family": "null",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.8
+ },
+ "aph(3')-VI": {
+  "input": "aph(3')-VI",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "cmlA5": {
+  "input": "cmlA5",
+  "family": "cmlA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "mph(E)": {
+  "input": "mph(E)",
+  "family": "mph",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "msr(E)": {
+  "input": "msr(E)",
+  "family": "msr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "sat2": {
+  "input": "sat2",
+  "family": "sat",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_P12SfsTer10": {
+  "input": "POINT:ompK35_P12SfsTer10",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_D165AfsTer85": {
+  "input": "POINT:ompK35_D165AfsTer85",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_V39RfsTer15": {
+  "input": "POINT:ramR_V39RfsTer15",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aac(6')-Ib-cr": {
+  "input": "aac(6')-Ib-cr",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_G62AfsTer1": {
+  "input": "POINT:ompK35_G62AfsTer1",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "oqxB20": {
+  "input": "oqxB20",
+  "family": "oqxB",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_L111RfsTer72": {
+  "input": "POINT:ramR_L111RfsTer72",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_P130RfsTer5": {
+  "input": "POINT:ompK36_P130RfsTer5",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "dfrA18": {
+  "input": "dfrA18",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "dfrA33": {
+  "input": "dfrA33",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "qnrB10": {
+  "input": "qnrB10",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "qnrE1": {
+  "input": "qnrE1",
+  "family": "qnrE",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_W230Ter": {
+  "input": "POINT:ompK35_W230Ter",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "qnrB": {
+  "input": "qnrB",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "rmtF": {
+  "input": "rmtF",
+  "family": "rmtF",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "blaCMY": {
+  "input": "blaCMY",
+  "family": "blaCMY",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_D135DD": {
+  "input": "POINT:ompK36_D135DD",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_N87LfsTer90": {
+  "input": "POINT:ramR_N87LfsTer90",
+  "family": "null",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "cmlA4": {
+  "input": "cmlA4",
+  "family": "cmlA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ramR_I115RfsTer42": {
+  "input": "POINT:ramR_I115RfsTer42",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_Q11TfsTer40": {
+  "input": "POINT:ramR_Q11TfsTer40",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_W95VfsTer13": {
+  "input": "POINT:ramR_W95VfsTer13",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "blaDHA": {
+  "input": "blaDHA",
+  "family": "blaDHA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ramR_F48TerfsTer0": {
+  "input": "POINT:ramR_F48TerfsTer0",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:cirA_E528Ter": {
+  "input": "POINT:cirA_E528Ter",
+  "family": "cirA",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "blaCARB": {
+  "input": "blaCARB",
+  "family": "blaCARB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.8
+ },
+ "catB11": {
+  "input": "catB11",
+  "family": "catB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.8
+ },
+ "cmlA": {
+  "input": "cmlA",
+  "family": "cmlA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:blaSHV_C-112A": {
+  "input": "POINT:blaSHV_C-112A",
+  "family": "blaSHV",
+  "kind": "point_mutation",
+  "drugs": [
+   "cephalosporin"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_Q262PfsTer55": {
+  "input": "POINT:ompK36_Q262PfsTer55",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_G208VfsTer5": {
+  "input": "POINT:ompK35_G208VfsTer5",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "tet(B)": {
+  "input": "tet(B)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_Y47HfsTer3": {
+  "input": "POINT:ramR_Y47HfsTer3",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_H103PfsTer17": {
+  "input": "POINT:ramR_H103PfsTer17",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "dfrA15": {
+  "input": "dfrA15",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_W316Ter": {
+  "input": "POINT:ompK35_W316Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:mgrB_N25RfsTer14": {
+  "input": "POINT:mgrB_N25RfsTer14",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_A119GfsTer13": {
+  "input": "POINT:ompK35_A119GfsTer13",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_E282Ter": {
+  "input": "POINT:ompK36_E282Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_R98VfsTer13": {
+  "input": "POINT:ramR_R98VfsTer13",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "aac(6')": {
+  "input": "aac(6')",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "dfrB3": {
+  "input": "dfrB3",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.8
+ },
+ "qnrB2": {
+  "input": "qnrB2",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_A170GfsTer83": {
+  "input": "POINT:ompK35_A170GfsTer83",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_H103RfsTer22": {
+  "input": "POINT:ramR_H103RfsTer22",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_L66AfsTer95": {
+  "input": "POINT:ramR_L66AfsTer95",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_W316CfsTer7": {
+  "input": "POINT:ompK35_W316CfsTer7",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:cirA_A48RfsTer13": {
+  "input": "POINT:cirA_A48RfsTer13",
+  "family": "cirA",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_P76RfsTer85": {
+  "input": "POINT:ramR_P76RfsTer85",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_W47R": {
+  "input": "POINT:mgrB_W47R",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_Q288Ter": {
+  "input": "POINT:ompK35_Q288Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_Q196Ter": {
+  "input": "POINT:ompK36_Q196Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:cirA_N122TfsTer45": {
+  "input": "POINT:cirA_N122TfsTer45",
+  "family": "cirA",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_K27IfsTer5": {
+  "input": "POINT:ompK36_K27IfsTer5",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_E102SfsTer17": {
+  "input": "POINT:ramR_E102SfsTer17",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "oqxB15": {
+  "input": "oqxB15",
+  "family": "oqxB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:cirA_D443TerfsTer0": {
+  "input": "POINT:cirA_D443TerfsTer0",
+  "family": "cirA",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aph(3')-VIb": {
+  "input": "aph(3')-VIb",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_L66NfsTer112": {
+  "input": "POINT:ramR_L66NfsTer112",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:acrR_M109I": {
+  "input": "POINT:acrR_M109I",
+  "family": "acrAB",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_Y255Ter": {
+  "input": "POINT:ompK36_Y255Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "ere(B)": {
+  "input": "ere(B)",
+  "family": "ere",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_W125Ter": {
+  "input": "POINT:ompK36_W125Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_W95LfsTer4": {
+  "input": "POINT:ramR_W95LfsTer4",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_H103QfsTer19": {
+  "input": "POINT:ramR_H103QfsTer19",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "mcr-9.1": {
+  "input": "mcr-9.1",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_Y113TerfsTer0": {
+  "input": "POINT:ompK35_Y113TerfsTer0",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aadA13": {
+  "input": "aadA13",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_Q275Ter": {
+  "input": "POINT:ompK35_Q275Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:pmrB_T157P": {
+  "input": "POINT:pmrB_T157P",
+  "family": "pmrB",
+  "kind": "point_mutation",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_G134AfsTer11": {
+  "input": "POINT:ompK35_G134AfsTer11",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:lapB_V43G": {
+  "input": "POINT:lapB_V43G",
+  "family": "lapB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ompK35_D71TerfsTer0": {
+  "input": "POINT:ompK35_D71TerfsTer0",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_D159AfsTer8": {
+  "input": "POINT:ompK35_D159AfsTer8",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "rmtC": {
+  "input": "rmtC",
+  "family": "rmt",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "dfrA26": {
+  "input": "dfrA26",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_K309TfsTer1": {
+  "input": "POINT:ompK35_K309TfsTer1",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "erm(42)": {
+  "input": "erm(42)",
+  "family": "erm",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_Y36Ter": {
+  "input": "POINT:ompK35_Y36Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_G29GALLNKTer": {
+  "input": "POINT:ompK36_G29GALLNKTer",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "oqxB14": {
+  "input": "oqxB14",
+  "family": "oqxAB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "tet(W)": {
+  "input": "tet(W)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "aac(6')-Ib4": {
+  "input": "aac(6')-Ib4",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_V26insTer6": {
+  "input": "POINT:mgrB_V26insTer6",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_Y173Ter": {
+  "input": "POINT:ompK35_Y173Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aac(6')-Il": {
+  "input": "aac(6')-Il",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaVIM": {
+  "input": "blaVIM",
+  "family": "blaVIM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_A59GfsTer21": {
+  "input": "POINT:ompK35_A59GfsTer21",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aac(6')-IIa": {
+  "input": "aac(6')-IIa",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_S86CfsTer4": {
+  "input": "POINT:ompK35_S86CfsTer4",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_S137Ter": {
+  "input": "POINT:ramR_S137Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "qnrB6": {
+  "input": "qnrB6",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_Q92Ter": {
+  "input": "POINT:ompK35_Q92Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_Y59CfsTer13": {
+  "input": "POINT:ramR_Y59CfsTer13",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_L60CfsTer13": {
+  "input": "POINT:ramR_L60CfsTer13",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_Q70Ter": {
+  "input": "POINT:ompK36_Q70Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_Q76Ter": {
+  "input": "POINT:ompK36_Q76Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_H103RfsTer15": {
+  "input": "POINT:ramR_H103RfsTer15",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_A275insTer9": {
+  "input": "POINT:ompK36_A275insTer9",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "blaSHV-2A": {
+  "input": "blaSHV-2A",
+  "family": "blaSHV",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "dfrA30": {
+  "input": "dfrA30",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim",
+   "sulfonamide"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_K231SfsTer16": {
+  "input": "POINT:ompK36_K231SfsTer16",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_D127TfsTer38": {
+  "input": "POINT:ompK36_D127TfsTer38",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_Q275HfsTer11": {
+  "input": "POINT:ompK35_Q275HfsTer11",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:mgrB_W20Ter": {
+  "input": "POINT:mgrB_W20Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_R60LfsTer31": {
+  "input": "POINT:ompK35_R60LfsTer31",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:gyrA_S83L": {
+  "input": "POINT:gyrA_S83L",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_S110YfsTer35": {
+  "input": "POINT:ompK35_S110YfsTer35",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_Q54RfsTer34": {
+  "input": "POINT:ompK36_Q54RfsTer34",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "rmtG": {
+  "input": "rmtG",
+  "family": "rmt",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "oqxA3": {
+  "input": "oqxA3",
+  "family": "oqxAB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_M109AfsTer68": {
+  "input": "POINT:ramR_M109AfsTer68",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_N116RfsTer13": {
+  "input": "POINT:ompK35_N116RfsTer13",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "blaFOX": {
+  "input": "blaFOX",
+  "family": "blaFOX",
+  "kind": "acquired_gene",
+  "drugs": [
+   "cephalosporin",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "qnrA1": {
+  "input": "qnrA1",
+  "family": "qnrA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:pmrA_S42N": {
+  "input": "POINT:pmrA_S42N",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:nfsB_V167GfsTer7": {
+  "input": "POINT:nfsB_V167GfsTer7",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_Q273Ter": {
+  "input": "POINT:ompK35_Q273Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:pmrB_T140P": {
+  "input": "POINT:pmrB_T140P",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_K235Ter": {
+  "input": "POINT:ompK35_K235Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "ramR_G96AfsTer27": {
+  "input": "ramR_G96AfsTer27",
+  "family": "ramR",
+  "kind": "regulator",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "lnu(F)": {
+  "input": "lnu(F)",
+  "family": "lnu",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_A227EfsTer11": {
+  "input": "POINT:ompK35_A227EfsTer11",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_D77GfsTer105": {
+  "input": "POINT:ramR_D77GfsTer105",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aacA34": {
+  "input": "aacA34",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aph(3')-VIa": {
+  "input": "aph(3')-VIa",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaIMP": {
+  "input": "blaIMP",
+  "family": "blaIMP",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem",
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_S230RfsTer11": {
+  "input": "POINT:ompK36_S230RfsTer11",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_A323GfsTer13": {
+  "input": "POINT:ompK36_A323GfsTer13",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "bleO": {
+  "input": "bleO",
+  "family": "ble",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "estT": {
+  "input": "estT",
+  "family": "est",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "tet(X4)": {
+  "input": "tet(X4)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "mcr-3.22": {
+  "input": "mcr-3.22",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "mef(B)": {
+  "input": "mef(B)",
+  "family": "mef",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "mcr-3.21": {
+  "input": "mcr-3.21",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "aph(3')-IIa": {
+  "input": "aph(3')-IIa",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "mcr-3.23": {
+  "input": "mcr-3.23",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:pmrA_G53S": {
+  "input": "POINT:pmrA_G53S",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aacA16": {
+  "input": "aacA16",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaVEB": {
+  "input": "blaVEB",
+  "family": "blaVEB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_V32G": {
+  "input": "POINT:mgrB_V32G",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_Q68Ter": {
+  "input": "POINT:ompK35_Q68Ter",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_N116PfsTer1": {
+  "input": "POINT:ompK35_N116PfsTer1",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_A105RfsTer40": {
+  "input": "POINT:ompK35_A105RfsTer40",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ramR_K63insTer8": {
+  "input": "POINT:ramR_K63insTer8",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_S233LfsTer20": {
+  "input": "POINT:ompK35_S233LfsTer20",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_N84TfsTer18": {
+  "input": "POINT:ompK36_N84TfsTer18",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ramR_E125RfsTer57": {
+  "input": "POINT:ramR_E125RfsTer57",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:mgrB_N25KfsTer9": {
+  "input": "POINT:mgrB_N25KfsTer9",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_N29TfsTer34": {
+  "input": "POINT:ompK35_N29TfsTer34",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_Q78Ter": {
+  "input": "POINT:ompK35_Q78Ter",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "aph(3')-XV": {
+  "input": "aph(3')-XV",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "catB2": {
+  "input": "catB2",
+  "family": "catA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_Q66Ter": {
+  "input": "POINT:ompK36_Q66Ter",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_G41TfsTer32": {
+  "input": "POINT:ompK35_G41TfsTer32",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ramR_E41Ter": {
+  "input": "POINT:ramR_E41Ter",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "blaNMC-A": {
+  "input": "blaNMC-A",
+  "family": "blaNDM",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "fosA7": {
+  "input": "fosA7",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_M133RfsTer6": {
+  "input": "POINT:ramR_M133RfsTer6",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ramR_M101PfsTer61": {
+  "input": "POINT:ramR_M101PfsTer61",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ramR_S91insTer26": {
+  "input": "POINT:ramR_S91insTer26",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "blaSCO": {
+  "input": "blaSCO",
+  "family": "blaSHV",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_Q54Ter": {
+  "input": "POINT:ompK36_Q54Ter",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "blaOXY-5": {
+  "input": "blaOXY-5",
+  "family": "blaOXA-48",
+  "kind": "acquired_gene",
+  "drugs": [
+   "beta-lactam"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_N115insTer8": {
+  "input": "POINT:ompK36_N115insTer8",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ramR_R46VfsTer49": {
+  "input": "POINT:ramR_R46VfsTer49",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "dfrA8": {
+  "input": "dfrA8",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_W95Ter": {
+  "input": "POINT:ramR_W95Ter",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_I69SfsTer1": {
+  "input": "POINT:ompK35_I69SfsTer1",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:pmrB_S85R": {
+  "input": "POINT:pmrB_S85R",
+  "family": "pmrB",
+  "kind": "point_mutation",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_Y155Ter": {
+  "input": "POINT:ompK35_Y155Ter",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:pmrA_G53C": {
+  "input": "POINT:pmrA_G53C",
+  "family": "pmrA",
+  "kind": "point_mutation",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_Y144Ter": {
+  "input": "POINT:ompK35_Y144Ter",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_K185Ter": {
+  "input": "POINT:ompK35_K185Ter",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_L63KfsTer7": {
+  "input": "POINT:ompK35_L63KfsTer7",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.7
+ },
+ "ant(4')-IIb": {
+  "input": "ant(4')-IIb",
+  "family": "ant(4')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "rmtB4": {
+  "input": "rmtB4",
+  "family": "rmtB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:crrB_P151L": {
+  "input": "POINT:crrB_P151L",
+  "family": "crrB",
+  "kind": "point_mutation",
+  "drugs": [
+   "unknown"
+  ],
+  "confidence": 0.5
+ },
+ "POINT:ramR_I106SfsTer10": {
+  "input": "POINT:ramR_I106SfsTer10",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "qnrS": {
+  "input": "qnrS",
+  "family": "qnrS",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_W89Ter": {
+  "input": "POINT:ramR_W89Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_I115PfsTer40": {
+  "input": "POINT:ramR_I115PfsTer40",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "aph(3')-II": {
+  "input": "aph(3')-II",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_K139SfsTer85": {
+  "input": "POINT:ramR_K139SfsTer85",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_Q170Ter": {
+  "input": "POINT:ompK36_Q170Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "bla": {
+  "input": "bla",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.1
+ },
+ "qnrB17": {
+  "input": "qnrB17",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_L4Ter": {
+  "input": "POINT:mgrB_L4Ter",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "dfrA22": {
+  "input": "dfrA22",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_K10SfsTer16": {
+  "input": "POINT:ramR_K10SfsTer16",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:mgrB_D31N": {
+  "input": "POINT:mgrB_D31N",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:mgrB_K43Ter": {
+  "input": "POINT:mgrB_K43Ter",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "aph(3')": {
+  "input": "aph(3')",
+  "family": "aph(3')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aadA3": {
+  "input": "aadA3",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_E118Ter": {
+  "input": "POINT:ramR_E118Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_L154CfsTer43": {
+  "input": "POINT:ramR_L154CfsTer43",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:mgrB_N25TfsTer1": {
+  "input": "POINT:mgrB_N25TfsTer1",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_L156CfsTer71": {
+  "input": "POINT:ramR_L156CfsTer71",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_L66AfsTer5": {
+  "input": "POINT:ramR_L66AfsTer5",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_E140Ter": {
+  "input": "POINT:ramR_E140Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_Y47CfsTer26": {
+  "input": "POINT:ramR_Y47CfsTer26",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_T43M": {
+  "input": "POINT:ramR_T43M",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_K9Ter": {
+  "input": "POINT:ramR_K9Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_T333N": {
+  "input": "POINT:ompK36_T333N",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_G37Ter": {
+  "input": "POINT:ompK35_G37Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_P255QfsTer5": {
+  "input": "POINT:ompK35_P255QfsTer5",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_E78GfsTer9": {
+  "input": "POINT:ompK36_E78GfsTer9",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:crrB_P151S": {
+  "input": "POINT:crrB_P151S",
+  "family": "crrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.6
+ },
+ "POINT:ramR_Q11AfsTer42": {
+  "input": "POINT:ramR_Q11AfsTer42",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_S206CfsTer48": {
+  "input": "POINT:ompK35_S206CfsTer48",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_S29HfsTer20": {
+  "input": "POINT:ramR_S29HfsTer20",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_R115VfsTer30": {
+  "input": "POINT:ompK35_R115VfsTer30",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aadA21": {
+  "input": "aadA21",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aac(6')-Ian": {
+  "input": "aac(6')-Ian",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_G37VfsTer32": {
+  "input": "POINT:mgrB_G37VfsTer32",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "aac(3)-Ia": {
+  "input": "aac(3)-Ia",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_M27K": {
+  "input": "POINT:mgrB_M27K",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_M57TfsTer3": {
+  "input": "POINT:ompK36_M57TfsTer3",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_G96AfsTer27": {
+  "input": "POINT:ramR_G96AfsTer27",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_A251EfsTer51": {
+  "input": "POINT:ompK36_A251EfsTer51",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_S124FfsTer37": {
+  "input": "POINT:ompK36_S124FfsTer37",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:pmrB_S208N": {
+  "input": "POINT:pmrB_S208N",
+  "family": "pmrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_Y326LfsTer11": {
+  "input": "POINT:ompK36_Y326LfsTer11",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:cirA_Q55Ter": {
+  "input": "POINT:cirA_Q55Ter",
+  "family": "cirA",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_W89SfsTer30": {
+  "input": "POINT:ramR_W89SfsTer30",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_Y153Ter": {
+  "input": "POINT:ompK36_Y153Ter",
+  "family": "ompK36",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_W138Ter": {
+  "input": "POINT:ompK35_W138Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_W133Ter": {
+  "input": "POINT:ompK35_W133Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_E57Ter": {
+  "input": "POINT:ramR_E57Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_S86VfsTer3": {
+  "input": "POINT:ompK35_S86VfsTer3",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "dfrA32": {
+  "input": "dfrA32",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "mcr-3.20": {
+  "input": "mcr-3.20",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "tet(M)": {
+  "input": "tet(M)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_A12GfsTer37": {
+  "input": "POINT:ramR_A12GfsTer37",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "aac(2')-IIa": {
+  "input": "aac(2')-IIa",
+  "family": "aac(2')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_S29HfsTer18": {
+  "input": "POINT:ramR_S29HfsTer18",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "tet(X5)": {
+  "input": "tet(X5)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_T162I": {
+  "input": "POINT:ramR_T162I",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "oqxB6": {
+  "input": "oqxB6",
+  "family": "oqxB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "dfrA7": {
+  "input": "dfrA7",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "mcr-1.1": {
+  "input": "mcr-1.1",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_C16Ter": {
+  "input": "POINT:mgrB_C16Ter",
+  "family": "mgrB",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_S29PfsTer42": {
+  "input": "POINT:ramR_S29PfsTer42",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "mcr-8.1": {
+  "input": "mcr-8.1",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "mph(B)": {
+  "input": "mph(B)",
+  "family": "mph",
+  "kind": "acquired_gene",
+  "drugs": [
+   "macrolide"
+  ],
+  "confidence": 0.9
+ },
+ "rdmCL": {
+  "input": "rdmCL",
+  "family": "rdmC",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_Y76Ter": {
+  "input": "POINT:ompK35_Y76Ter",
+  "family": "ompK35",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_L111RfsTer13": {
+  "input": "POINT:ramR_L111RfsTer13",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:cirA_A414GfsTer2": {
+  "input": "POINT:cirA_A414GfsTer2",
+  "family": "cirA",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "rmtH": {
+  "input": "rmtH",
+  "family": "rmt",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:oqxR_Q11L": {
+  "input": "POINT:oqxR_Q11L",
+  "family": "oqxR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "aac(3)-IIg": {
+  "input": "aac(3)-IIg",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aac(6')-IIc": {
+  "input": "aac(6')-IIc",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "blaGES": {
+  "input": "blaGES",
+  "family": "blaGES",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_E83Ter": {
+  "input": "POINT:ramR_E83Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "oqxA4": {
+  "input": "oqxA4",
+  "family": "oqxA",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:cirA_F362LfsTer13": {
+  "input": "POINT:cirA_F362LfsTer13",
+  "family": "cirA",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ramR_E160GfsTer23": {
+  "input": "POINT:ramR_E160GfsTer23",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:cirA_Q64Ter": {
+  "input": "POINT:cirA_Q64Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_W79Ter": {
+  "input": "POINT:ompK35_W79Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "tet(C)": {
+  "input": "tet(C)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "dfrA16": {
+  "input": "dfrA16",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "catA": {
+  "input": "catA",
+  "family": "catA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "phenicol"
+  ],
+  "confidence": 0.9
+ },
+ "tet(J)": {
+  "input": "tet(J)",
+  "family": "tet",
+  "kind": "acquired_gene",
+  "drugs": [
+   "tetracycline"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_V138IfsTer40": {
+  "input": "POINT:ramR_V138IfsTer40",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "dfrA35": {
+  "input": "dfrA35",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "oqxB21": {
+  "input": "oqxB21",
+  "family": "oqxB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "oqxB27": {
+  "input": "oqxB27",
+  "family": "oqxB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "blaEC": {
+  "input": "blaEC",
+  "family": "blaEC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_E132Ter": {
+  "input": "POINT:ompK35_E132Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_Y76TerfsTer0": {
+  "input": "POINT:ompK35_Y76TerfsTer0",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_AGSLG269insTer49": {
+  "input": "POINT:ompK36_AGSLG269insTer49",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "oqxB22": {
+  "input": "oqxB22",
+  "family": "oqxB",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "oqxA6": {
+  "input": "oqxA6",
+  "family": "oqxA",
+  "kind": "acquired_gene",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "fosA9": {
+  "input": "fosA9",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "aadA10": {
+  "input": "aadA10",
+  "family": "aadA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "aacA43": {
+  "input": "aacA43",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_H103RfsTer80": {
+  "input": "POINT:ramR_H103RfsTer80",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_S185RfsTer8": {
+  "input": "POINT:ompK36_S185RfsTer8",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_H186LfsTer5": {
+  "input": "POINT:ramR_H186LfsTer5",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_Y147Ter": {
+  "input": "POINT:ramR_Y147Ter",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:cirA_S419Ter": {
+  "input": "POINT:cirA_S419Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_L111PfsTer11": {
+  "input": "POINT:ramR_L111PfsTer11",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_Y274Ter": {
+  "input": "POINT:ompK35_Y274Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_E131Ter": {
+  "input": "POINT:ompK36_E131Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_N141RfsTer2": {
+  "input": "POINT:ompK36_N141RfsTer2",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_Q301Ter": {
+  "input": "POINT:ompK36_Q301Ter",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ftsI_L367Q": {
+  "input": "POINT:ftsI_L367Q",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_L165AfsTer1": {
+  "input": "POINT:ompK36_L165AfsTer1",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "fosA3": {
+  "input": "fosA3",
+  "family": "fosA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fosfomycin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_A323RfsTer50": {
+  "input": "POINT:ompK36_A323RfsTer50",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "qnrB91": {
+  "input": "qnrB91",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_S124VfsTer16": {
+  "input": "POINT:ompK36_S124VfsTer16",
+  "family": null,
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_N99PfsTer82": {
+  "input": "POINT:ramR_N99PfsTer82",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "ampC": {
+  "input": "ampC",
+  "family": "ampC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "penicillin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_F127TerfsTer0": {
+  "input": "POINT:ramR_F127TerfsTer0",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "aac(3)-II": {
+  "input": "aac(3)-II",
+  "family": "aac(3)",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_M133CfsTer5": {
+  "input": "POINT:ramR_M133CfsTer5",
+  "family": "ramR",
+  "kind": "truncation",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:cirA_W615Ter": {
+  "input": "POINT:cirA_W615Ter",
+  "family": "cirA",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_V97NfsTer2": {
+  "input": "POINT:ramR_V97NfsTer2",
+  "family": "ramR",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_R80EfsTer98": {
+  "input": "POINT:ramR_R80EfsTer98",
+  "family": "ramR",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:cirA_R269AfsTer8": {
+  "input": "POINT:cirA_R269AfsTer8",
+  "family": "cirA",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:cirA_I124TfsTer5": {
+  "input": "POINT:cirA_I124TfsTer5",
+  "family": "cirA",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_N99QfsTer83": {
+  "input": "POINT:ramR_N99QfsTer83",
+  "family": "ramR",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:cirA_W241Ter": {
+  "input": "POINT:cirA_W241Ter",
+  "family": "cirA",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:mgrB_L24insTer9": {
+  "input": "POINT:mgrB_L24insTer9",
+  "family": "mgrB",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "dfrB5": {
+  "input": "dfrB5",
+  "family": "dfr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "trimethoprim"
+  ],
+  "confidence": 0.9
+ },
+ "blaOKP-A": {
+  "input": "blaOKP-A",
+  "family": "blaOKP",
+  "kind": "acquired_gene",
+  "drugs": [
+   "carbapenem"
+  ],
+  "confidence": 0.9
+ },
+ "qnrA6": {
+  "input": "qnrA6",
+  "family": "qnrA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "qnrA": {
+  "input": "qnrA",
+  "family": "qnrA",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_G133D": {
+  "input": "POINT:ompK36_G133D",
+  "family": "ompK36",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:mgrB_L18Ter": {
+  "input": "POINT:mgrB_L18Ter",
+  "family": "mgrB",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_L14GfsTer11": {
+  "input": "POINT:ompK35_L14GfsTer11",
+  "family": "ompK35",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_F48SfsTer22": {
+  "input": "POINT:ramR_F48SfsTer22",
+  "family": "ramR",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:mgrB_N42IfsTer30": {
+  "input": "POINT:mgrB_N42IfsTer30",
+  "family": "mgrB",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "qnrVC1": {
+  "input": "qnrVC1",
+  "family": "qnrVC",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_E24Ter": {
+  "input": "POINT:ompK35_E24Ter",
+  "family": "ompK35",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_T47PfsTer16": {
+  "input": "POINT:ompK35_T47PfsTer16",
+  "family": "ompK35",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "mcr": {
+  "input": "mcr",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_D91VfsTer11": {
+  "input": "POINT:ompK36_D91VfsTer11",
+  "family": "ompK36",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_K104RfsTer6": {
+  "input": "POINT:ramR_K104RfsTer6",
+  "family": "ramR",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_A346SfsTer22": {
+  "input": "POINT:ompK35_A346SfsTer22",
+  "family": "ompK35",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_K28WfsTer30": {
+  "input": "POINT:ompK35_K28WfsTer30",
+  "family": "ompK35",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:cirA_L32MfsTer6": {
+  "input": "POINT:cirA_L32MfsTer6",
+  "family": "cirA",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_A27SfsTer26": {
+  "input": "POINT:ramR_A27SfsTer26",
+  "family": "ramR",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_V131LfsTer14": {
+  "input": "POINT:ompK35_V131LfsTer14",
+  "family": "ompK35",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_K124AfsTer2": {
+  "input": "POINT:ramR_K124AfsTer2",
+  "family": "ramR",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:mgrB_Q33Ter": {
+  "input": "POINT:mgrB_Q33Ter",
+  "family": "mgrB",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "aac(6')-Iq": {
+  "input": "aac(6')-Iq",
+  "family": "aac(6')",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "qnrB12": {
+  "input": "qnrB12",
+  "family": "qnrB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:ramR_G38PfsTer24": {
+  "input": "POINT:ramR_G38PfsTer24",
+  "family": "ramR",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "rmtB": {
+  "input": "rmtB",
+  "family": "rmtB",
+  "kind": "acquired_gene",
+  "drugs": [
+   "aminoglycoside"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:phoQ_V24G": {
+  "input": "POINT:phoQ_V24G",
+  "family": "phoQ",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "mcr-3.26": {
+  "input": "mcr-3.26",
+  "family": "mcr",
+  "kind": "acquired_gene",
+  "drugs": [
+   "polymyxin"
+  ],
+  "confidence": 0.9
+ },
+ "qnrS13": {
+  "input": "qnrS13",
+  "family": "qnrS",
+  "kind": "acquired_gene",
+  "drugs": [
+   "fluoroquinolone"
+  ],
+  "confidence": 0.9
+ },
+ "POINT:phoP_D191Y": {
+  "input": "POINT:phoP_D191Y",
+  "family": "phoP",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:cirA_T79SfsTer16": {
+  "input": "POINT:cirA_T79SfsTer16",
+  "family": "cirA",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK35_Y140IfsTer5": {
+  "input": "POINT:ompK35_Y140IfsTer5",
+  "family": "ompK35",
+  "kind": "POINT",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ramR_I26SfsTer26": {
+  "input": "POINT:ramR_I26SfsTer26",
+  "family": "ramR",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_F35SfsTer37": {
+  "input": "POINT:mgrB_F35SfsTer37",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_K176Ter": {
+  "input": "POINT:ompK35_K176Ter",
+  "family": "ompK35",
+  "kind": "TRUNC",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "arr-3": {
+  "input": "arr-3",
+  "family": null,
+  "kind": null,
+  "drugs": [],
+  "confidence": 0.5
+ },
+ "tmexC3": {
+  "input": "tmexC3",
+  "family": "tmexC",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "tmexD": {
+  "input": "tmexD",
+  "family": "tmexD",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "toprJ1": {
+  "input": "toprJ1",
+  "family": "toprJ",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:ompK36_L32FfsTer28": {
+  "input": "POINT:ompK36_L32FfsTer28",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:mgrB_I10QfsTer3": {
+  "input": "POINT:mgrB_I10QfsTer3",
+  "family": "mgrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK36_Y137SfsTer28": {
+  "input": "POINT:ompK36_Y137SfsTer28",
+  "family": "ompK36",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_Y117Ter": {
+  "input": "POINT:ompK35_Y117Ter",
+  "family": "ompK35",
+  "kind": "TRUNC",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_S53TfsTer9": {
+  "input": "POINT:ompK35_S53TfsTer9",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_Y339Ter": {
+  "input": "POINT:ompK35_Y339Ter",
+  "family": "ompK35",
+  "kind": "TRUNC",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK35_T47HfsTer42": {
+  "input": "POINT:ompK35_T47HfsTer42",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "tmexC2": {
+  "input": "tmexC2",
+  "family": "tmexC",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "tmexD2": {
+  "input": "tmexD2",
+  "family": "tmexD",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "toprJ2": {
+  "input": "toprJ2",
+  "family": "toprJ",
+  "kind": "efflux",
+  "drugs": [],
+  "confidence": 0.7
+ },
+ "POINT:cirA_Y457SfsTer26": {
+  "input": "POINT:cirA_Y457SfsTer26",
+  "family": "cirA",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:crrB_G183V": {
+  "input": "POINT:crrB_G183V",
+  "family": "crrB",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_I25KfsTer39": {
+  "input": "POINT:ompK35_I25KfsTer39",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_N21TfsTer42": {
+  "input": "POINT:ompK35_N21TfsTer42",
+  "family": "ompK35",
+  "kind": "point_mutation",
+  "drugs": [],
+  "confidence": 0.9
+ },
+ "POINT:ompK35_E66Ter": {
+  "input": "POINT:ompK35_E66Ter",
+  "family": "ompK35",
+  "kind": "TRUNC",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ompK36_Q288Ter": {
+  "input": "POINT:ompK36_Q288Ter",
+  "family": "ompK36",
+  "kind": "TRUNC",
+  "drugs": [],
+  "confidence": 0.8
+ },
+ "POINT:ramR_E164Ter": {
+  "input": "POINT:ramR_E164Ter",
+  "family": "ramR",
+  "kind": "TRUNC",
+  "drugs": [],
+  "confidence": 0.8
+ }
+}
