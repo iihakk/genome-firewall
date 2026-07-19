@@ -144,13 +144,13 @@ export default function Worklist() {
           <thead>
             <tr className="border-b border-line">
               {[
-                ["Accession", "w-[168px]"],
-                ["Organism", "w-[200px]"],
-                ["Source", "w-[124px]"],
-                ["Ward", "w-[166px]"],
-                ["Status", "w-[126px]"],
-                ["Therapy", "w-auto"],
-                ["Received", "w-[104px]"],
+                ["Accession", "w-[158px]"],
+                ["Organism", "w-auto"],
+                ["Source", "w-[126px]"],
+                ["Ward", "w-[168px]"],
+                ["Status", "w-[122px]"],
+                ["Therapy", "w-[196px]"],
+                ["Received", "w-[98px]"],
               ].map(([h, w]) => (
                 <th
                   key={h}

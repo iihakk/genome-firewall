@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
-data/ncbi_amr_kleb.tsv
+data/ncbi_amr_*.tsv
 data/genes_*.tsv
 data/amr_*.tsv
 .env

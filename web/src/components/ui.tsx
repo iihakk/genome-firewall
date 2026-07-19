@@ -232,6 +232,22 @@ export function prettyToken(t: string): string {
   return t.replace(/^(aac|aph|ant)\(/, (m) => m.toUpperCase());
 }
 
+/** Standard clinical shorthand. A report reads "TMP-SMX", not the full salt name, and using it
+ *  keeps the antibiotic column from being sized by its single longest entry. */
+const DRUG_SHORT: Record<string, string> = {
+  "trimethoprim-sulfamethoxazole": "TMP-SMX",
+  "piperacillin-tazobactam": "pip-tazo",
+  "amoxicillin-clavulanate": "co-amoxiclav",
+  "ampicillin-sulbactam": "amp-sulbactam",
+  "ticarcillin-clavulanate": "tic-clav",
+  "ceftolozane-tazobactam": "ceftol-tazo",
+  "ceftazidime-avibactam": "ceftaz-avi",
+};
+
+export function shortDrug(d: string): string {
+  return DRUG_SHORT[d] ?? d;
+}
+
 export function relTime(iso: string) {
   const then = new Date(iso).getTime();
   const now = new Date("2026-07-19T09:00").getTime();

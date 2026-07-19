@@ -4,7 +4,7 @@ import Link from "next/link";
 import { use, useMemo, useState } from "react";
 import { PageHeader } from "@/components/Rail";
 import { ResultDialog } from "@/components/ResultDialog";
-import { Button, CallChip, Card, Chip, Meter, SectionLabel, prettyToken } from "@/components/ui";
+import { Button, CallChip, Card, Chip, Meter, SectionLabel, prettyToken, shortDrug } from "@/components/ui";
 import { CURRENT_USER, useSpecimens } from "@/lib/store";
 import { EXCLUDED_DRUGS, type Call, type DrugResult } from "@/lib/types";
 
@@ -90,7 +90,7 @@ export default function SpecimenPage({ params }: { params: Promise<{ id: string 
                         onClick={() => setOpen(d.drug)}
                         className="rounded-full bg-susceptible-soft px-3 py-1 text-[12.5px] font-medium text-susceptible ring-1 ring-susceptible-line transition-transform duration-150 hover:scale-[1.03]"
                       >
-                        {d.drug}
+                        {shortDrug(d.drug)}
                       </button>
                     ))
                   ) : (
@@ -111,7 +111,7 @@ export default function SpecimenPage({ params }: { params: Promise<{ id: string 
 
           <Card>
             <SectionLabel>Full panel · {s.drugs.length} antibiotics</SectionLabel>
-            <div className="grid grid-cols-[210px_132px_1fr_124px_48px] items-center gap-3 border-b border-line pb-2 text-[11px] font-semibold text-faint">
+            <div className="grid grid-cols-[152px_130px_1fr_118px_46px] items-center gap-3 border-b border-line pb-2 text-[11px] font-semibold text-faint">
               <span>Antibiotic</span>
               <span>Call</span>
               <span>Confidence</span>
@@ -273,12 +273,13 @@ function DrugRow({
 
   return (
     <div className="group/row border-b border-line last:border-0">
-      <div className="grid grid-cols-[210px_132px_1fr_124px_48px] items-center gap-3 py-2.5">
+      <div className="grid grid-cols-[152px_130px_1fr_118px_46px] items-center gap-3 py-2.5">
         <button
           onClick={onOpen}
-          className="flex items-center gap-1.5 text-left text-[13.5px] font-medium hover:text-accent"
+          title={d.drug}
+          className="flex items-center gap-1.5 truncate text-left text-[13.5px] font-medium hover:text-accent"
         >
-          {d.drug}
+          {shortDrug(d.drug)}
           {excluded && (
             <span title={excluded} className="font-mono text-[10px] text-deferred">
               ⚠
