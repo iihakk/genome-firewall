@@ -12,7 +12,7 @@ Carries the four things the previous export could not:
 
     python3 pipeline/export_ui.py
 
-Writes ui/predictions.json and ui/predictions.js
+Writes web/src/data/predictions.json
 """
 
 import json
@@ -198,9 +198,9 @@ def main():
             note="Predictions precomputed offline so the demo cannot fail live. "
                  "The pipeline runs for real in the tech video."))
 
-    json.dump(payload, open(os.path.join(HERE, "ui", "predictions.json"), "w"), indent=1)
-    with open(os.path.join(HERE, "ui", "predictions.js"), "w") as f:
-        f.write("window.PREDICTIONS = " + json.dumps(payload) + ";\n")
+    dest_dir = os.path.join(HERE, "web", "src", "data")
+    os.makedirs(dest_dir, exist_ok=True)
+    json.dump(payload, open(os.path.join(dest_dir, "predictions.json"), "w"), indent=1)
 
     calls = [d["call"] for i in demo for d in i["drugs"]]
     print(f"\n{len(demo)} demo isolates · {len(models)} drugs")
@@ -208,7 +208,7 @@ def main():
           f"IND={calls.count('INDETERMINATE')}")
     print(f"isolates showing a dangerous lookup failure: "
           f"{sum(1 for i in demo if any(d['rule_wrong_and_dangerous'] for d in i['drugs']))}")
-    print("wrote ui/predictions.js")
+    print("wrote web/src/data/predictions.json")
 
 
 if __name__ == "__main__":

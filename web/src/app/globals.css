@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+/* ══════════════════════════════════════════════════════════════════════════
+   GENOME FIREWALL — design system
+   Direction B · Swiss Clinical · emerald accent
+
+   Two green families that must never be confused:
+
+     ACCENT (emerald #059669)     brand. Navigation, buttons, focus, links.
+     SUSCEPTIBLE (forest #15803D) status. Only ever on a result chip.
+
+   Separated by hue, by placement, and by redundant encoding — every status chip
+   carries a glyph and a word as well as a colour, because red/green alone fails
+   roughly 1 in 12 men and a misread here changes an antibiotic.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+@theme {
+  --color-bg: #f7f9fc;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1f5f9;
+  --color-line: #e3e9f0;
+  --color-line-strong: #cfd8e3;
+
+  --color-ink: #0f172a;
+  --color-muted: #5a6779;
+  --color-faint: #94a2b4;
+
+  /* accent — brand only, never a result */
+  --color-accent: #059669;
+  --color-accent-hover: #047857;
+  --color-accent-soft: #ecfdf5;
+  --color-accent-line: #a7f3d0;
+
+  /* semantic — result chips only, never chrome */
+  --color-resistant: #dc2626;
+  --color-resistant-soft: #fef2f2;
+  --color-resistant-line: #fecaca;
+  --color-susceptible: #15803d;
+  --color-susceptible-soft: #f0fdf4;
+  --color-susceptible-line: #bbf7d0;
+  --color-deferred: #b45309;
+  --color-deferred-soft: #fffbeb;
+  --color-deferred-line: #fde68a;
+
+  --radius-card: 14px;
+  --radius-ctl: 10px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  ::selection {
+    background: var(--color-accent-line);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  /* numbers compared down a column must line up */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@utility card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-card);
+  box-shadow:
+    0 1px 2px rgb(15 23 42 / 0.04),
+    0 8px 24px -14px rgb(15 23 42 / 0.1);
+}
+
+/* ── motion ────────────────────────────────────────────────────────────────
+   Purposeful only: entrances, state changes, the drawer. Nothing decorative,
+   nothing that delays a task.                                              */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.5s var(--ease-out) backwards;
+}
+.animate-fade {
+  animation: fade 0.3s var(--ease-out) backwards;
+}
+.animate-slide-in {
+  animation: slide-in 0.28s var(--ease-out);
+}
+.animate-grow {
+  animation: grow 0.8s var(--ease-out) backwards;
+  transform-origin: left;
+}
+
+.stagger > * {
+  animation: rise 0.5s var(--ease-out) backwards;
+}
+.stagger > *:nth-child(1) {
+  animation-delay: 0.02s;
+}
+.stagger > *:nth-child(2) {
+  animation-delay: 0.06s;
+}
+.stagger > *:nth-child(3) {
+  animation-delay: 0.1s;
+}
+.stagger > *:nth-child(4) {
+  animation-delay: 0.14s;
+}
+.stagger > *:nth-child(5) {
+  animation-delay: 0.18s;
+}
+.stagger > *:nth-child(6) {
+  animation-delay: 0.22s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* thin scrollbars — this is a dense data tool */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line-strong);
+  border-radius: 6px;
+  border: 3px solid var(--color-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-faint);
+}

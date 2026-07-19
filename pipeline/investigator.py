@@ -97,7 +97,8 @@ def main():
     ap.add_argument("--limit", type=int, default=25)
     args = ap.parse_args()
 
-    payload = json.load(open(os.path.join(HERE, "ui", "predictions.json")))
+    PRED = os.path.join(HERE, "web", "src", "data", "predictions.json")
+    payload = json.load(open(PRED))
     feats, _, _ = load_ncbi("klebsiella")
     split = json.load(open(os.path.join(DATA, "split_v2.json")))
     known_vocab = {t for g in split["train"] for t in feats.get(g, ())}
@@ -141,9 +142,7 @@ def main():
             lead = by_key.get((iso["genome_id"], d["drug"]))
             if lead:
                 d["investigation"] = lead
-    json.dump(payload, open(os.path.join(HERE, "ui", "predictions.json"), "w"), indent=1)
-    with open(os.path.join(HERE, "ui", "predictions.js"), "w") as f:
-        f.write("window.PREDICTIONS = " + json.dumps(payload) + ";\n")
+    json.dump(payload, open(PRED, "w"), indent=1)
 
     if out:
         conf = sum(o["lead"]["confidence"] for o in out) / len(out)
