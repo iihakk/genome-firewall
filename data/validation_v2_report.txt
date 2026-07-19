@@ -1,0 +1,46 @@
+1. loading NCBI (primary — genes + mutations + truncations) ...
+   1863 isolates
+2. loading BV-BRC (external — gene presence only) ...
+   7273 genomes
+3. locked holdout: 1590 train / 273 quarantined
+
+drug                              n   rand  clone   hold    ext   temp    geo   rule  model
+-------------------------------------------------------------------------------------------
+amikacin                        610  0.895  0.890  0.940  0.811  0.991  0.740  0.736  0.800
+amoxicillin-clavulanate         588  0.855  0.805  0.958  0.900  0.581  0.540  0.658  0.822
+ampicillin-sulbactam            300  0.947  0.950  0.960  0.932    -    1.000  0.909  0.935
+aztreonam                       283  0.942  0.940  0.872  0.835  0.894  0.969  0.899  0.904
+cefazolin                       361  0.903  0.900  0.923  0.966  0.752  0.979  0.859  0.838
+cefepime                        592  0.888  0.873  0.816  0.788    -    0.970  0.804  0.806
+cefotaxime                      618  0.985  0.984  0.993  0.978  0.870  0.884  0.951  0.968
+cefoxitin                       422  0.835  0.829  0.811  0.708  0.698  0.884  0.747  0.779
+ceftazidime                    1253  0.931  0.924  0.953  0.950  0.531  0.938  0.825  0.906
+ceftazidime-avibactam           174  0.969  0.951  0.945  0.987  0.993  0.750    -      -  
+ceftriaxone                     922  0.944  0.934  0.889  0.982  0.706  0.510  0.825  0.923
+ciprofloxacin                   675  0.923  0.900  0.891  0.911    -    0.890  0.522  0.844
+colistin                        184  0.720  0.606  0.684  0.427    -    0.322  0.693  0.588
+ertapenem                       622  0.948  0.929  0.946  0.896    -    0.995  0.832  0.885
+gentamicin                      626  0.924  0.904  0.971  0.933  0.919  0.842  0.886  0.874
+imipenem                        478  0.926  0.913  0.897  0.947  0.948  0.741  0.832  0.848
+levofloxacin                    465  0.919  0.902  0.880  0.704    -    0.836  0.516  0.843
+meropenem                       673  0.913  0.909  0.922  0.953  0.938  0.765  0.811  0.838
+nitrofurantoin                  240  0.614  0.570  0.653  0.418  0.519  0.567  0.500  0.521
+piperacillin-tazobactam         898  0.835  0.842  0.850  0.881  0.660  0.570  0.661  0.802
+tetracycline                    359  0.865  0.825  0.886  0.808  0.885  0.939  0.855  0.841
+tobramycin                      494  0.977  0.975  0.988  0.925    -    0.913  0.959  0.960
+trimethoprim-sulfamethoxazole   649  0.931  0.898  0.950  0.925    -    0.826  0.812  0.895
+
+==================================================================
+MEAN ACROSS 23 ANTIBIOTICS
+==================================================================
+   1. random split (optimistic)                   0.895
+   2. clone-aware split                           0.876
+   3. locked holdout                              0.895
+   4. EXTERNAL (BV-BRC, no mutation features)     0.851
+   5. temporal                                    0.792
+   6. geographic                                  0.799
+
+   vs clinical rule: model 0.837 vs rule 0.777  (+0.06)
+   wins 13 / ties 7 / losses 2
+
+wrote /Users/abdulazizal-haidary/development/Hackathon/genome-firewall/data/validation_v2.json
