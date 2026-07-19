@@ -1,0 +1,31 @@
+drug                              n    RULE   MODEL     AUC    delta
+----------------------------------------------------------------------
+meropenem                       841   0.819   0.850   0.918   +0.031 WIN
+ertapenem                       770   0.838   0.895   0.955   +0.057 WIN
+imipenem                        579   0.849   0.843   0.918   -0.006 tie
+ceftazidime                    1455   0.821   0.910   0.937   +0.089 WIN
+ceftriaxone                    1074   0.816   0.918   0.945   +0.102 WIN
+cefotaxime                      739   0.949   0.972   0.990   +0.023 WIN
+cefepime                        722   0.798   0.774   0.886   -0.023 loss
+ciprofloxacin                   838   0.694   0.843   0.916   +0.149 WIN
+levofloxacin                    566   0.644   0.842   0.900   +0.198 WIN
+gentamicin                      787   0.890   0.892   0.939   +0.002 tie
+amikacin                        766   0.735   0.833   0.931   +0.099 WIN
+tobramycin                      608   0.961   0.960   0.977   -0.001 tie
+trimethoprim-sulfamethoxazole   792   0.815   0.877   0.937   +0.062 WIN
+tetracycline                    442   0.867   0.861   0.879   -0.005 tie
+colistin                        244   0.686   0.622   0.718   -0.064 loss
+----------------------------------------------------------------------
+model WINS 9, ties 4, loses 2 of 15
+mean gain over a correctly-specified rule: +0.047
+
+NOTES
+- Rule set is ResFinder/PointFinder-style, specified correctly: blaSHV and blaTEM are
+  EXCLUDED from cephalosporin rules because blaSHV is chromosomal in K. pneumoniae
+  (present in 92% of isolates) and neither marks ESBL activity without allele typing.
+  An earlier run that included them scored the rule at 0.49 and inflated our apparent
+  gain to +0.165. That was a strawman and is not reported.
+- Fluoroquinolone rules include gyrA/parC point mutations (PointFinder-equivalent).
+- Model figures are out-of-fold predictions, 5-fold stratified CV on NCBI Klebsiella.
+- Splits are random, so ABSOLUTE AUCs are optimistic (lineage leakage). The model-vs-rule
+  DELTA is fair: both are evaluated on identical isolates.
