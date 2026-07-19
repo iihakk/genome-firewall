@@ -1,0 +1,12 @@
+S. aureus isolates with AST + genotype: 1082
+
+drug                                n   %R     AUC  model bAcc  rule bAcc   delta
+---------------------------------------------------------------------------------
+oxacillin                         871  30%   0.984       0.978      0.980  -0.002 tie
+penicillin                        369  87%   0.868       0.860      0.884  -0.024 loss
+erythromycin                      858  45%   0.967       0.964      0.899  +0.064 WIN
+clindamycin                       850  30%   0.965       0.948      0.884  +0.065 WIN
+---------------------------------------------------------------------------------
+
+mean AUC 0.946 over 4 drugs
+vs clinical rule: wins 2, ties 1, losses 1  (mean +0.026)
