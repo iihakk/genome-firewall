@@ -28,31 +28,46 @@ const STATUS_LABEL: Record<
 /** Carbapenems are the last line. Resistance here is an infection-control event, not a data point. */
 const LAST_LINE = ["meropenem", "ertapenem", "imipenem"];
 
-/** Worklist flags answer one question: what does this specimen need from me next?
+/** Worklist flags answer one question: can the clinician act on this specimen now?
  *
- *  An earlier version flagged "genotype lookup would fail here", which is a claim about a
- *  competing method rather than a clinical instruction — useful when evaluating the system,
- *  useless when triaging a bench. That comparison now lives on Validation and Reconciliation,
- *  where a reader is actually assessing the tool.
+ *  Two earlier versions got this wrong. The first flagged "genotype lookup would fail here",
+ *  which is a claim about a competing method — useful when evaluating the system, useless when
+ *  working a bench. The second flagged every deferred drug, which fired on nearly every specimen:
+ *  with ~19% of results deferred and ten drugs each, P(at least one) is about 88%. Framing that as
+ *  a warning implied the specimen still needed culture and erased the point of the system.
+ *
+ *  What matters is whether a usable therapy option came back confidently. Nine confident calls and
+ *  one deferral is a success, not a caveat.
  */
 function triage(s: Specimen) {
-  const flags: { label: string; tone: "resistant" | "deferred" | "accent"; glyph: string }[] = [];
+  const flags: { label: string; tone: "resistant" | "deferred" | "accent" | "susceptible"; glyph: string }[] = [];
 
+  const options = s.drugs.filter((d) => d.call === "SUSCEPTIBLE");
   const carbR = s.drugs.filter((d) => LAST_LINE.includes(d.drug) && d.call === "RESISTANT").length;
-  if (carbR > 0)
-    flags.push({ label: "Carbapenem-resistant", tone: "resistant", glyph: "!" });
-
   const resistant = s.drugs.filter((d) => d.call === "RESISTANT").length;
   const called = s.drugs.filter((d) => d.call !== "INDETERMINATE").length;
-  if (carbR === 0 && called > 0 && resistant / called >= 0.6)
+  const deferred = s.drugs.length - called;
+
+  // The headline: is there a drug to give tonight?
+  if (options.length > 0)
+    flags.push({
+      label: `${options.length} option${options.length > 1 ? "s" : ""} available`,
+      tone: "susceptible",
+      glyph: "✓",
+    });
+  else
+    flags.push({ label: "No confident option", tone: "resistant", glyph: "!" });
+
+  if (carbR > 0) flags.push({ label: "Carbapenem-resistant", tone: "resistant", glyph: "!" });
+  else if (called > 0 && resistant / called >= 0.6)
     flags.push({ label: "Multi-drug resistant", tone: "resistant", glyph: "!" });
 
-  const deferred = s.drugs.filter((d) => d.call === "INDETERMINATE").length;
-  if (deferred > 0)
-    flags.push({ label: `${deferred} awaiting culture`, tone: "deferred", glyph: "?" });
+  if (s.drugs.some((d) => d.reason?.includes("unrecognised")))
+    flags.push({ label: "Unrecognised machinery", tone: "accent", glyph: "◆" });
 
-  const novel = s.drugs.some((d) => d.reason?.includes("unrecognised"));
-  if (novel) flags.push({ label: "Unrecognised machinery", tone: "accent", glyph: "◆" });
+  // Deferrals are shown as a quiet count, not a warning — they are the expected minority.
+  if (deferred > 0)
+    flags.push({ label: `${deferred} pending`, tone: "deferred", glyph: "·" });
 
   return flags;
 }
@@ -98,10 +113,9 @@ export default function Worklist() {
           />,
           <Stat
             key="c"
-            value={`${Math.round(META.deferral.mean_deferral * 100)}%`}
-            label="of results deferred to culture"
-            note="within expected range"
-            tone="deferred"
+            value={`${rows.filter((s) => s.drugs.some((d) => d.call === "SUSCEPTIBLE")).length}/${rows.length}`}
+            label="specimens with a usable therapy option reported now"
+            note={`${Math.round(META.deferral.mean_deferral * 100)}% of individual results pending culture`}
           />,
           <Stat
             key="d"

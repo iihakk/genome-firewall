@@ -46,6 +46,8 @@ export interface DrugResult {
   lead?: InvestigativeLead;
   /** Culture AST once it arrives, for reconciliation. */
   cultureResult?: "Resistant" | "Susceptible" | null;
+  /** Laboratory ground truth where known, shown on reconciled specimens. */
+  truth?: string | null;
   /** Reviewer changed the call, with a mandatory reason. */
   override?: { to: Call; reason: string; by: string; at: string } | null;
 }
