@@ -1,0 +1,20 @@
+{
+ "accession": "DEMO-2604",
+ "organism": "Klebsiella pneumoniae",
+ "source": "hospital effluent",
+ "ward": "Emergency",
+ "requestedBy": "Dr. P. Ramanathan",
+ "sequencedFrom": "GCA_049383465.1",
+ "note": "Carries machinery absent from training \u2014 should trip the novelty gate",
+ "determinants": [
+  "acrR_V165I=POINT",
+  "acrR_Y114F=POINT",
+  "blaOKP-B-5",
+  "emrD",
+  "ompK35_E132K=POINT",
+  "oqxA",
+  "oqxB",
+  "oqxR_D95E=POINT",
+  "qnrE1"
+ ]
+}

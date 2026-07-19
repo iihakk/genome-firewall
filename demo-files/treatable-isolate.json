@@ -1,0 +1,20 @@
+{
+ "accession": "DEMO-2601",
+ "organism": "Klebsiella pneumoniae",
+ "source": "urine",
+ "ward": "Intensive Care",
+ "requestedBy": "Dr. R. Okonkwo",
+ "sequencedFrom": "GCA_022064685.1",
+ "note": "Lightly armed isolate \u2014 the case where the system clears therapy rather than refusing it",
+ "determinants": [
+  "bla=HMM",
+  "blaSHV-11",
+  "blaSHV-12",
+  "emrD",
+  "fosA",
+  "oqxA",
+  "oqxB19",
+  "qnrB17",
+  "sul1"
+ ]
+}

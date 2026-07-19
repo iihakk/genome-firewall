@@ -45,6 +45,13 @@ def vocab_map():
     return _VOCAB
 
 
+def _gene_from_mutation(token):
+    """POINT:gyrA_S83I -> gyra.  The gene name is right there in the token, so a missing family
+    assignment does not have to mean a lost feature."""
+    body = token.split(":", 1)[1] if ":" in token else token
+    return re.split(r"[_ ]", body)[0].lower() or None
+
+
 def canon(token):
     """Annotation string -> canonical token, or None if not a usable determinant."""
     if not token:
@@ -53,18 +60,58 @@ def canon(token):
     if not r or r.get("confidence", 0) < MIN_CONF:
         return None
     fam = r.get("family")
+    kind = str(r.get("kind") or "")
+    # The classifier returned family=null for 42 of 283 mutation tokens — including gyrA_S83I,
+    # the canonical fluoroquinolone mutation — while still identifying the kind correctly. The
+    # gene is recoverable from the token itself, so derive it rather than drop the feature.
+    if not fam and token.startswith(("POINT:", "TRUNC:")):
+        fam = _gene_from_mutation(token)
     if not fam:
         return None
     fam = re.sub(r"[^A-Za-z0-9()'\-]", "", str(fam)).lower()
     # A kind without a family produced 437 junk 'POINT:null' rows before this guard.
     if not fam or fam in ("null", "none", "unknown"):
         return None
-    kind = r.get("kind") or ""
-    if kind == "point_mutation":
+    k = kind.lower()
+    if k in ("point_mutation", "point") or token.startswith("POINT:"):
         return f"POINT:{fam}"
-    if kind == "truncation":
+    if k in ("truncation", "trunc") or token.startswith("TRUNC:"):
         return f"TRUNC:{fam}"
     return fam
+
+
+def canon_raw(raw):
+    """Raw AMRFinderPlus output -> canonical token.
+
+    Real submissions carry allele suffixes and mutation coordinates (blaKPC-2, gyrA_S83I=POINT,
+    ompK35_E42RfsTer47). The vocabulary is keyed on the form the extractor produced, so try the
+    plausible spellings in order rather than assuming one.
+    """
+    t = (raw or "").strip()
+    if not t or t.upper() in ("NULL", "-"):
+        return None
+    if t.endswith(("=MISTRANSLATION", "=PARTIAL")):
+        return None
+
+    body = t.split("=")[0]
+    candidates = []
+    if t.endswith("=POINT"):
+        candidates += [f"POINT:{body}", f"TRUNC:{body}"]
+    elif re.search(r"fsTer|Ter\d*$", body):
+        candidates += [f"TRUNC:{body}", f"POINT:{body}", f"TRUNC:{re.split(r'_', body)[0]}"]
+    else:
+        candidates += [t, body, re.sub(r"-\d+$", "", body)]
+
+    for c in candidates:
+        got = canon(c)
+        if got:
+            return got
+    # Nothing matched, but a mutation token still names its gene — keep the feature.
+    if t.endswith("=POINT") or re.search(r"fsTer|Ter\d*$", body):
+        gene = re.split(r"[_ ]", body)[0].lower()
+        if gene:
+            return ("TRUNC:" if re.search(r"fsTer|Ter\d*$", body) else "POINT:") + gene
+    return None
 
 
 def norm_drug(d):
