@@ -72,9 +72,13 @@ def main():
         gid = iso["genome_id"]
         meta = iso.get("meta") or {}
         raw_source = str(meta.get("source") or "").lower()
-        label, prio = next(
-            ((v[0], v[1]) for k, v in SOURCES.items() if k in raw_source),
-            ("Sterile site", "routine"))
+        if raw_source in ("", "null", "none", "not recorded", "missing"):
+            # NCBI leaves this blank often; say so rather than inventing a site.
+            label, prio = "Not recorded", "routine"
+        else:
+            label, prio = next(
+                ((v[0], v[1]) for k, v in SOURCES.items() if k in raw_source),
+                (raw_source.capitalize(), "routine"))
 
         # Newest first; roughly one specimen every few hours, as a real bench would see them.
         received = base - timedelta(hours=2 + i * 5, minutes=(rng(gid, 3) % 50))
