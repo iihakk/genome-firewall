@@ -1,0 +1,158 @@
+{
+ "summary": {
+  "within": 0.869,
+  "cross": 0.768,
+  "rule": 0.874,
+  "retained": 0.884,
+  "beats_rule_on": 2,
+  "drugs": 16,
+  "gain_over_rule": -0.106,
+  "verdict": "does NOT transfer \u2014 do not deploy cross-species"
+ },
+ "per_drug": {
+  "amoxicillin-clavulanate": {
+   "n": 4407,
+   "within": 0.794,
+   "cross": 0.678,
+   "cross_auc": 0.756,
+   "rule": 0.629,
+   "transfer_retained": 0.854,
+   "beats_rule": true
+  },
+  "ampicillin-sulbactam": {
+   "n": 278,
+   "within": 0.845,
+   "cross": 0.642,
+   "cross_auc": 0.678,
+   "rule": 0.817,
+   "transfer_retained": 0.76,
+   "beats_rule": false
+  },
+  "aztreonam": {
+   "n": 1189,
+   "within": 0.865,
+   "cross": 0.868,
+   "cross_auc": 0.892,
+   "rule": 0.942,
+   "transfer_retained": 1.003,
+   "beats_rule": false
+  },
+  "cefazolin": {
+   "n": 415,
+   "within": 0.86,
+   "cross": 0.748,
+   "cross_auc": 0.82,
+   "rule": 0.923,
+   "transfer_retained": 0.87,
+   "beats_rule": false
+  },
+  "cefepime": {
+   "n": 1245,
+   "within": 0.814,
+   "cross": 0.863,
+   "cross_auc": 0.928,
+   "rule": 0.909,
+   "transfer_retained": 1.059,
+   "beats_rule": false
+  },
+  "cefotaxime": {
+   "n": 6585,
+   "within": 0.95,
+   "cross": 0.813,
+   "cross_auc": 0.915,
+   "rule": 0.962,
+   "transfer_retained": 0.856,
+   "beats_rule": false
+  },
+  "cefoxitin": {
+   "n": 1164,
+   "within": 0.871,
+   "cross": 0.561,
+   "cross_auc": 0.598,
+   "rule": 0.879,
+   "transfer_retained": 0.644,
+   "beats_rule": false
+  },
+  "ceftazidime": {
+   "n": 7022,
+   "within": 0.911,
+   "cross": 0.849,
+   "cross_auc": 0.898,
+   "rule": 0.93,
+   "transfer_retained": 0.932,
+   "beats_rule": false
+  },
+  "ceftriaxone": {
+   "n": 964,
+   "within": 0.947,
+   "cross": 0.784,
+   "cross_auc": 0.849,
+   "rule": 0.969,
+   "transfer_retained": 0.828,
+   "beats_rule": false
+  },
+  "colistin": {
+   "n": 244,
+   "within": 0.914,
+   "cross": 0.5,
+   "cross_auc": 0.489,
+   "rule": 0.898,
+   "transfer_retained": 0.547,
+   "beats_rule": false
+  },
+  "ertapenem": {
+   "n": 926,
+   "within": 0.877,
+   "cross": 0.65,
+   "cross_auc": 0.674,
+   "rule": 0.923,
+   "transfer_retained": 0.741,
+   "beats_rule": false
+  },
+  "gentamicin": {
+   "n": 7340,
+   "within": 0.953,
+   "cross": 0.929,
+   "cross_auc": 0.962,
+   "rule": 0.937,
+   "transfer_retained": 0.974,
+   "beats_rule": false
+  },
+  "imipenem": {
+   "n": 1709,
+   "within": 0.9,
+   "cross": 0.952,
+   "cross_auc": 0.949,
+   "rule": 0.954,
+   "transfer_retained": 1.058,
+   "beats_rule": false
+  },
+  "levofloxacin": {
+   "n": 401,
+   "within": 0.598,
+   "cross": 0.677,
+   "cross_auc": 0.734,
+   "rule": 0.474,
+   "transfer_retained": 1.132,
+   "beats_rule": true
+  },
+  "tetracycline": {
+   "n": 877,
+   "within": 0.901,
+   "cross": 0.895,
+   "cross_auc": 0.921,
+   "rule": 0.926,
+   "transfer_retained": 0.993,
+   "beats_rule": false
+  },
+  "tobramycin": {
+   "n": 1589,
+   "within": 0.902,
+   "cross": 0.885,
+   "cross_auc": 0.919,
+   "rule": 0.913,
+   "transfer_retained": 0.981,
+   "beats_rule": false
+  }
+ }
+}

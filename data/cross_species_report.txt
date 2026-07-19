@@ -1,0 +1,32 @@
+Klebsiella (source, NCBI): 1863 isolates
+E. coli (target, BV-BRC): 12627 genomes
+
+drug                               n   within   cross    rule  transfer
+-----------------------------------------------------------------------
+amoxicillin-clavulanate         4407    0.794   0.678   0.629       85%
+ampicillin-sulbactam             278    0.845   0.642   0.817       76%
+aztreonam                       1189    0.865   0.868   0.942      100%
+cefazolin                        415    0.860   0.748   0.923       87%
+cefepime                        1245    0.814   0.863   0.909      106%
+cefotaxime                      6585    0.950   0.813   0.962       86%
+cefoxitin                       1164    0.871   0.561   0.879       64%
+ceftazidime                     7022    0.911   0.849   0.930       93%
+ceftriaxone                      964    0.947   0.784   0.969       83%
+colistin                         244    0.914   0.500   0.898       55%
+ertapenem                        926    0.877   0.650   0.923       74%
+gentamicin                      7340    0.953   0.929   0.937       97%
+imipenem                        1709    0.900   0.952   0.954      106%
+levofloxacin                     401    0.598   0.677   0.474      113%
+tetracycline                     877    0.901   0.895   0.926       99%
+tobramycin                      1589    0.902   0.885   0.913       98%
+-----------------------------------------------------------------------
+
+within-species (E. coli, upper bound)  : 0.869
+cross-species  (Klebsiella -> E. coli) : 0.768
+clinical rule  (species-agnostic)      : 0.874
+
+transfer retains 88% of within-species performance
+cross-species model beats the rule on 2/16 drugs (-0.106 mean)
+verdict: does NOT transfer — do not deploy cross-species
+
+wrote /Users/abdulazizal-haidary/development/Hackathon/genome-firewall/data/cross_species.json
