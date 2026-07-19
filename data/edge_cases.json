@@ -1,0 +1,1796 @@
+{
+ "generated": "deterministic, seed 20260719",
+ "source": "BV-BRC Klebsiella pneumoniae, laboratory-confirmed phenotypes",
+ "note": "Derived from real isolates by perturbation. 'expected_behaviour' encodes the clinically acceptable response, which for several categories is abstention rather than a label.",
+ "n_cases": 93,
+ "cases": [
+  {
+   "case_id": "EC001",
+   "category": "novel_mechanism",
+   "derived_from": "573.29870",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 9,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC002",
+   "category": "novel_mechanism",
+   "derived_from": "573.29996",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 9,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC003",
+   "category": "novel_mechanism",
+   "derived_from": "573.30009",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aminoglycoside_other",
+    "blaAmpC",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 10,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC004",
+   "category": "novel_mechanism",
+   "derived_from": "573.29875",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aminoglycoside_other",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 10,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC005",
+   "category": "novel_mechanism",
+   "derived_from": "573.24274",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "beta_lactamase_other",
+    "blaCTX-M",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 15,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC006",
+   "category": "novel_mechanism",
+   "derived_from": "573.67224",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "beta_lactamase_other",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 11,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC007",
+   "category": "novel_mechanism",
+   "derived_from": "573.29938",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aminoglycoside_other",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 11,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC008",
+   "category": "novel_mechanism",
+   "derived_from": "573.29916",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 9,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC009",
+   "category": "novel_mechanism",
+   "derived_from": "573.23202",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "aph(3')",
+    "blaCTX-M",
+    "blaOXA",
+    "blaSHV",
+    "cat",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "qnrB",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 18,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC010",
+   "category": "novel_mechanism",
+   "derived_from": "573.29958",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "aph(3')",
+    "blaCTX-M",
+    "blaOXA",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 17,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC011",
+   "category": "novel_mechanism",
+   "derived_from": "573.29973",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "aph(3')",
+    "blaSHV",
+    "cat",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 13,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC012",
+   "category": "novel_mechanism",
+   "derived_from": "573.67233",
+   "features": [
+    "UNKNOWN:novel_beta_lactamase",
+    "aminoglycoside_other",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 9,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Carbapenemase swapped for an unrecognised protein call, mimicking a newly evolved enzyme. The system cannot know what it does \u2014 but it can see that something unfamiliar is there, and must refuse rather than guess."
+  },
+  {
+   "case_id": "EC013",
+   "category": "invisible_mechanism",
+   "derived_from": "573.23205",
+   "features": [
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "blaCTX-M",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "erm",
+    "fosA",
+    "mph",
+    "qac",
+    "qnrB",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 15,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "DOCUMENTED_LIMITATION",
+   "rationale": "Every trace of the carbapenemase removed. Unrecoverable by construction \u2014 included to bound the claim, not to be passed. Richer features (point mutations, plasmid context, raw sequence) would be required to detect this class."
+  },
+  {
+   "case_id": "EC014",
+   "category": "invisible_mechanism",
+   "derived_from": "573.30001",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 8,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "DOCUMENTED_LIMITATION",
+   "rationale": "Every trace of the carbapenemase removed. Unrecoverable by construction \u2014 included to bound the claim, not to be passed. Richer features (point mutations, plasmid context, raw sequence) would be required to detect this class."
+  },
+  {
+   "case_id": "EC015",
+   "category": "invisible_mechanism",
+   "derived_from": "573.29868",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 8,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "DOCUMENTED_LIMITATION",
+   "rationale": "Every trace of the carbapenemase removed. Unrecoverable by construction \u2014 included to bound the claim, not to be passed. Richer features (point mutations, plasmid context, raw sequence) would be required to detect this class."
+  },
+  {
+   "case_id": "EC016",
+   "category": "invisible_mechanism",
+   "derived_from": "573.29975",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 8,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "DOCUMENTED_LIMITATION",
+   "rationale": "Every trace of the carbapenemase removed. Unrecoverable by construction \u2014 included to bound the claim, not to be passed. Richer features (point mutations, plasmid context, raw sequence) would be required to detect this class."
+  },
+  {
+   "case_id": "EC017",
+   "category": "invisible_mechanism",
+   "derived_from": "573.67678",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 8,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "DOCUMENTED_LIMITATION",
+   "rationale": "Every trace of the carbapenemase removed. Unrecoverable by construction \u2014 included to bound the claim, not to be passed. Richer features (point mutations, plasmid context, raw sequence) would be required to detect this class."
+  },
+  {
+   "case_id": "EC018",
+   "category": "invisible_mechanism",
+   "derived_from": "573.29907",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "qnrB",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 9,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "DOCUMENTED_LIMITATION",
+   "rationale": "Every trace of the carbapenemase removed. Unrecoverable by construction \u2014 included to bound the claim, not to be passed. Richer features (point mutations, plasmid context, raw sequence) would be required to detect this class."
+  },
+  {
+   "case_id": "EC019",
+   "category": "invisible_mechanism",
+   "derived_from": "573.24278",
+   "features": [
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "beta_lactamase_other",
+    "blaCTX-M",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 14,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "DOCUMENTED_LIMITATION",
+   "rationale": "Every trace of the carbapenemase removed. Unrecoverable by construction \u2014 included to bound the claim, not to be passed. Richer features (point mutations, plasmid context, raw sequence) would be required to detect this class."
+  },
+  {
+   "case_id": "EC020",
+   "category": "invisible_mechanism",
+   "derived_from": "573.29972",
+   "features": [
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "aph(3'')",
+    "aph(3')",
+    "aph(6)",
+    "beta_lactamase_other",
+    "blaCTX-M",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "erm",
+    "fosA",
+    "mph",
+    "qac",
+    "qnrB",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 19,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "DOCUMENTED_LIMITATION",
+   "rationale": "Every trace of the carbapenemase removed. Unrecoverable by construction \u2014 included to bound the claim, not to be passed. Richer features (point mutations, plasmid context, raw sequence) would be required to detect this class."
+  },
+  {
+   "case_id": "EC021",
+   "category": "clean_background",
+   "derived_from": "573.24276",
+   "features": [
+    "blaOXA-48",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC022",
+   "category": "clean_background",
+   "derived_from": "573.30017",
+   "features": [
+    "blaKPC",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC023",
+   "category": "clean_background",
+   "derived_from": "573.13793",
+   "features": [
+    "blaKPC",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC024",
+   "category": "clean_background",
+   "derived_from": "573.67239",
+   "features": [
+    "blaNDM",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC025",
+   "category": "clean_background",
+   "derived_from": "573.29863",
+   "features": [
+    "blaKPC",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC026",
+   "category": "clean_background",
+   "derived_from": "573.29907",
+   "features": [
+    "blaKPC",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC027",
+   "category": "clean_background",
+   "derived_from": "573.24440",
+   "features": [
+    "blaKPC",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC028",
+   "category": "clean_background",
+   "derived_from": "573.18477",
+   "features": [
+    "blaKPC",
+    "blaVIM",
+    "fosA"
+   ],
+   "n_features": 3,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC029",
+   "category": "clean_background",
+   "derived_from": "573.67224",
+   "features": [
+    "blaKPC",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC030",
+   "category": "clean_background",
+   "derived_from": "573.29973",
+   "features": [
+    "blaVIM",
+    "fosA"
+   ],
+   "n_features": 2,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with no co-carried resistance genes. Removes the linkage crutch the model leans on when a plasmid arrives carrying a crowd."
+  },
+  {
+   "case_id": "EC031",
+   "category": "degraded_assembly",
+   "derived_from": "573.30017",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "mph",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 6,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC032",
+   "category": "degraded_assembly",
+   "derived_from": "573.30017",
+   "features": [
+    "blaSHV",
+    "fosA",
+    "sul"
+   ],
+   "n_features": 3,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC033",
+   "category": "degraded_assembly",
+   "derived_from": "573.13701",
+   "features": [
+    "aminoglycoside_other",
+    "aph(3'')",
+    "blaCTX-M",
+    "blaSHV",
+    "blaTEM",
+    "qac",
+    "qnrB",
+    "sul"
+   ],
+   "n_features": 8,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC034",
+   "category": "degraded_assembly",
+   "derived_from": "573.13701",
+   "features": [
+    "aminoglycoside_other",
+    "aph(6)",
+    "dfr",
+    "rmt_16S_methylase"
+   ],
+   "n_features": 4,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC035",
+   "category": "degraded_assembly",
+   "derived_from": "573.17927",
+   "features": [
+    "aac(6')",
+    "beta_lactamase_other",
+    "blaOXA",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 9,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC036",
+   "category": "degraded_assembly",
+   "derived_from": "573.17927",
+   "features": [
+    "aminoglycoside_other",
+    "aph(6)",
+    "beta_lactamase_other",
+    "qac",
+    "sul"
+   ],
+   "n_features": 5,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC037",
+   "category": "degraded_assembly",
+   "derived_from": "573.66867",
+   "features": [
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 5,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC038",
+   "category": "degraded_assembly",
+   "derived_from": "573.66867",
+   "features": [
+    "ant(3'')",
+    "dfr",
+    "sul"
+   ],
+   "n_features": 3,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC039",
+   "category": "degraded_assembly",
+   "derived_from": "573.26087",
+   "features": [
+    "aminoglycoside_other",
+    "beta_lactamase_other",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 7,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC040",
+   "category": "degraded_assembly",
+   "derived_from": "573.26087",
+   "features": [
+    "aminoglycoside_other",
+    "beta_lactamase_other",
+    "dfr",
+    "fosA"
+   ],
+   "n_features": 4,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC041",
+   "category": "degraded_assembly",
+   "derived_from": "573.67287",
+   "features": [
+    "ant(3'')",
+    "aph(3'')",
+    "aph(3')",
+    "blaAmpC",
+    "blaCTX-M",
+    "blaNDM",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "qac",
+    "tet"
+   ],
+   "n_features": 12,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC042",
+   "category": "degraded_assembly",
+   "derived_from": "573.67287",
+   "features": [
+    "aph(6)",
+    "blaAmpC",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "qac"
+   ],
+   "n_features": 6,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC043",
+   "category": "degraded_assembly",
+   "derived_from": "573.13358",
+   "features": [
+    "aminoglycoside_other",
+    "beta_lactamase_other",
+    "blaKPC",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 6,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC044",
+   "category": "degraded_assembly",
+   "derived_from": "573.13358",
+   "features": [
+    "aminoglycoside_other",
+    "beta_lactamase_other",
+    "blaTEM"
+   ],
+   "n_features": 3,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC045",
+   "category": "degraded_assembly",
+   "derived_from": "573.5712",
+   "features": [
+    "aac(3)",
+    "blaCTX-M",
+    "blaTEM",
+    "dfr",
+    "qac",
+    "sul"
+   ],
+   "n_features": 6,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC046",
+   "category": "degraded_assembly",
+   "derived_from": "573.5712",
+   "features": [
+    "aac(3)",
+    "qac",
+    "sul"
+   ],
+   "n_features": 3,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC047",
+   "category": "degraded_assembly",
+   "derived_from": "573.67210",
+   "features": [
+    "aminoglycoside_other",
+    "blaOXA-48",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 5,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC048",
+   "category": "degraded_assembly",
+   "derived_from": "573.67210",
+   "features": [
+    "aminoglycoside_other",
+    "dfr",
+    "fosA"
+   ],
+   "n_features": 3,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC049",
+   "category": "degraded_assembly",
+   "derived_from": "573.29870",
+   "features": [
+    "blaSHV",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 6,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "40% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC050",
+   "category": "degraded_assembly",
+   "derived_from": "573.29870",
+   "features": [
+    "blaKPC",
+    "fosA",
+    "sul"
+   ],
+   "n_features": 3,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_IF_MECHANISM_LOST",
+   "rationale": "70% of gene calls dropped, simulating low coverage or a fragmented reconstruction. Confidence should fall as evidence disappears."
+  },
+  {
+   "case_id": "EC051",
+   "category": "silent_gene",
+   "derived_from": "573.67113",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 7,
+   "drug": "trimethoprim/sulfamethoxazole",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "sul is present yet the isolate tested susceptible to trimethoprim/sulfamethoxazole. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC052",
+   "category": "silent_gene",
+   "derived_from": "573.13859",
+   "features": [
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "aph(3'')",
+    "aph(6)",
+    "blaCTX-M",
+    "blaOXA",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "qac",
+    "qnrB",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 17,
+   "drug": "amikacin",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "aac(6') is present yet the isolate tested susceptible to amikacin. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC053",
+   "category": "silent_gene",
+   "derived_from": "573.66611",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 7,
+   "drug": "trimethoprim/sulfamethoxazole",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "sul is present yet the isolate tested susceptible to trimethoprim/sulfamethoxazole. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC054",
+   "category": "silent_gene",
+   "derived_from": "573.5814",
+   "features": [
+    "aac(3)",
+    "aminoglycoside_other",
+    "aph(3'')",
+    "aph(6)",
+    "blaCTX-M",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "qnrB",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 14,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "qnrB is present yet the isolate tested susceptible to ciprofloxacin. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC055",
+   "category": "silent_gene",
+   "derived_from": "573.5695",
+   "features": [
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "aph(3'')",
+    "aph(6)",
+    "blaCTX-M",
+    "blaOXA",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 15,
+   "drug": "amikacin",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "aac(6') is present yet the isolate tested susceptible to amikacin. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC056",
+   "category": "silent_gene",
+   "derived_from": "573.66862",
+   "features": [
+    "aminoglycoside_other",
+    "ant(3'')",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 8,
+   "drug": "trimethoprim/sulfamethoxazole",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "sul is present yet the isolate tested susceptible to trimethoprim/sulfamethoxazole. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC057",
+   "category": "silent_gene",
+   "derived_from": "573.24274",
+   "features": [
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "beta_lactamase_other",
+    "blaCTX-M",
+    "blaOXA-48",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 15,
+   "drug": "trimethoprim/sulfamethoxazole",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "sul is present yet the isolate tested susceptible to trimethoprim/sulfamethoxazole. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC058",
+   "category": "silent_gene",
+   "derived_from": "573.15497",
+   "features": [
+    "aac(6')",
+    "aminoglycoside_other",
+    "aph(3'')",
+    "aph(6)",
+    "blaCTX-M",
+    "blaOXA",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "qac",
+    "qnrB",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 15,
+   "drug": "amikacin",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "aac(6') is present yet the isolate tested susceptible to amikacin. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC059",
+   "category": "silent_gene",
+   "derived_from": "573.12939",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 7,
+   "drug": "trimethoprim/sulfamethoxazole",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "sul is present yet the isolate tested susceptible to trimethoprim/sulfamethoxazole. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC060",
+   "category": "silent_gene",
+   "derived_from": "573.30010",
+   "features": [
+    "aminoglycoside_other",
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 10,
+   "drug": "trimethoprim/sulfamethoxazole",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN_OR_SUSCEPTIBLE",
+   "rationale": "sul is present yet the isolate tested susceptible to trimethoprim/sulfamethoxazole. The determinant is not being expressed, or is a non-functional variant. Presence-based reasoning over-calls resistance here."
+  },
+  {
+   "case_id": "EC061",
+   "category": "point_only",
+   "derived_from": "573.24274",
+   "features": [
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "beta_lactamase_other",
+    "blaCTX-M",
+    "blaOXA-48",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 15,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC062",
+   "category": "point_only",
+   "derived_from": "573.24278",
+   "features": [
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "beta_lactamase_other",
+    "blaCTX-M",
+    "blaOXA-48",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 15,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC063",
+   "category": "point_only",
+   "derived_from": "573.29983",
+   "features": [
+    "aminoglycoside_other",
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 9,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC064",
+   "category": "point_only",
+   "derived_from": "573.66776",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 7,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC065",
+   "category": "point_only",
+   "derived_from": "573.29936",
+   "features": [
+    "aminoglycoside_other",
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 11,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC066",
+   "category": "point_only",
+   "derived_from": "573.14274",
+   "features": [
+    "aac(3)",
+    "aminoglycoside_other",
+    "blaCTX-M",
+    "blaSHV",
+    "cat",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 11,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC067",
+   "category": "point_only",
+   "derived_from": "573.24440",
+   "features": [
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "blaKPC",
+    "blaSHV",
+    "cat",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 12,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC068",
+   "category": "point_only",
+   "derived_from": "573.18477",
+   "features": [
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "aph(3')",
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "blaVIM",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 13,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC069",
+   "category": "point_only",
+   "derived_from": "573.67416",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 7,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC070",
+   "category": "point_only",
+   "derived_from": "573.13990",
+   "features": [
+    "aac(3)",
+    "aminoglycoside_other",
+    "aph(3'')",
+    "aph(6)",
+    "blaCTX-M",
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 14,
+   "drug": "ciprofloxacin",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "ABSTAIN_OR_RESISTANT",
+   "rationale": "Fluoroquinolone resistance with no acquired qnr gene \u2014 almost certainly a gyrA/parC target mutation, which a gene-presence feature space cannot represent at all."
+  },
+  {
+   "case_id": "EC071",
+   "category": "conflicting",
+   "derived_from": "573.30017",
+   "features": [
+    "blaKPC",
+    "blaSHV",
+    "fosA",
+    "qac"
+   ],
+   "n_features": 4,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with a susceptible-looking accessory profile. Tests whether the model weighs the causal mechanism above the background."
+  },
+  {
+   "case_id": "EC072",
+   "category": "conflicting",
+   "derived_from": "573.14428",
+   "features": [
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "fosA",
+    "qac"
+   ],
+   "n_features": 5,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with a susceptible-looking accessory profile. Tests whether the model weighs the causal mechanism above the background."
+  },
+  {
+   "case_id": "EC073",
+   "category": "conflicting",
+   "derived_from": "573.67189",
+   "features": [
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "fosA",
+    "qac"
+   ],
+   "n_features": 5,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with a susceptible-looking accessory profile. Tests whether the model weighs the causal mechanism above the background."
+  },
+  {
+   "case_id": "EC074",
+   "category": "conflicting",
+   "derived_from": "573.67217",
+   "features": [
+    "blaCTX-M",
+    "blaOXA-48",
+    "blaSHV",
+    "blaTEM",
+    "fosA",
+    "qac"
+   ],
+   "n_features": 6,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with a susceptible-looking accessory profile. Tests whether the model weighs the causal mechanism above the background."
+  },
+  {
+   "case_id": "EC075",
+   "category": "conflicting",
+   "derived_from": "573.29972",
+   "features": [
+    "blaCTX-M",
+    "blaNDM",
+    "blaOXA-48",
+    "blaSHV",
+    "blaTEM",
+    "fosA",
+    "qac"
+   ],
+   "n_features": 7,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with a susceptible-looking accessory profile. Tests whether the model weighs the causal mechanism above the background."
+  },
+  {
+   "case_id": "EC076",
+   "category": "conflicting",
+   "derived_from": "573.29983",
+   "features": [
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "fosA",
+    "qac"
+   ],
+   "n_features": 5,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with a susceptible-looking accessory profile. Tests whether the model weighs the causal mechanism above the background."
+  },
+  {
+   "case_id": "EC077",
+   "category": "conflicting",
+   "derived_from": "573.29939",
+   "features": [
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "fosA",
+    "qac"
+   ],
+   "n_features": 5,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with a susceptible-looking accessory profile. Tests whether the model weighs the causal mechanism above the background."
+  },
+  {
+   "case_id": "EC078",
+   "category": "conflicting",
+   "derived_from": "573.12771",
+   "features": [
+    "blaKPC",
+    "blaSHV",
+    "blaTEM",
+    "fosA",
+    "qac"
+   ],
+   "n_features": 5,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Carbapenemase with a susceptible-looking accessory profile. Tests whether the model weighs the causal mechanism above the background."
+  },
+  {
+   "case_id": "EC079",
+   "category": "chimeric",
+   "derived_from": "573.66591+573.20910",
+   "features": [
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "beta_lactamase_other",
+    "blaCTX-M",
+    "blaNDM",
+    "blaOXA",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 18,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Gene calls from two isolates merged, simulating contamination or a mixed sample. A single confident call is not defensible when the input is not one organism."
+  },
+  {
+   "case_id": "EC080",
+   "category": "chimeric",
+   "derived_from": "573.26232+573.20790",
+   "features": [
+    "aac(3)",
+    "aac(6')",
+    "aminoglycoside_other",
+    "ant(3'')",
+    "aph(3'')",
+    "aph(6)",
+    "blaCTX-M",
+    "blaOXA-48",
+    "blaSHV",
+    "blaTEM",
+    "cat",
+    "dfr",
+    "fosA",
+    "mph",
+    "qac",
+    "rmt_16S_methylase",
+    "sul",
+    "tet"
+   ],
+   "n_features": 18,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Gene calls from two isolates merged, simulating contamination or a mixed sample. A single confident call is not defensible when the input is not one organism."
+  },
+  {
+   "case_id": "EC081",
+   "category": "chimeric",
+   "derived_from": "573.66599+573.21886",
+   "features": [
+    "aminoglycoside_other",
+    "blaSHV",
+    "dfr",
+    "fosA",
+    "qac",
+    "rmt_16S_methylase",
+    "sul"
+   ],
+   "n_features": 7,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Gene calls from two isolates merged, simulating contamination or a mixed sample. A single confident call is not defensible when the input is not one organism."
+  },
+  {
+   "case_id": "EC082",
+   "category": "minimal",
+   "derived_from": "573.29983",
+   "features": [
+    "blaKPC"
+   ],
+   "n_features": 1,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Exactly one determinant and nothing else. Can the model act on a lone mechanism?"
+  },
+  {
+   "case_id": "EC083",
+   "category": "minimal",
+   "derived_from": "573.29992",
+   "features": [
+    "blaKPC"
+   ],
+   "n_features": 1,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Exactly one determinant and nothing else. Can the model act on a lone mechanism?"
+  },
+  {
+   "case_id": "EC084",
+   "category": "minimal",
+   "derived_from": "573.13793",
+   "features": [
+    "blaKPC"
+   ],
+   "n_features": 1,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Exactly one determinant and nothing else. Can the model act on a lone mechanism?"
+  },
+  {
+   "case_id": "EC085",
+   "category": "minimal",
+   "derived_from": "573.30008",
+   "features": [
+    "blaKPC"
+   ],
+   "n_features": 1,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Exactly one determinant and nothing else. Can the model act on a lone mechanism?"
+  },
+  {
+   "case_id": "EC086",
+   "category": "minimal",
+   "derived_from": "573.13990",
+   "features": [
+    "blaKPC"
+   ],
+   "n_features": 1,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Exactly one determinant and nothing else. Can the model act on a lone mechanism?"
+  },
+  {
+   "case_id": "EC087",
+   "category": "minimal",
+   "derived_from": "573.30009",
+   "features": [
+    "blaKPC"
+   ],
+   "n_features": 1,
+   "drug": "meropenem",
+   "ground_truth": "Resistant",
+   "expected_behaviour": "RESISTANT",
+   "rationale": "Exactly one determinant and nothing else. Can the model act on a lone mechanism?"
+  },
+  {
+   "case_id": "EC088",
+   "category": "bare",
+   "derived_from": "573.66847 (determinants stripped)",
+   "features": [],
+   "n_features": 0,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Constructed: all determinants removed. Only 4 of 7276 real genomes look like this, so an empty vector signals a failed pipeline rather than a clean organism \u2014 and it is indistinguishable from a genome carrying an unrecognised mechanism."
+  },
+  {
+   "case_id": "EC089",
+   "category": "bare",
+   "derived_from": "573.66568 (determinants stripped)",
+   "features": [],
+   "n_features": 0,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Constructed: all determinants removed. Only 4 of 7276 real genomes look like this, so an empty vector signals a failed pipeline rather than a clean organism \u2014 and it is indistinguishable from a genome carrying an unrecognised mechanism."
+  },
+  {
+   "case_id": "EC090",
+   "category": "bare",
+   "derived_from": "573.14274 (determinants stripped)",
+   "features": [],
+   "n_features": 0,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Constructed: all determinants removed. Only 4 of 7276 real genomes look like this, so an empty vector signals a failed pipeline rather than a clean organism \u2014 and it is indistinguishable from a genome carrying an unrecognised mechanism."
+  },
+  {
+   "case_id": "EC091",
+   "category": "bare",
+   "derived_from": "573.13767 (determinants stripped)",
+   "features": [],
+   "n_features": 0,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Constructed: all determinants removed. Only 4 of 7276 real genomes look like this, so an empty vector signals a failed pipeline rather than a clean organism \u2014 and it is indistinguishable from a genome carrying an unrecognised mechanism."
+  },
+  {
+   "case_id": "EC092",
+   "category": "bare",
+   "derived_from": "573.26289 (determinants stripped)",
+   "features": [],
+   "n_features": 0,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Constructed: all determinants removed. Only 4 of 7276 real genomes look like this, so an empty vector signals a failed pipeline rather than a clean organism \u2014 and it is indistinguishable from a genome carrying an unrecognised mechanism."
+  },
+  {
+   "case_id": "EC093",
+   "category": "bare",
+   "derived_from": "573.13656 (determinants stripped)",
+   "features": [],
+   "n_features": 0,
+   "drug": "meropenem",
+   "ground_truth": "Susceptible",
+   "expected_behaviour": "ABSTAIN",
+   "rationale": "Constructed: all determinants removed. Only 4 of 7276 real genomes look like this, so an empty vector signals a failed pipeline rather than a clean organism \u2014 and it is indistinguishable from a genome carrying an unrecognised mechanism."
+  }
+ ]
+}
