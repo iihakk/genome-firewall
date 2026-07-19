@@ -9,7 +9,7 @@ normalisation a real laboratory submission would.
 
 | file | source isolate | determinants | mutations |
 |---|---|---|---|
-| `treatable-isolate.json` | GCA_022064685.1 | 6 | 0 |
+| `treatable-isolate.json` | GCA_031013725.2 | 6 | 0 |
 | `carbapenemase-mutations.json` | GCA_003069525.1 | 28 | 3 |
 | `mutations-no-carbapenemase.json` | GCA_001874695.1 | 24 | 3 |
 | `unfamiliar-machinery.json` | GCA_049383465.1 | 7 | 3 |
