@@ -99,7 +99,10 @@ def main():
         models[drug] = Firewall(mdl, vocab, Xtr, y, known)
         print(f"   model: {drug} (n={len(ids)})")
 
-    results, per_cat = [], defaultdict(lambda: [0, 0, 0])
+    # [n, passed, lethal, scored] — `scored` excludes DOCUMENTED_LIMITATION cases, which are
+    # measured but kept out of the headline pass rate. Their lethal errors are real and must not
+    # vanish from the total just because the pass/fail column does not apply to them.
+    results, per_cat = [], defaultdict(lambda: [0, 0, 0, 0])
     for c in cases:
         drug = norm_drug(c["drug"])
         m = models.get(drug)
@@ -111,8 +114,7 @@ def main():
         per_cat[c["category"]][0] += 1
         per_cat[c["category"]][1] += int(bool(ok))
         per_cat[c["category"]][2] += int(lethal)
-        if ok is None:
-            per_cat[c["category"]][1] = -1  # marker: not scored
+        per_cat[c["category"]][3] += int(ok is not None)
         results.append(dict(case_id=c["case_id"], category=c["category"], drug=drug,
                             ground_truth=c["ground_truth"], probability=round(prob, 3),
                             call=call, expected=c["expected_behaviour"],
@@ -123,21 +125,28 @@ def main():
     scored = [r for r in results if r["passed"] is not None]
     tot = len(scored)
     passed = sum(r["passed"] for r in scored)
-    lethal = sum(r["lethal_error"] for r in scored)
+    lethal = sum(r["lethal_error"] for r in scored)              # headline: scored cases only
+    lethal_all = sum(r["lethal_error"] for r in results)         # every case run, excluded included
     print(f"\n{'category':<24}{'n':>4}{'passed':>9}{'lethal':>9}")
     print("-" * 48)
-    for cat, (n, p, l) in sorted(per_cat.items()):
-        if p < 0:
+    for cat, (n, p, l, sc) in sorted(per_cat.items()):
+        if sc == 0:
             print(f"{cat:<24}{n:>4}{'  not scored':>12}{l:>7}")
         else:
-            print(f"{cat:<24}{n:>4}{p:>6} ({100*p//max(n,1):>3}%){l:>7}")
+            print(f"{cat:<24}{n:>4}{p:>6} ({100*p//max(sc,1):>3}%){l:>7}")
     print("-" * 48)
-    print(f"{'TOTAL':<24}{tot:>4}{passed:>6} ({100*passed//max(tot,1):>3}%){lethal:>7}")
-    print(f"\nlethal errors = confident SUSCEPTIBLE on a truly resistant genome: {lethal}")
+    print(f"{'TOTAL (scored)':<24}{tot:>4}{passed:>6} ({100*passed//max(tot,1):>3}%){lethal:>7}")
+    print(f"\nlethal error = confident SUSCEPTIBLE on a truly resistant genome")
+    print(f"  {lethal} across the {tot} scored cases")
+    print(f"  {lethal_all} across all {len(results)} cases run — the difference falls entirely in")
+    print(f"  DOCUMENTED_LIMITATION categories, where the discriminating information is absent")
+    print(f"  from the feature space by construction. Excluded from the pass rate, not from this.")
 
-    out = dict(n_cases=tot, passed=passed, pass_rate=round(passed / max(tot, 1), 3),
-               lethal_errors=lethal,
-               by_category={k: dict(n=v[0], passed=v[1], lethal=v[2]) for k, v in per_cat.items()},
+    out = dict(n_cases=tot, n_run=len(results), passed=passed,
+               pass_rate=round(passed / max(tot, 1), 3),
+               lethal_errors=lethal, lethal_errors_all_cases=lethal_all,
+               by_category={k: dict(n=v[0], passed=(None if v[3] == 0 else v[1]),
+                                    lethal=v[2], scored=v[3]) for k, v in per_cat.items()},
                results=results)
     json.dump(out, open(os.path.join(DATA, "edge_case_results.json"), "w"), indent=1)
     print(f"\nwrote {os.path.join(DATA, 'edge_case_results.json')}")

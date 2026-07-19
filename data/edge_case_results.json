@@ -1,58 +1,70 @@
 {
  "n_cases": 85,
+ "n_run": 93,
  "passed": 73,
  "pass_rate": 0.859,
  "lethal_errors": 3,
+ "lethal_errors_all_cases": 7,
  "by_category": {
   "novel_mechanism": {
    "n": 12,
    "passed": 12,
-   "lethal": 0
+   "lethal": 0,
+   "scored": 12
   },
   "invisible_mechanism": {
    "n": 8,
-   "passed": -1,
-   "lethal": 4
+   "passed": null,
+   "lethal": 4,
+   "scored": 0
   },
   "clean_background": {
    "n": 10,
    "passed": 7,
-   "lethal": 0
+   "lethal": 0,
+   "scored": 10
   },
   "degraded_assembly": {
    "n": 20,
    "passed": 19,
-   "lethal": 1
+   "lethal": 1,
+   "scored": 20
   },
   "silent_gene": {
    "n": 10,
    "passed": 7,
-   "lethal": 0
+   "lethal": 0,
+   "scored": 10
   },
   "point_only": {
    "n": 10,
    "passed": 8,
-   "lethal": 2
+   "lethal": 2,
+   "scored": 10
   },
   "conflicting": {
    "n": 8,
    "passed": 7,
-   "lethal": 0
+   "lethal": 0,
+   "scored": 8
   },
   "chimeric": {
    "n": 3,
    "passed": 1,
-   "lethal": 0
+   "lethal": 0,
+   "scored": 3
   },
   "minimal": {
    "n": 6,
    "passed": 6,
-   "lethal": 0
+   "lethal": 0,
+   "scored": 6
   },
   "bare": {
    "n": 6,
    "passed": 6,
-   "lethal": 0
+   "lethal": 0,
+   "scored": 6
   }
  },
  "results": [
