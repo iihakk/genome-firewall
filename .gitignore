@@ -12,3 +12,7 @@ secrets/
 # recording scripts — submission material, not project code
 *-Script.docx
 VIDEO_SCRIPTS.md
+
+# Vercel CLI local project link
+.vercel/
+web/.vercel/
