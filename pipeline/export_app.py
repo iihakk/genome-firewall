@@ -27,7 +27,7 @@ WARDS = ["Intensive Care", "Haematology", "General Medicine", "Renal", "Surgery"
          "Emergency", "Respiratory", "Transplant"]
 CLINICIANS = ["Dr. R. Okonkwo", "Dr. M. Lindqvist", "Dr. S. Haddad", "Dr. P. Ramanathan",
               "Dr. J. Mwangi", "Dr. E. Nakamura", "Dr. T. Fernandes"]
-REVIEWERS = ["Dr. A. Haidary", "Dr. L. Bergström"]
+REVIEWERS = ["Dr. Jack Halloran", "Dr. L. Bergström"]
 SOURCES = {
     "blood": ("Blood culture", "urgent"),
     "tracheal aspirate": ("Tracheal aspirate", "urgent"),

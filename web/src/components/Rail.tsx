@@ -122,7 +122,7 @@ export function Rail() {
       <div className="border-t border-line px-5 py-3.5">
         <div className="flex items-center gap-2.5">
           <div className="grid size-8 place-items-center rounded-full bg-accent-soft text-[11px] font-semibold text-accent">
-            AH
+            JH
           </div>
           <div className="min-w-0">
             <div className="truncate text-[12.5px] font-medium">{CURRENT_USER}</div>

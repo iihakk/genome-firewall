@@ -161,6 +161,6 @@ export function useThresholds() {
 }
 
 /** The signed-in reviewer. A real deployment takes this from the lab's identity provider. */
-export const CURRENT_USER = "Dr. A. Haidary";
+export const CURRENT_USER = "Dr. Jack Halloran";
 
 export type { Seed };
